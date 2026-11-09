@@ -32,6 +32,8 @@ All big-endian, 9 bytes total (4 bytes for run id seems too much, 65536 run ids 
 
 Block_counter starts at 0, +1 for every 16-byte block, big-endian, incremented from the last byte (this is just how micropython cryptolib CTR mode 6 does it, so put the block counter at the end, not in the middle). max packet is 250 bytes (max of ESPNOW) = 16 blocks so only the last byte ever changes
 
+Heads up: on our firmware (MicroPython v1.27.0, generic ESP32) `cryptolib.aes(key, 6, iv)` raises `ValueError: mode`, so mode 6 does not exist there. Only ECB (1) and CBC (2) work. The code builds CTR on top of ECB with the same counter block layout and the same increment rule, so the packets are identical to what mode 6 would give. It reproduces the NIST SP 800-38A AES-128 CTR test vector on the board.
+
 
 ## A single shared PSK: who generates it, and how do we distribute it?
 
@@ -80,3 +82,38 @@ The sensors we have are:
 - DS18B20 (2x)
 - CO (2x)
 - DHT11 (2x)
+
+---
+
+## Code
+
+Everything is in `prototypes/`. Two programs, one per board, each a single file with a `MODE` constant at the top:
+
+- `root.py`: the root, ID 0. In `"dv"` mode it advertises hop 0 with parent 0 and logs every unique data packet it receives. In `"flood"` mode it only receives.
+- `node.py`: a non-root device with the CO sensor. It advertises, picks a parent, forwards for others and sends its own samples. `DEVICE_ID` and `MODE` are set at the top (our team ID is 5).
+- `keys.py`: the keychain from above. It is not committed. Create it yourself from the `keychain` block in this README and copy it to every board.
+
+`MODE` and `RUN_ID` must be identical on all boards. Both programs use the rx thread for receiving and one worker thread for sending, so the radio never has two callers.
+
+### Putting it on a board
+
+1. Stop whatever is running (Ctrl-C in Thonny). If the board has an old lab `main.py` that connects to Wi-Fi, rename it, otherwise it blocks the REPL and fights ESP-NOW for the radio.
+2. Save `keys.py` on the board.
+3. Save `root.py` or `node.py` on the board as `main.py`.
+4. Press RST. The program starts by itself on every reset or power-up.
+
+Don't delete `ctr.txt`, it keeps the tx counter across reboots.
+
+### CO sensor (FC-22, MQ-9)
+
+Sensor code 4. The module has four pins: VCC to VIN (5 V), GND to GND, DO to GPIO 14. AO is not used, so leave it unconnected. The heater smells a bit and gets hot for the first few minutes, that is normal.
+
+DO is pulled up to the module supply, so on 5 V it can be above the 3.3 V the ESP32 pin is rated for. Measure it with no gas present, and if it reads about 5 V put a divider in (10k from DO to the pin, 20k from the pin to GND).
+
+DO goes low when CO is above the level set by the potentiometer. Low is reported as `smoke=1`, high as `smoke=0`.
+
+### Tested so far
+
+DV mode with one root and one node, boards next to each other. The node found the root, chose it as parent (`ROUTE parent 255->0 hop 255->1`), the RSSI estimate updated, and the root logged every packet once with no drops. The first sample, generated before the route existed, is dropped as "no route", as the spec asks.
+
+Not tested yet: flooding mode, two-hop paths, parent switching, neighbor expiry, and the other four sensor types.
