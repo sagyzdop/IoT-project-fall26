@@ -1,83 +1,179 @@
-# Packet formats
+# Packet format reference
 
-## Where the lengths come from
+Everything a node needs to build packets the root accepts, and everything the root checks.
 
-The lengths were not inferred from the sensors. Task.md section V fixes the data header (7 bytes) and the payload of each sensor code, so that one root can decode every team's packets. The payload sizes follow from the field types: a float32 is 4 bytes, so DHT11 (two floats) is 8, DS18 and the accelerometer (one float) are 4, GPS (two floats) is 8, and smoke is a single byte. Section V.A adds the encryption envelope, and the field widths of that envelope are the team's choice from the README.
+Each rule comes from one of two places. Rules marked **task** are defined in [Task.md section V](Task.md#v-task-3-data-generation-and-delivery) and [section V.A](Task.md#va-mandatory-aes-ctr-encryption-and-integrity-checks). Rules marked **agreed** are the team choices recorded in [README.md](README.md#team-agreements) (field widths, key handling, intervals). All multi-byte values are big-endian, so every `struct` format below starts with `>`.
 
-A packet has two layers:
+## Contents
+
+- [Layers](#layers)
+- [Outer header](#outer-header)
+- [Encryption and integrity](#encryption-and-integrity)
+- [Advertisement packet](#advertisement-packet)
+- [Data packet header](#data-packet-header)
+- [Sensor codes and payloads](#sensor-codes-and-payloads)
+- [Packing](#packing)
+- [Unpacking and validation](#unpacking-and-validation)
+- [Sizes](#sizes)
+
+## Layers
+
+Every transmission, advertisement or data, is an ESP-NOW broadcast with this layout:
 
 ```
-on air:  | outer header (9 B, clear) | ciphertext = AES-CTR( inner packet | CRC-32 (4 B) ) |
+| outer header, 9 B, clear | ciphertext = AES-128-CTR( inner packet | CRC-32, 4 B ) |
 ```
 
-The outer header and CRC add 13 bytes to every packet, whatever the sensor.
+The envelope adds 13 bytes to every packet. The inner packet is an [advertisement](#advertisement-packet) or a [data packet](#data-packet-header). See [Task.md, outer packet format](Task.md#outer-packet-format) and [integrity value](Task.md#integrity-value).
 
-## Inner data packet (Task.md section V)
+## Outer header
 
-The 7-byte header is the same for every sensor. Only `sensor_code` and the payload change.
+Format `">BBBHI"`, 9 bytes. Widths are **agreed**, see [README, outer header field widths](README.md#outer-header-field-widths); the field list is **task**.
 
-| field       | bytes | meaning                                                      |
-| ----------- | ----- | ------------------------------------------------------------ |
-| ptype       | 1     | 2 for data                                                   |
-| dest_id     | 1     | DV: next hop (the parent). Flooding: 255                     |
-| origin_id   | 1     | node that took the measurement, never changed while relaying |
-| seq         | 2     | device-wide sample counter, shared by all sensor types       |
-| ttl         | 1     | transmissions still allowed                                  |
-| sensor_code | 1     | 1 to 5, selects the payload below                            |
+| field | bytes | value |
+| --- | --- | --- |
+| version | 1 | 1 |
+| key_id | 1 | 1, selects the key in `keychain` ([README, shared PSK](README.md#shared-psk-and-keychain)) |
+| sender_id | 1 | the device that is transmitting now (not the origin) |
+| run_id | 2 | same on every board for a run, +1 per run ([README, run ID](README.md#run-id)) |
+| tx_counter | 4 | per-sender counter, +1 for every new encryption (adverts, own data, relayed data) |
 
-Python format string for the header: `">BBBHBB"`. The `>` means big-endian (network byte order), which the task requires on every device.
+## Encryption and integrity
 
-## Payload per sensor
+Task rules: [section V.A](Task.md#va-mandatory-aes-ctr-encryption-and-integrity-checks). Our choices: [README, AES key](README.md#aes-key), [integrity check](README.md#integrity-check) and [counter block layout](README.md#counter-block-layout).
 
-| code | sensor     | node IDs | payload                            | format  | payload bytes | inner bytes | on air bytes |
-| ---- | ---------- | -------- | ---------------------------------- | ------- | ------------- | ----------- | ------------ |
-| 1    | DHT11      | 6, 13    | temperature (C), humidity (%)      | `">ff"` | 8             | 15          | 28           |
-| 2    | DS18B20    | 3, 9     | temperature (C)                    | `">f"`  | 4             | 11          | 24           |
-| 3    | GPS        | 2, 7     | longitude, latitude (degrees)      | `">ff"` | 8             | 15          | 28           |
-| 4    | CO / smoke | 5, 12    | 0 not detected, 1 detected         | `">B"`  | 1             | 8           | 21           |
-| 5    | MPU-6050   | 1, 4, 8  | mean acceleration magnitude (m/s2) | `">f"`  | 4             | 11          | 24           |
+- Key: 16-byte AES-128 key from `keychain[key_id]`, provisioned in a separate `keys.py` and never printed or sent.
+- CRC-32: `binascii.crc32(outer_header + plaintext_inner) & 0xFFFFFFFF`, packed as 4 bytes big-endian and appended to the inner packet. Header and inner are covered, so changing either breaks the CRC.
+- Counter block, 16 bytes: `run_id (2) | sender_id (1) | tx_counter (4) | block_counter (9)`. The block counter starts at 0 and goes up by 1 per 16-byte block, big-endian, from the last byte. A packet has at most 16 blocks, so only the last byte changes.
+- Encrypt `inner_packet | crc` with that counter block. CTR needs no padding.
+- Never reuse a counter block with the same key. Keep `tx_counter` in a file (`ctr.txt`) so it survives reboots ([Task.md, run identifier and transmission counter](Task.md#run-identifier-and-transmission-counter)).
 
-The advertisement (type 0) has no sensor part: `ptype | dest_id | src_id | hop | parent_id`, 5 bytes, format `">BBBBB"`, 18 bytes on air. The code 4 row is our node's payload length: 1 byte payload, 8 inner, 21 on air.
-
-## Packing on the node
+On our firmware (MicroPython v1.27.0, generic ESP32) `cryptolib.aes(key, 6, iv)` raises `ValueError: mode`. CTR is built from ECB instead and gives the same output (checked against the NIST SP 800-38A vector):
 
 ```python
-header  = struct.pack(">BBBHBB", 2, dest, ME, seq, ttl, code)
+import cryptolib
+
+def aes_ctr(key, iv, data):
+    ecb = cryptolib.aes(key, 1)
+    out = bytearray(len(data))
+    ctr = bytearray(iv)
+    for off in range(0, len(data), 16):
+        ks = ecb.encrypt(bytes(ctr))
+        chunk = data[off:off + 16]
+        for i in range(len(chunk)):
+            out[off + i] = chunk[i] ^ ks[i]
+        j = 15
+        while j >= 0:
+            ctr[j] = (ctr[j] + 1) & 0xFF
+            if ctr[j]:
+                break
+            j -= 1
+    return bytes(out)
+```
+
+Sending:
+
+```python
+hdr = struct.pack(">BBBHI", 1, KEY_ID, MY_ID, RUN_ID, tx_counter)
+crc = struct.pack(">I", crc32(hdr + inner) & 0xFFFFFFFF)
+iv  = struct.pack(">HBI", RUN_ID, MY_ID, tx_counter) + bytes(9)
+packet = hdr + aes_ctr(key, iv, inner + crc)
+```
+
+Receiving, in this order ([Task.md, reception](Task.md#reception)): check length, version, key_id and run_id before decrypting; decrypt; split off the last 4 bytes; recompute the CRC over the received header and decrypted inner packet; compare. On any mismatch discard and count the packet. Only a packet that passes everything may update routing state, the duplicate cache, be forwarded, or be logged at the root.
+
+A relay builds a new envelope: its own outer header, a new CRC and a fresh `tx_counter` ([Task.md, relaying](Task.md#relaying)).
+
+## Advertisement packet
+
+Inner packet type 0, defined in [Task.md, inner-packet formats](Task.md#inner-packet-formats) (**task**). Format `">BBBBB"`, 5 bytes, 18 on air.
+
+| field | bytes | value |
+| --- | --- | --- |
+| ptype | 1 | 0 |
+| dest_id | 1 | 255 |
+| src_id | 1 | the advertiser, must equal the outer `sender_id` |
+| hop | 1 | hops to the root, 255 = no route, root = 0 |
+| parent_id | 1 | selected parent, 255 = none |
+
+Task.md says parent 255 means no parent, including at the root. The team agreed that the root advertises parent 0 ([README, other settings](README.md#other-settings)). Receivers only exclude a neighbor whose parent equals their own ID, so either value works for nodes. How advertisements feed the neighbor table is in [Task.md section III](Task.md#iii-task-1-neighbor-discovery).
+
+## Data packet header
+
+Inner packet type 2 (**task**, [inner-packet formats](Task.md#inner-packet-formats)). The 7-byte header is identical for every sensor. Format `">BBBHBB"`.
+
+| field | bytes | value |
+| --- | --- | --- |
+| ptype | 1 | 2 |
+| dest_id | 1 | DV: ID of the next hop (the sender's parent). Flooding: 255 |
+| origin_id | 1 | device that took the measurement, never changed while relaying |
+| seq | 2 | device-wide counter, +1 for every new data packet of any sensor type |
+| ttl | 1 | transmissions still allowed |
+| sensor_code | 1 | 1 to 5, selects the payload |
+
+`(origin_id, seq)` identifies a packet and is the key of the duplicate cache ([Task.md, validation and sequence numbers](Task.md#validation-and-sequence-numbers)).
+
+## Sensor codes and payloads
+
+Fixed by [Task.md, sensor codes and payloads](Task.md#sensor-codes-and-payloads) (**task**).
+
+| code | sensor | payload | format | payload B | inner B | on air B |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | DHT11 | temperature (degrees C), relative humidity (%) | `">ff"` | 8 | 15 | 28 |
+| 2 | DS18 series | temperature (degrees C) | `">f"` | 4 | 11 | 24 |
+| 3 | GPS | longitude, latitude (decimal degrees, west and south negative) | `">ff"` | 8 | 15 | 28 |
+| 4 | Smoke detection | 0 = not detected, 1 = detected | `">B"` | 1 | 8 | 21 |
+| 5 | Accelerometer | mean acceleration magnitude (m/s²) | `">f"` | 4 | 11 | 24 |
+
+Floats are IEEE 754 binary32. Codes 0 and 6 to 255 are reserved and must be rejected. Which team uses which sensor is in the [README team table](README.md#teams).
+
+Accelerometer value ([Task.md, accelerometer averaging](Task.md#accelerometer-averaging)): sample x, y and z at a steady rate over a full 2 s window, convert to m/s², and send the mean of the per-sample magnitudes (gravity included):
+
+$$
+\bar{a} = \frac{1}{N} \sum_{k=1}^{N} \sqrt{a_{x,k}^2 + a_{y,k}^2 + a_{z,k}^2}
+$$
+
+Do not take the magnitude of the averaged axes. For smoke, normalize the detector output to 0 or 1 and document how (digital output level or threshold). A failed sensor read or an invalid GPS fix must not become a packet: count it separately and send nothing.
+
+## Packing
+
+```python
+header  = struct.pack(">BBBHBB", 2, dest, MY_ID, seq, ttl, code)
+payload = struct.pack(">ff", temp_c, humidity)       # code 1
+payload = struct.pack(">f",  temp_c)                 # code 2
+payload = struct.pack(">ff", longitude, latitude)    # code 3
+payload = bytes([1 if detected else 0])              # code 4
+payload = struct.pack(">f",  accel_mean)             # code 5
 inner   = header + payload
-packet  = env.seal(ME, inner)      # appends CRC-32, encrypts with AES-CTR, adds the outer header
-radio.send(packet)
 ```
 
-Only the payload line differs per sensor:
+TTL ([Task.md, required delivery behavior](Task.md#required-delivery-behavior)): a sender needs `ttl > 0` and decrements it before each transmission, so a new packet with initial TTL 10 goes out with 9. A relay that receives TTL 0 discards the packet. The root accepts TTL 0.
+
+Worked example: DHT11 from node 5, destination 0, seq 258, ttl 9, 24.5 C, 41.0 %.
+
+```
+header   02 00 05 0102 09 01
+payload  41c40000 42240000
+inner    0200050102090141c4000042240000        (15 bytes)
+```
+
+CO detected from node 5, destination 0, seq 259, ttl 9: `0200050103090401` (8 bytes).
+
+## Unpacking and validation
 
 ```python
-payload = struct.pack(">ff", temp_c, humidity)          # code 1, DHT11
-payload = struct.pack(">f",  temp_c)                    # code 2, DS18B20
-payload = struct.pack(">ff", longitude, latitude)       # code 3, GPS (west and south negative)
-payload = bytes([1 if co_detected else 0])              # code 4, CO / smoke
-payload = struct.pack(">f",  accel_mean)                # code 5, MPU-6050
+ptype, dest, origin, seq, ttl, code = struct.unpack(">BBBHBB", inner[:7])
+payload = inner[7:]
 ```
 
-For the MPU-6050, sample all three axes over a full 2 s window, convert to m/s2, take the magnitude `sqrt(x*x + y*y + z*z)` of each sample, and send the mean of those magnitudes (gravity included).
+Checks, all required by [Task.md section V](Task.md#v-task-3-data-generation-and-delivery):
 
-In `node.py` this happens in `generate()`: it builds `payload` (line `payload = bytes([read_co()])`) and calls `send_data(ME, seq, 4, ...)`, where 4 is the sensor code. Another sensor needs its own read function, its payload line and its code in those two places.
+- `sensor_code` is 1 to 5, and `len(payload)` equals the length in the [table](#sensor-codes-and-payloads) exactly.
+- Floats are finite. Humidity is 0 to 100, longitude -180 to 180, latitude -90 to 90, smoke is 0 or 1, acceleration is not negative.
+- DV: process a data packet only if `dest_id` is your own ID. Ignore overheard packets for others.
+- The `(origin_id, seq)` pair is not already in the duplicate cache. Cache lifetime 60 s, up to 200 entries ([README, intervals and thresholds](README.md#intervals-and-thresholds)).
+- A relay keeps `origin_id`, `seq`, `sensor_code` and the payload bytes, sets the new `dest_id` and `ttl`, then builds its own [outer header](#outer-header), a new CRC and a fresh `tx_counter`.
 
-## Unpacking at the root
+## Sizes
 
-The root does this in `root_process()`, in this order:
-
-1. `env.open()` checks length, version, key ID and run ID, decrypts, and compares the CRC-32 over the outer header plus the decrypted inner packet. A mismatch is counted as `drop_crc` and the packet is thrown away.
-2. `check_data()` reads the 7-byte header with `struct.unpack(">BBBHBB", ...)`, looks the sensor code up in `SENSORS` (codes 0 and 6 to 255 are rejected as `drop_code`), and requires the payload length to match exactly (`drop_payload`).
-3. `decode_payload()` unpacks the payload with the format from the table (for example `struct.unpack(">ff", payload)` for DHT11) and rejects values that are not valid: non-finite floats, humidity outside 0 to 100, longitude outside -180 to 180, latitude outside -90 to 90, smoke other than 0 or 1, negative acceleration.
-4. `root_process()` checks the destination (0 in DV mode, 255 in flooding), drops a repeated `(origin_id, seq)`, then prints the line.
-
-## Size
-
-These formats are mostly fixed by the task, so there is little room to shrink them. What we chose to keep them small:
-
-- CRC-32 (4 bytes) instead of SHA-256 (32 bytes) saves 28 bytes per packet.
-- A 2-byte `run_id` instead of 4 saves 2 bytes.
-- AES-CTR needs no padding. The ECB mode from Lab 6 pads each message up to a multiple of 16 bytes, so up to 15 bytes extra.
-- Smoke is one byte, not a float.
-
-What cannot change without breaking the spec: the 7-byte header and the float32 payloads. The DHT11 only measures whole degrees and whole percent, but the format still carries them as float32. The largest packet is 28 bytes, far below the 250-byte ESP-NOW limit. The fixed 13 bytes of envelope are the main cost: 13 of the 21 bytes of a smoke packet, 13 of 28 for DHT11 or GPS.
+The largest packet is 28 bytes, far below the 250-byte ESP-NOW limit. Of those, 13 bytes are envelope (9 header and 4 CRC), so a smoke packet is 21 bytes with 1 byte of measurement. Choices that keep it small: CRC-32 (4 B) instead of SHA-256 (32 B), a 2-byte `run_id`, and CTR instead of a padded block mode. The 7-byte data header and the float32 payloads are fixed by the task.
