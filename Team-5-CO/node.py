@@ -25,6 +25,10 @@ from keys import keychain
 from machine import Pin
 
 # ---- config ----
+# Task.md section II: "Provide configuration parameters for device ID, root/non-root
+# role, routing mode (DV or flooding), enabled sensor types, advertisement interval,
+# data interval, RSS threshold, and initial TTL". The values are the ones the team
+# agreed on in README.md. All times are in milliseconds.
 DEVICE_ID = 5            # your team ID (1-254)
 MODE = "dv"              # "dv" or "flood" - must be the same on root and node
 
@@ -46,19 +50,31 @@ FLOOD_DELAY_MS = (50, 150)
 FWD_QUEUE_MAX = 20
 
 # ---- shared code ----
+# ---- constants fixed by Task.md ----
+# Section II: every transmission is an ESP-NOW broadcast (BCAST), device ID 255 means
+# "everyone", the root is always ID 0. Packet types: 0 = advertisement, 2 = data (section V).
 BCAST = b"\xff" * 6
 BROADCAST_ID = 255
 ROOT_ID = 0
 PT_ADV = 0
 PT_DATA = 2
 
+# Section V.A outer packet: version | key_id | sender_id | run_id | tx_counter | ciphertext.
+# Widths and byte order (big-endian) are the team choice from README.md: 1+1+1+2+4 = 9 bytes.
+# CRC_LEN is the 4-byte CRC-32 that is appended to the inner packet before encryption.
+# MAX_LEN is the ESP-NOW payload limit the task asks us to stay under.
 HDR_FMT = ">BBBHI"          # version | key_id | sender_id | run_id | tx_counter
 HDR_LEN = 9
 CRC_LEN = 4
 MAX_LEN = 250
+# Section V data inner header, 7 bytes: ptype | dest_id | origin_id | seq(2) | ttl | sensor_code.
 DATA_HDR_FMT = ">BBBHBB"    # ptype | dest | origin | seq | ttl | sensor_code
 DATA_HDR_LEN = 7
+# Section V sensor codes and the exact payload length each one must have:
+# 1 DHT11 (2 x float32), 2 DS18 (float32), 3 GPS (2 x float32), 4 smoke (1 byte), 5 accel (float32).
+# Codes 0 and 6-255 are reserved: a packet that uses them is rejected (see check_data).
 SENSORS = {1: ("DHT11", 8), 2: ("DS18", 4), 3: ("GPS", 8), 4: ("SMOKE", 1), 5: ("ACCEL", 4)}
+# Section V.A: the tx counter must survive reboots so counter blocks are never reused.
 CTR_FILE = "ctr.txt"
 
 
@@ -70,6 +86,8 @@ def elapsed(since):
     return time.ticks_diff(time.ticks_ms(), since)
 
 
+# Section VI: counters are shared between threads, so every update takes a lock.
+# Section VIII needs them to compute PDR and overhead (sent / dropped / delivered).
 class Counters:
     def __init__(self):
         self.lock = _thread.allocate_lock()
@@ -84,6 +102,11 @@ class Counters:
             return dict(self.d)
 
 
+# Section II: broadcast-only ESP-NOW on one channel. The only peer ever registered is
+# the broadcast address, no per-neighbor MAC table. Section VI: one thread calls recv(),
+# one thread calls send(), so the radio itself needs no lock.
+# recv() also looks up the RSSI of the sender in peers_table (section III), which is the
+# only place a MAC address is used.
 class Radio:
     """Broadcast-only ESP-NOW. Only the rx thread calls recv, only the tx thread calls send."""
 
@@ -110,6 +133,9 @@ class Radio:
         return rssi, bytes(msg)
 
 
+# Section V.A: mandatory AES-CTR. cryptolib mode 6 is missing on our firmware, so CTR is
+# built from AES-ECB: encrypt the counter block, XOR with the data, add 1 to the counter
+# (big-endian, from the last byte). Same output as real CTR (checked against NIST SP 800-38A).
 def aes_ctr(key, iv, data):
     """AES-128-CTR built on ECB: this firmware's cryptolib has no mode 6.
     Counter block = iv; incremented as a big-endian integer from the last byte."""
@@ -130,6 +156,8 @@ def aes_ctr(key, iv, data):
     return bytes(out)
 
 
+# Section V.A: the encryption envelope used for every packet, advertisements included.
+# seal() builds an outer packet, open() checks and decrypts one.
 class Envelope:
     def __init__(self):
         self.key = keychain[KEY_ID]
@@ -140,6 +168,8 @@ class Envelope:
         except (OSError, ValueError):
             self.ctr = 0
 
+    # Section V.A: one tx_counter per encryption (adverts, own data, relayed data). It is
+    # written to ctr.txt every time, so a reboot never repeats a counter block.
     def _next_ctr(self):
         with self.lock:
             if self.ctr >= 0xFFFFFFFF:
@@ -149,11 +179,15 @@ class Envelope:
                 f.write(str(self.ctr))
             return self.ctr
 
+    # Section V.A counter block (16 bytes): run_id(2) | sender_id(1) | tx_counter(4) | block
+    # counter(9). The block counter starts at 0 and is the part aes_ctr increments.
     @staticmethod
     def _iv(run_id, sender, txc):
         # run_id(2) | sender_id(1) | tx_counter(4) | block_counter(9), starts at 0
         return struct.pack(">HBI", run_id, sender, txc) + bytes(9)
 
+    # Section V.A sending side: CRC-32 over (outer header + plaintext inner packet), append it
+    # big-endian to the inner packet, then encrypt both together. Header stays in clear.
     def seal(self, sender, inner):
         txc = self._next_ctr()
         hdr = struct.pack(HDR_FMT, VERSION, KEY_ID, sender, RUN_ID, txc)
@@ -161,6 +195,10 @@ class Envelope:
         enc = aes_ctr(self.key, self._iv(RUN_ID, sender, txc), inner + crc)
         return hdr + enc
 
+    # Section V.A receiving side, in the order the task gives: check length, version, key ID and
+    # run ID BEFORE decrypting, then decrypt, split off the CRC, recompute it over header +
+    # plaintext and compare. Any failure returns a counter name and the caller drops the packet,
+    # so nothing touches routing state, the duplicate cache or the delivered log.
     def open(self, msg):
         """Return (sender, inner) or (None, counter_name)."""
         if len(msg) < HDR_LEN + CRC_LEN + 5 or len(msg) > MAX_LEN:
@@ -180,6 +218,8 @@ class Envelope:
         return sender, inner
 
 
+# Section V: bounded duplicate cache keyed by (origin_id, seq). Lifetime 60 s (longer than a
+# packet can live), at most 200 entries; the oldest entry is evicted when full.
 class DupCache:
     def __init__(self):
         self.lock = _thread.allocate_lock()
@@ -205,6 +245,9 @@ def _finite(x):
     return x - x == 0
 
 
+# Section V validation of the measurement itself: finite floats, humidity 0-100, longitude
+# -180..180, latitude -90..90, smoke 0 or 1, acceleration >= 0. Returns text for the log or
+# None if the value is not valid (the packet is then discarded and counted).
 def decode_payload(code, p):
     """Printable measurement with units, or None if invalid."""
     if code == 1:
@@ -221,7 +264,7 @@ def decode_payload(code, p):
             return "lon=%.6f deg lat=%.6f deg" % (lon, lat)
     elif code == 4:
         if p[0] in (0, 1):
-            return "smoke=%d" % p[0]
+            return "smoke=%d (%s)" % (p[0], "CO detected" if p[0] else "not detected")
     elif code == 5:
         (a,) = struct.unpack(">f", p)
         if _finite(a) and a >= 0:
@@ -229,6 +272,8 @@ def decode_payload(code, p):
     return None
 
 
+# Section V: validate a decrypted data packet. Rejects reserved sensor codes (0, 6-255), a
+# payload whose length does not match the sensor code, and invalid values.
 def check_data(inner):
     """Return ((dest, origin, seq, ttl, code, payload), text) or (None, counter_name)."""
     if len(inner) < DATA_HDR_LEN:
@@ -246,37 +291,10 @@ def check_data(inner):
     return (dest, origin, seq, ttl, code, payload), text
 
 
-def root_process(msg, mode, env, cnt, dup):
-    """Root receive path. Prints one line per unique delivered packet."""
-    cnt.bump("rx_total")
-    sender, inner = env.open(msg)
-    if sender is None:
-        cnt.bump(inner)
-        return
-    if inner[0] == PT_ADV:
-        if len(inner) != 5 or inner[2] != sender:
-            cnt.bump("drop_inner")
-        else:
-            cnt.bump("adv_rx")
-        return
-    if inner[0] != PT_DATA:
-        cnt.bump("drop_inner")
-        return
-    f, text = check_data(inner)
-    if f is None:
-        cnt.bump(text)
-        return
-    dest, origin, seq, ttl, code, payload = f
-    if dest != (ROOT_ID if mode == "dv" else BROADCAST_ID):
-        cnt.bump("drop_dest")      # overheard DV data for another device
-        return
-    if dup.seen((origin, seq)):    # ttl 0 is fine at the root
-        cnt.bump("drop_dup")
-        return
-    cnt.bump("delivered")
-    print("DELIVERED origin=%d seq=%d sensor=%s %s" % (origin, seq, SENSORS[code][0], text))
 
 # ---- program ----
+# Section V code 4 (smoke): the FC-22 / MQ-9 digital output is normalized to 1 byte,
+# 0 = not detected, 1 = detected. DO is low when CO is above the potentiometer threshold.
 DO_PIN = 14
 ACTIVE_LOW = True
 _pin = Pin(DO_PIN, Pin.IN)
@@ -287,6 +305,8 @@ def read_co():
     v = _pin.value()
     return 1 if (v == 0) == ACTIVE_LOW else 0
 
+# Section VI: the main thread receives (rx), the worker thread sends (tx). Shared state is
+# protected by locks, and the worker never holds a lock while sleeping or sending.
 ME = DEVICE_ID
 NONE = 255
 
@@ -295,10 +315,13 @@ env = Envelope()
 cnt = Counters()
 dup = DupCache()
 
+# Section III/IV shared state: neighbor table and (parent, hop) are always read and written
+# together under one lock, so the route is one consistent value (section IV).
 state_lock = _thread.allocate_lock()   # guards neighbors and route
 neighbors = {}                         # id -> [hop, parent, rssi, ema, last_ms]
 route = {"parent": NONE, "hop": NONE}
 
+# Section VI relay queue, bounded to FWD_QUEUE_MAX entries; overflow is counted as drop_queue.
 fq_lock = _thread.allocate_lock()      # guards the relay queue
 fq = []                                # (due_ms, origin, seq, code, ttl, payload)
 
@@ -312,6 +335,14 @@ def jittered(base):
 
 
 # ---- routing (call with state_lock held; returns log text or None) -----------
+# Section IV parent selection, called with state_lock held.
+# 1) exclude stale neighbors, unknown routes (hop 255), myself, neighbors whose parent is me,
+#    links below the RSS threshold and hop values that would reach 255;
+# 2) prefer the smallest hop (neighbor hop + 1);
+# 3) same hop: prefer the strongest smoothed RSS, then the smaller ID;
+# 4) hysteresis: keep a still-eligible parent unless a shorter route exists or a same-hop
+#    alternative is stronger by more than RSS_MARGIN dB.
+# No candidate -> parent 255 and hop 255. Returns a log line (old/new parent, hop, RSS, reason).
 def recompute(now):
     cands = []
     for i, n in neighbors.items():
@@ -346,6 +377,9 @@ def recompute(now):
     return None
 
 
+# Section III: a valid advertisement creates or updates the neighbor entry (hop, parent,
+# latest RSSI, smoothed RSSI, last-heard time). Smoothing is an exponential moving average
+# with RSS_ALPHA = 0.3. The inner source must equal the outer sender (section V.A check).
 def on_advert(rssi, inner, sender):
     if len(inner) != 5 or inner[2] != sender:
         cnt.bump("drop_inner")
@@ -371,6 +405,8 @@ def on_advert(rssi, inner, sender):
         print(change)
 
 
+# Section III: remove neighbors not heard within NEIGHBOR_TIMEOUT_MS (time.ticks_diff is used
+# for every comparison) and re-run parent selection so a stale parent is dropped at once.
 def expire():
     now = ticks()
     gone = []
@@ -386,6 +422,7 @@ def expire():
         print(change)
 
 
+# Section III demonstration: periodic printout of the neighbor table.
 def print_table():
     now = ticks()
     with state_lock:
@@ -396,6 +433,10 @@ def print_table():
         print("  id=%d hop=%d parent=%d rssi=%d ema=%.1f age=%dms" % r)
 
 
+# Section V/VII receive path for data. DV: only the node named in dest_id processes it.
+# Flooding: dest is 255 and everyone processes it. Then: relay TTL 0 is discarded, the
+# duplicate cache suppresses repeats, and the packet is queued for the worker thread to
+# send (flooding adds a random 50-150 ms delay first).
 def on_data(inner):
     f, text = check_data(inner)
     if f is None:
@@ -426,6 +467,8 @@ def on_data(inner):
 
 
 # ---- tx side (worker thread only) ---------------------------------------------
+# ---- tx side: only the worker thread calls these ----
+# Section III: advertisements carry my current hop and parent (255/255 when I have no route).
 def send_adv():
     with state_lock:
         p, h = route["parent"], route["hop"]
@@ -434,6 +477,9 @@ def send_adv():
     cnt.bump("adv_tx")
 
 
+# Section V: build and broadcast a data packet. DV: dest = current parent (no route -> count
+# and drop, no buffering, no retries). Flooding: dest = 255. Origin, seq, sensor code and
+# payload are kept as received; only dest and ttl change. ttl arrives already decremented.
 def send_data(origin, seq, code, ttl, payload, local):
     """ttl is the value to put on the air (already decremented)."""
     if MODE == "dv":
@@ -450,9 +496,14 @@ def send_data(origin, seq, code, ttl, payload, local):
     cnt.bump("data_tx_own" if local else "data_tx_relay")
 
 
+# Section V: one device-wide sequence number for every new data packet (all sensor types).
 seq_counter = 0   # device-wide, touched only by the worker thread
 
 
+# Section V data generation: read the sensor, count it as generated, then send. A failed read
+# is counted as acq_fail and produces no packet. TTL starts at TTL_INIT and is decremented
+# before sending, so my own packets go out with TTL_INIT - 1. The packet is marked as seen
+# first (section VII) so my own broadcast is ignored if it comes back.
 def generate():
     global seq_counter
     try:
@@ -473,6 +524,8 @@ def generate():
     send_data(ME, seq, 4, ttl, payload, True)
 
 
+# Section VI worker thread: schedules advertisements (DV only) and own data with jitter,
+# and sends queued relay packets when they are due. A short sleep avoids a busy loop.
 def worker():
     now = ticks()
     next_adv = time.ticks_add(now, jittered(ADV_INTERVAL_MS))
@@ -499,6 +552,9 @@ def worker():
 
 _thread.start_new_thread(worker, ())
 
+# Section VI main/receive thread: the only thread that calls recv(). It decrypts and checks
+# every packet (section V.A), updates neighbors (III), selects the parent (IV), expires
+# neighbors every second, and prints the neighbor table and counters every 10 s.
 print("node %d mode=%s run=%d" % (ME, MODE, RUN_ID))
 last_exp = last_tab = last_cnt = ticks()
 while True:

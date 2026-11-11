@@ -83,15 +83,44 @@ The sensors we have are:
 - CO (2x)
 - DHT11 (2x)
 
+Node IDs and their sensors:
+
+| ID  | Sensor   |
+| --- | -------- |
+| 1   | MPU-6050 |
+| 2   | GPS      |
+| 3   | DS18B20  |
+| 4   | MPU-6050 |
+| 5   | CO       |
+| 6   | DHT11    |
+| 7   | GPS      |
+| 8   | MPU-6050 |
+| 9   | DS18B20  |
+| 12  | CO       |
+| 13  | DHT11    |
+
+Packet layouts and sizes for each sensor are in [PACKETS.md](PACKETS.md).
+
 ---
 
 ## Code
 
-Everything is in `prototypes/`. Two programs, one per board, each a single file with a `MODE` constant at the top:
+Two programs, one per board, each a single file with a `MODE` constant at the top:
 
 - `root.py`: the root, ID 0. In `"dv"` mode it advertises hop 0 with parent 0 and logs every unique data packet it receives. In `"flood"` mode it only receives.
-- `node.py`: a non-root device with the CO sensor. It advertises, picks a parent, forwards for others and sends its own samples. `DEVICE_ID` and `MODE` are set at the top (our team ID is 5).
-- `keys.py`: the keychain from above. It is not committed. Create it yourself from the `keychain` block in this README and copy it to every board.
+- `Team-5-CO/node.py`: a non-root device with the CO sensor. It advertises, picks a parent, forwards for others and sends its own samples. `DEVICE_ID` and `MODE` are set at the top (our team ID is 5).
+- `keys.py`: the keychain from above, copied to every board next to the program.
+
+Both files have comments that point to the Task.md section each part implements.
+
+### Reading the root output
+
+```
+[  83s] DELIVERED  node 5   seq 12    SMOKE (code 4)  smoke=0 (not detected)
+[  90s] STATS      delivered=9 (node 5: 9) | adverts heard=18 sent=18 | dropped: none
+```
+
+`DELIVERED` appears once per unique packet that passed decryption, the CRC check and validation. It shows the origin node, its sequence number, the sensor and the decoded reading with units. The number in brackets is seconds since the root started. `STATS` is printed every 10 s: unique packets per node, advertisements received and sent, and every drop reason that is not zero (`crc`, `dup`, `dest`, `code`, `payload`, `run`, ...).
 
 `MODE` and `RUN_ID` must be identical on all boards. Both programs use the rx thread for receiving and one worker thread for sending, so the radio never has two callers.
 
