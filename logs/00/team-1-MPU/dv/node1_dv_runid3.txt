@@ -1,0 +1,273 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4200
+load:0x40078000,len:15236
+load:0x40080400,len:3332
+entry 0x400805a8
+LOG {"mode": "dv", "channel": 1, "run": 3, "event": "BOOT", "ms": 817, "node": 1}
+LOG {"reason": "advertisement", "rssi": -80, "mode": "dv", "ms": 4298, "node": 1, "hop": 1, "parent": 0, "run": 3, "event": "ROUTE", "old_parent": 255, "old_hop": 255}
+LOG {"bytes": 18, "counter": 7168, "mode": "dv", "ms": 6279, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -80], [10, 255, 255, -75], [3, 2, 1, -72], [12, 2, 1, -83], [4, 255, 255, -77], [6, 2, 1, -70], [7, 2, 1, -68]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 1, "counters": {"rx_advertisements": 11, "tx_adv": 1}, "parent": 0, "ms": 10828, "node": 1}
+LOG {"bytes": 18, "counter": 7169, "mode": "dv", "ms": 11596, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": null, "mode": "dv", "ms": 14798, "node": 1, "hop": 255, "parent": 255, "run": 3, "event": "ROUTE", "old_parent": 0, "old_hop": 1}
+LOG {"bytes": 18, "counter": 7170, "mode": "dv", "ms": 16677, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -82, "mode": "dv", "ms": 16873, "node": 1, "hop": 2, "parent": 5, "run": 3, "event": "ROUTE", "old_parent": 255, "old_hop": 255}
+LOG {"neighbors": [[0, 0, 0, -91], [5, 1, 0, -82], [10, 3, 6, -80], [3, 3, 6, -78], [12, 2, 5, -79], [4, 3, 6, -77], [6, 2, 1, -74], [7, 3, 6, -67]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"rx_advertisements": 26, "tx_adv": 3}, "parent": 5, "ms": 20830, "node": 1}
+LOG {"bytes": 18, "counter": 7171, "mode": "dv", "ms": 22169, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7172, "mode": "dv", "ms": 27425, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -73, "mode": "dv", "ms": 28361, "node": 1, "hop": 2, "parent": 3, "run": 3, "event": "ROUTE", "old_parent": 5, "old_hop": 2}
+LOG {"mode": "dv", "phase": "measurement", "run": 3, "event": "PHASE", "ms": 30827, "node": 1}
+LOG {"neighbors": [[5, 1, 0, -80], [10, 2, 3, -77], [3, 1, 0, -73], [12, 2, 5, -88], [4, 2, 3, -78], [6, 2, 3, -74], [7, 3, 6, -67]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"rx_advertisements": 37, "tx_adv": 5}, "parent": 3, "ms": 30842, "node": 1}
+LOG {"magnitude": 8.53139, "mode": "dv", "ms": 32836, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 0, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7173, "mode": "dv", "ms": 32848, "node": 1, "seq": 0, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7174, "mode": "dv", "ms": 32902, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7175, "mode": "dv", "ms": 38143, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -89], [10, 2, 3, -89], [12, 2, 5, -76], [3, 1, 0, -79], [4, 2, 3, -84], [5, 1, 0, -89], [6, 2, 3, -82], [7, 2, 3, -64], [8, 255, 255, -69]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 1, "tx_adv": 7, "tx_data": 1, "rx_advertisements": 53}, "parent": 3, "ms": 40849, "node": 1}
+LOG {"magnitude": 8.951921, "mode": "dv", "ms": 43046, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 1, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7176, "mode": "dv", "ms": 43058, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7177, "mode": "dv", "ms": 43446, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7178, "mode": "dv", "ms": 48861, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -90], [10, 2, 3, -85], [12, 1, 0, -80], [3, 1, 0, -78], [4, 2, 3, -85], [5, 1, 0, -89], [6, 2, 3, -74], [7, 2, 3, -80], [8, 2, 3, -64]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 2, "tx_adv": 9, "tx_data": 2, "rx_advertisements": 66}, "parent": 3, "ms": 50858, "node": 1}
+LOG {"magnitude": 8.532742, "mode": "dv", "ms": 53880, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 2, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7179, "mode": "dv", "ms": 53898, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7180, "mode": "dv", "ms": 54092, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -62, "mode": "dv", "ms": 59196, "node": 1, "hop": 2, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 3, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7181, "mode": "dv", "ms": 59204, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -88], [10, 2, 3, -81], [12, 1, 0, -73], [3, 1, 0, -77], [4, 2, 3, -86], [5, 1, 0, -92], [6, 2, 3, -76], [7, 2, 8, -76], [8, 1, 0, -62]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 3, "tx_adv": 11, "tx_data": 3, "rx_advertisements": 82}, "parent": 8, "ms": 60863, "node": 1}
+LOG {"bytes": 18, "counter": 7182, "mode": "dv", "ms": 64240, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 8.515979, "mode": "dv", "ms": 64497, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 3, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7183, "mode": "dv", "ms": 64511, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"reason": "advertisement", "rssi": -77, "mode": "dv", "ms": 69652, "node": 1, "hop": 2, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7184, "mode": "dv", "ms": 69709, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -86], [10, 2, 8, -81], [12, 1, 0, -77], [3, 2, 12, -80], [4, 2, 8, -79], [5, 1, 0, -90], [6, 2, 8, -70], [7, 2, 12, -71], [8, 255, 255, -60]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 4, "tx_adv": 13, "tx_data": 4, "rx_advertisements": 99}, "parent": 12, "ms": 70869, "node": 1}
+LOG {"bytes": 24, "counter": 7185, "mode": "dv", "ms": 70908, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 18, "counter": 7186, "mode": "dv", "ms": 74798, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 8.495984, "mode": "dv", "ms": 75083, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 4, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7187, "mode": "dv", "ms": 75097, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 7188, "mode": "dv", "ms": 75403, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 18, "counter": 7189, "mode": "dv", "ms": 80193, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -88], [10, 3, 1, -88], [12, 1, 0, -78], [3, 2, 12, -80], [4, 2, 12, -85], [5, 1, 0, -91], [6, 2, 5, -73], [7, 2, 12, -74], [8, 3, 1, -64]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 5, "rx_advertisements": 113, "tx_adv": 15, "tx_data": 5, "tx_relay": 2}, "parent": 12, "ms": 80867, "node": 1}
+LOG {"reason": "advertisement", "rssi": -72, "mode": "dv", "ms": 81086, "node": 1, "hop": 2, "parent": 3, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7190, "mode": "dv", "ms": 85236, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 8.465458, "mode": "dv", "ms": 85459, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 5, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7191, "mode": "dv", "ms": 85477, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7192, "mode": "dv", "ms": 90634, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -89], [10, 2, 3, -83], [12, 1, 0, -84], [3, 1, 0, -78], [4, 2, 12, -85], [5, 1, 0, -92], [6, 2, 12, -68], [7, 2, 3, -71], [8, 2, 3, -68]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 6, "rx_advertisements": 129, "tx_adv": 17, "tx_data": 6, "tx_relay": 2}, "parent": 3, "ms": 90878, "node": 1}
+LOG {"magnitude": 8.65162, "mode": "dv", "ms": 95649, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 6, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7193, "mode": "dv", "ms": 95668, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7194, "mode": "dv", "ms": 96067, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -92], [10, 2, 3, -91], [12, 1, 0, -86], [3, 1, 0, -76], [4, 2, 3, -86], [5, 1, 0, -92], [6, 2, 3, -72], [7, 2, 3, -82], [8, 2, 3, -68]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 7, "rx_advertisements": 142, "tx_adv": 18, "tx_data": 7, "tx_relay": 2}, "parent": 3, "ms": 100881, "node": 1}
+LOG {"bytes": 18, "counter": 7195, "mode": "dv", "ms": 101538, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 8.541474, "mode": "dv", "ms": 106079, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 7, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7196, "mode": "dv", "ms": 106097, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7197, "mode": "dv", "ms": 106593, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -67, "mode": "dv", "ms": 107349, "node": 1, "hop": 3, "parent": 6, "run": 3, "event": "ROUTE", "old_parent": 3, "old_hop": 2}
+LOG {"neighbors": [[0, 0, 0, -92], [10, 2, 3, -92], [12, 1, 0, -86], [3, 2, 12, -86], [4, 2, 3, -87], [6, 2, 3, -67], [7, 2, 12, -78], [8, 2, 3, -68]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"generated": 8, "rx_advertisements": 156, "tx_adv": 20, "tx_data": 8, "tx_relay": 2}, "parent": 6, "ms": 110881, "node": 1}
+LOG {"reason": "advertisement", "rssi": -68, "mode": "dv", "ms": 111423, "node": 1, "hop": 3, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 6, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7198, "mode": "dv", "ms": 111852, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -78, "mode": "dv", "ms": 112228, "node": 1, "hop": 3, "parent": 7, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 3}
+LOG {"magnitude": 8.431653, "mode": "dv", "ms": 116262, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 8, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7199, "mode": "dv", "ms": 116277, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7200, "mode": "dv", "ms": 117160, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -85, "mode": "dv", "ms": 117884, "node": 1, "hop": 2, "parent": 3, "run": 3, "event": "ROUTE", "old_parent": 7, "old_hop": 3}
+LOG {"neighbors": [[0, 0, 0, -89], [10, 2, 3, -84], [12, 2, 5, -90], [3, 1, 0, -85], [4, 2, 3, -84], [5, 1, 0, -93], [6, 3, 7, -69], [7, 2, 3, -74], [8, 3, 7, -69]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"generated": 9, "rx_advertisements": 173, "tx_adv": 22, "tx_data": 9, "tx_relay": 2}, "parent": 3, "ms": 120889, "node": 1}
+LOG {"bytes": 18, "counter": 7201, "mode": "dv", "ms": 122283, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 8.586272, "mode": "dv", "ms": 126849, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 9, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7202, "mode": "dv", "ms": 126868, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7203, "mode": "dv", "ms": 127635, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -72, "mode": "dv", "ms": 128457, "node": 1, "hop": 3, "parent": 6, "run": 3, "event": "ROUTE", "old_parent": 3, "old_hop": 2}
+LOG {"neighbors": [[0, 0, 0, -92], [10, 2, 3, -89], [12, 2, 5, -88], [3, 3, 12, -91], [4, 3, 8, -87], [5, 1, 0, -92], [6, 2, 3, -72], [7, 2, 3, -75], [8, 2, 3, -75]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"generated": 10, "rx_advertisements": 188, "tx_adv": 24, "tx_data": 10, "tx_relay": 2}, "parent": 6, "ms": 130894, "node": 1}
+LOG {"reason": "advertisement", "rssi": -75, "mode": "dv", "ms": 132145, "node": 1, "hop": 3, "parent": 7, "run": 3, "event": "ROUTE", "old_parent": 6, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7204, "mode": "dv", "ms": 132704, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -74, "mode": "dv", "ms": 133392, "node": 1, "hop": 4, "parent": 7, "run": 3, "event": "ROUTE", "old_parent": 7, "old_hop": 3}
+LOG {"bytes": 24, "counter": 7205, "mode": "dv", "ms": 133951, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"magnitude": 8.566443, "mode": "dv", "ms": 137827, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 10, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7206, "mode": "dv", "ms": 137838, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7207, "mode": "dv", "ms": 137920, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -92], [10, 4, 7, -90], [12, 2, 5, -88], [3, 3, 12, -81], [4, 4, 8, -85], [5, 1, 0, -92], [6, 4, 7, -82], [7, 3, 12, -78], [8, 4, 7, -72]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 4, "counters": {"generated": 11, "rx_advertisements": 203, "tx_adv": 26, "tx_data": 11, "tx_relay": 3}, "parent": 7, "ms": 140894, "node": 1}
+LOG {"bytes": 18, "counter": 7208, "mode": "dv", "ms": 143118, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -85, "mode": "dv", "ms": 147129, "node": 1, "hop": 1, "parent": 0, "run": 3, "event": "ROUTE", "old_parent": 7, "old_hop": 4}
+LOG {"magnitude": 8.655068, "mode": "dv", "ms": 148067, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 11, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7209, "mode": "dv", "ms": 148078, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7210, "mode": "dv", "ms": 148588, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7211, "mode": "dv", "ms": 149099, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 28, "counter": 7212, "mode": "dv", "ms": 149444, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"neighbors": [[0, 0, 0, -85], [10, 2, 1, -86], [12, 2, 5, -88], [3, 3, 12, -86], [4, 4, 7, -80], [6, 4, 7, -77], [7, 2, 1, -70], [8, 2, 1, -67]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 1, "counters": {"generated": 12, "rx_advertisements": 217, "tx_adv": 28, "tx_data": 12, "tx_relay": 5}, "parent": 0, "ms": 150896, "node": 1}
+LOG {"reason": "advertisement", "rssi": null, "mode": "dv", "ms": 153060, "node": 1, "hop": 255, "parent": 255, "run": 3, "event": "ROUTE", "old_parent": 0, "old_hop": 1}
+LOG {"bytes": 18, "counter": 7213, "mode": "dv", "ms": 154040, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -78, "mode": "dv", "ms": 154449, "node": 1, "hop": 4, "parent": 7, "run": 3, "event": "ROUTE", "old_parent": 255, "old_hop": 255}
+LOG {"reason": "advertisement", "rssi": -67, "mode": "dv", "ms": 154761, "node": 1, "hop": 4, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 7, "old_hop": 4}
+LOG {"magnitude": 8.759301, "mode": "dv", "ms": 158326, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 12, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7214, "mode": "dv", "ms": 158338, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 7215, "mode": "dv", "ms": 158602, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 7216, "mode": "dv", "ms": 158938, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 7217, "mode": "dv", "ms": 159326, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 18, "counter": 7218, "mode": "dv", "ms": 159423, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -86], [10, 2, 1, -86], [12, 2, 1, -78], [3, 3, 12, -89], [4, 2, 1, -91], [5, 1, 0, -92], [6, 4, 3, -72], [7, 3, 4, -76], [8, 3, 10, -76]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 4, "counters": {"tx_data": 13, "generated": 13, "rx_advertisements": 230, "tx_adv": 30, "duplicate": 1, "tx_relay": 8}, "parent": 8, "ms": 160896, "node": 1}
+LOG {"reason": "advertisement", "rssi": -77, "mode": "dv", "ms": 163155, "node": 1, "hop": 3, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 4}
+LOG {"bytes": 18, "counter": 7219, "mode": "dv", "ms": 164689, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 8.49425, "mode": "dv", "ms": 168367, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 13, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7220, "mode": "dv", "ms": 168380, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"reason": "advertisement", "rssi": -83, "mode": "dv", "ms": 168723, "node": 1, "hop": 1, "parent": 0, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7221, "mode": "dv", "ms": 169877, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7222, "mode": "dv", "ms": 169974, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 28, "counter": 7223, "mode": "dv", "ms": 170732, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"neighbors": [[0, 0, 0, -83], [10, 2, 1, -81], [12, 2, 5, -84], [3, 3, 12, -85], [4, 3, 12, -81], [5, 1, 0, -93], [6, 4, 7, -70], [7, 2, 1, -77], [8, 2, 1, -63]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 1, "counters": {"tx_data": 14, "generated": 14, "rx_advertisements": 247, "tx_adv": 32, "duplicate": 1, "tx_relay": 10}, "parent": 0, "ms": 170899, "node": 1}
+LOG {"bytes": 21, "counter": 7224, "mode": "dv", "ms": 172752, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 7225, "mode": "dv", "ms": 173628, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"reason": "advertisement", "rssi": -84, "mode": "dv", "ms": 173781, "node": 1, "hop": 3, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 0, "old_hop": 1}
+LOG {"reason": "advertisement", "rssi": -80, "mode": "dv", "ms": 173870, "node": 1, "hop": 4, "parent": 3, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7226, "mode": "dv", "ms": 175301, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -74, "mode": "dv", "ms": 175689, "node": 1, "hop": 4, "parent": 7, "run": 3, "event": "ROUTE", "old_parent": 3, "old_hop": 4}
+LOG {"reason": "advertisement", "rssi": -65, "mode": "dv", "ms": 175718, "node": 1, "hop": 3, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 7, "old_hop": 4}
+LOG {"magnitude": 8.787958, "mode": "dv", "ms": 179113, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 14, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7227, "mode": "dv", "ms": 179128, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7228, "mode": "dv", "ms": 180366, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -88], [10, 3, 8, -82], [12, 3, 6, -73], [3, 3, 12, -83], [4, 3, 8, -82], [5, 1, 0, -91], [6, 3, 8, -63], [7, 3, 8, -78], [8, 2, 5, -65]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 15, "generated": 15, "rx_advertisements": 261, "tx_adv": 34, "duplicate": 1, "tx_relay": 12}, "parent": 8, "ms": 180906, "node": 1}
+LOG {"bytes": 18, "counter": 7229, "mode": "dv", "ms": 185427, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 9.249748, "mode": "dv", "ms": 189743, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 15, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7230, "mode": "dv", "ms": 189758, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7231, "mode": "dv", "ms": 190761, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[10, 3, 8, -87], [12, 2, 5, -82], [3, 3, 12, -77], [4, 3, 8, -79], [6, 3, 8, -76], [7, 3, 8, -82], [8, 2, 5, -72]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 16, "generated": 16, "rx_advertisements": 273, "tx_adv": 36, "duplicate": 1, "tx_relay": 12}, "parent": 8, "ms": 190909, "node": 1}
+LOG {"reason": "advertisement", "rssi": -84, "mode": "dv", "ms": 195009, "node": 1, "hop": 1, "parent": 0, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7232, "mode": "dv", "ms": 196246, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7233, "mode": "dv", "ms": 197104, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"magnitude": 8.680351, "mode": "dv", "ms": 199809, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 16, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7234, "mode": "dv", "ms": 199827, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 28, "counter": 7235, "mode": "dv", "ms": 199938, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 7236, "mode": "dv", "ms": 200846, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"neighbors": [[0, 0, 0, -84], [10, 2, 1, -81], [12, 2, 1, -89], [3, 3, 12, -75], [4, 2, 1, -82], [6, 2, 1, -63], [7, 2, 1, -66], [8, 2, 1, -62]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 1, "counters": {"tx_data": 17, "generated": 17, "rx_advertisements": 287, "tx_adv": 37, "duplicate": 1, "tx_relay": 15}, "parent": 0, "ms": 200916, "node": 1}
+LOG {"bytes": 18, "counter": 7237, "mode": "dv", "ms": 201359, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 28, "counter": 7238, "mode": "dv", "ms": 202320, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 7239, "mode": "dv", "ms": 202578, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"reason": "advertisement", "rssi": -75, "mode": "dv", "ms": 205348, "node": 1, "hop": 4, "parent": 3, "run": 3, "event": "ROUTE", "old_parent": 0, "old_hop": 1}
+LOG {"bytes": 24, "counter": 7240, "mode": "dv", "ms": 206092, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 18, "counter": 7241, "mode": "dv", "ms": 206697, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -66, "mode": "dv", "ms": 206966, "node": 1, "hop": 4, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 3, "old_hop": 4}
+LOG {"reason": "advertisement", "rssi": -83, "mode": "dv", "ms": 210190, "node": 1, "hop": 3, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 4}
+LOG {"magnitude": 11.045638, "mode": "dv", "ms": 210752, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 17, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7242, "mode": "dv", "ms": 210768, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"neighbors": [[0, 0, 0, -89], [10, 3, 6, -89], [12, 2, 5, -83], [3, 3, 12, -75], [4, 3, 6, -74], [6, 2, 1, -68], [7, 3, 6, -80], [8, 3, 6, -66]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 18, "generated": 18, "rx_advertisements": 301, "tx_adv": 39, "duplicate": 1, "tx_relay": 18}, "parent": 12, "ms": 210925, "node": 1}
+LOG {"bytes": 18, "counter": 7243, "mode": "dv", "ms": 211867, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7244, "mode": "dv", "ms": 213118, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 18, "counter": 7245, "mode": "dv", "ms": 217119, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -90], [10, 4, 1, -86], [12, 2, 5, -81], [3, 3, 12, -79], [4, 3, 12, -77], [6, 3, 12, -65], [7, 3, 12, -74], [8, 4, 6, -67]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 18, "generated": 18, "rx_advertisements": 314, "tx_adv": 41, "duplicate": 1, "tx_relay": 19}, "parent": 12, "ms": 220930, "node": 1}
+LOG {"magnitude": 10.269439, "mode": "dv", "ms": 221387, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 18, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7246, "mode": "dv", "ms": 221398, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7247, "mode": "dv", "ms": 222466, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7248, "mode": "dv", "ms": 223128, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 18, "counter": 7249, "mode": "dv", "ms": 227870, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -88], [10, 4, 1, -86], [12, 2, 5, -79], [3, 3, 12, -75], [4, 3, 12, -86], [5, 1, 0, -86], [6, 3, 12, -65], [7, 3, 12, -76], [8, 4, 7, -62]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 19, "generated": 19, "rx_advertisements": 329, "tx_adv": 43, "duplicate": 1, "tx_relay": 20}, "parent": 12, "ms": 230936, "node": 1}
+LOG {"reason": "advertisement", "rssi": -85, "mode": "dv", "ms": 231562, "node": 1, "hop": 1, "parent": 0, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 3}
+LOG {"magnitude": 10.765478, "mode": "dv", "ms": 231761, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 19, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7250, "mode": "dv", "ms": 231777, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7251, "mode": "dv", "ms": 232976, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7252, "mode": "dv", "ms": 233432, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 21, "counter": 7253, "mode": "dv", "ms": 234756, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 28, "counter": 7254, "mode": "dv", "ms": 235029, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"reason": "advertisement", "rssi": -80, "mode": "dv", "ms": 236961, "node": 1, "hop": 3, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 0, "old_hop": 1}
+LOG {"reason": "advertisement", "rssi": -83, "mode": "dv", "ms": 237245, "node": 1, "hop": 4, "parent": 3, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 3}
+LOG {"bytes": 24, "counter": 7255, "mode": "dv", "ms": 237498, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"reason": "advertisement", "rssi": -85, "mode": "dv", "ms": 237688, "node": 1, "hop": 2, "parent": 5, "run": 3, "event": "ROUTE", "old_parent": 3, "old_hop": 4}
+LOG {"bytes": 18, "counter": 7256, "mode": "dv", "ms": 238265, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7257, "mode": "dv", "ms": 239631, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [[0, 0, 0, -91], [10, 3, 1, -82], [12, 2, 1, -74], [3, 3, 12, -71], [4, 2, 1, -80], [5, 1, 0, -85], [6, 2, 1, -75], [7, 2, 1, -78], [8, 2, 1, -69]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"tx_data": 20, "generated": 20, "rx_advertisements": 345, "tx_adv": 45, "duplicate": 1, "tx_relay": 25}, "parent": 5, "ms": 240936, "node": 1}
+LOG {"bytes": 28, "counter": 7258, "mode": "dv", "ms": 241507, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"magnitude": 10.461372, "mode": "dv", "ms": 242723, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 20, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7259, "mode": "dv", "ms": 242738, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7260, "mode": "dv", "ms": 243439, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7261, "mode": "dv", "ms": 244192, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"reason": "advertisement", "rssi": -63, "mode": "dv", "ms": 248359, "node": 1, "hop": 3, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 5, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7262, "mode": "dv", "ms": 248639, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -92], [10, 3, 8, -88], [12, 2, 5, -76], [3, 3, 12, -67], [4, 3, 8, -88], [5, 1, 0, -90], [6, 3, 8, -81], [7, 3, 8, -71], [8, 2, 5, -69]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 21, "generated": 21, "rx_advertisements": 361, "tx_adv": 47, "duplicate": 1, "tx_relay": 27}, "parent": 8, "ms": 250936, "node": 1}
+LOG {"magnitude": 10.477858, "mode": "dv", "ms": 252738, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 21, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7263, "mode": "dv", "ms": 252758, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7264, "mode": "dv", "ms": 253840, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7265, "mode": "dv", "ms": 259201, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -91], [10, 3, 8, -88], [12, 2, 5, -74], [3, 3, 12, -68], [4, 3, 8, -82], [5, 1, 0, -87], [6, 3, 8, -73], [7, 3, 8, -80], [8, 2, 5, -63]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 22, "generated": 22, "rx_advertisements": 375, "tx_adv": 49, "duplicate": 1, "tx_relay": 27}, "parent": 8, "ms": 260942, "node": 1}
+LOG {"magnitude": 10.467225, "mode": "dv", "ms": 263180, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 22, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7266, "mode": "dv", "ms": 263197, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"reason": "advertisement", "rssi": -84, "mode": "dv", "ms": 263823, "node": 1, "hop": 2, "parent": 5, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7267, "mode": "dv", "ms": 264632, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -60, "mode": "dv", "ms": 268997, "node": 1, "hop": 3, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 5, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7268, "mode": "dv", "ms": 269685, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -88], [10, 3, 8, -84], [12, 2, 5, -69], [3, 3, 12, -68], [4, 3, 8, -78], [5, 1, 0, -91], [6, 3, 8, -71], [7, 3, 8, -81], [8, 2, 5, -59]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 23, "generated": 23, "rx_advertisements": 391, "tx_adv": 51, "duplicate": 1, "tx_relay": 27}, "parent": 8, "ms": 270941, "node": 1}
+LOG {"magnitude": 10.467352, "mode": "dv", "ms": 273488, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 23, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7269, "mode": "dv", "ms": 273507, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7270, "mode": "dv", "ms": 274830, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7271, "mode": "dv", "ms": 279878, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -87], [10, 3, 8, -89], [12, 2, 5, -69], [3, 3, 12, -69], [4, 3, 8, -76], [5, 1, 0, -88], [6, 3, 8, -74], [7, 2, 5, -80], [8, 2, 5, -58]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 24, "generated": 24, "rx_advertisements": 408, "tx_adv": 53, "duplicate": 1, "tx_relay": 27}, "parent": 8, "ms": 280947, "node": 1}
+LOG {"magnitude": 10.46806, "mode": "dv", "ms": 284446, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 24, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7272, "mode": "dv", "ms": 284458, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7273, "mode": "dv", "ms": 285379, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -84, "mode": "dv", "ms": 290159, "node": 1, "hop": 2, "parent": 5, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7274, "mode": "dv", "ms": 290459, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -89], [10, 3, 8, -87], [12, 2, 5, -67], [3, 3, 12, -67], [4, 3, 8, -78], [5, 1, 0, -84], [6, 3, 8, -77], [7, 3, 8, -77], [8, 2, 5, -55]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"tx_data": 25, "generated": 25, "rx_advertisements": 422, "tx_adv": 55, "duplicate": 1, "tx_relay": 27}, "parent": 5, "ms": 290950, "node": 1}
+LOG {"magnitude": 10.469103, "mode": "dv", "ms": 294641, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 25, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7275, "mode": "dv", "ms": 294657, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"reason": "advertisement", "rssi": -57, "mode": "dv", "ms": 295360, "node": 1, "hop": 3, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 5, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7276, "mode": "dv", "ms": 295668, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -91], [10, 3, 8, -83], [12, 2, 5, -68], [3, 3, 12, -67], [4, 3, 8, -78], [5, 1, 0, -90], [6, 3, 8, -73], [7, 2, 5, -78], [8, 2, 5, -57]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 26, "generated": 26, "rx_advertisements": 438, "tx_adv": 56, "duplicate": 1, "tx_relay": 27}, "parent": 8, "ms": 300957, "node": 1}
+LOG {"bytes": 18, "counter": 7277, "mode": "dv", "ms": 300997, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 10.467123, "mode": "dv", "ms": 305300, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 26, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7278, "mode": "dv", "ms": 305317, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7279, "mode": "dv", "ms": 306053, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -66, "mode": "dv", "ms": 307192, "node": 1, "hop": 3, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 3}
+LOG {"neighbors": [[0, 0, 0, -89], [10, 3, 8, -85], [12, 2, 5, -69], [3, 3, 12, -67], [4, 3, 7, -79], [5, 1, 0, -90], [6, 3, 8, -69], [7, 2, 5, -79], [8, 3, 7, -59]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 27, "generated": 27, "rx_advertisements": 453, "tx_adv": 58, "duplicate": 1, "tx_relay": 27}, "parent": 12, "ms": 310965, "node": 1}
+LOG {"bytes": 18, "counter": 7280, "mode": "dv", "ms": 311457, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"magnitude": 10.467913, "mode": "dv", "ms": 315461, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 27, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7281, "mode": "dv", "ms": 315479, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 18, "counter": 7282, "mode": "dv", "ms": 316733, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -89], [10, 3, 7, -85], [12, 2, 5, -71], [3, 3, 12, -66], [4, 3, 12, -82], [5, 1, 0, -88], [6, 3, 7, -71], [7, 3, 12, -77], [8, 3, 7, -59]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 28, "generated": 28, "rx_advertisements": 467, "tx_adv": 60, "duplicate": 1, "tx_relay": 27}, "parent": 12, "ms": 320974, "node": 1}
+LOG {"bytes": 18, "counter": 7283, "mode": "dv", "ms": 321972, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -59, "mode": "dv", "ms": 322640, "node": 1, "hop": 3, "parent": 8, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 3}
+LOG {"magnitude": 10.468916, "mode": "dv", "ms": 325608, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 28, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 7284, "mode": "dv", "ms": 325618, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"reason": "advertisement", "rssi": -81, "mode": "dv", "ms": 326909, "node": 1, "hop": 1, "parent": 0, "run": 3, "event": "ROUTE", "old_parent": 8, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7285, "mode": "dv", "ms": 327411, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7286, "mode": "dv", "ms": 328101, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 7287, "mode": "dv", "ms": 329321, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 21, "counter": 7288, "mode": "dv", "ms": 330208, "node": 1, "seq": 29, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 28, "counter": 7289, "mode": "dv", "ms": 330625, "node": 1, "seq": 29, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"mode": "dv", "phase": "drain", "run": 3, "event": "PHASE", "ms": 330822, "node": 1}
+LOG {"neighbors": [[0, 0, 0, -81], [10, 2, 1, -92], [12, 2, 5, -68], [3, 3, 12, -72], [4, 2, 1, -90], [5, 1, 0, -87], [6, 3, 8, -71], [7, 2, 1, -72], [8, 2, 1, -60]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 1, "counters": {"tx_data": 29, "generated": 29, "rx_advertisements": 483, "tx_adv": 62, "duplicate": 1, "tx_relay": 31}, "parent": 0, "ms": 330980, "node": 1}
+LOG {"bytes": 18, "counter": 7290, "mode": "dv", "ms": 332615, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7291, "mode": "dv", "ms": 333953, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 18, "counter": 7292, "mode": "dv", "ms": 337634, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -81], [10, 2, 1, -86], [12, 2, 1, -72], [3, 3, 12, -76], [4, 1, 0, -88], [5, 1, 0, -83], [6, 2, 1, -81], [7, 2, 1, -77], [8, 2, 1, -67]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 1, "counters": {"tx_data": 29, "generated": 29, "rx_advertisements": 498, "tx_adv": 64, "duplicate": 1, "tx_relay": 32}, "parent": 0, "ms": 340989, "node": 1}
+LOG {"bytes": 18, "counter": 7293, "mode": "dv", "ms": 342886, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 24, "counter": 7294, "mode": "dv", "ms": 344163, "node": 1, "seq": 29, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 18, "counter": 7295, "mode": "dv", "ms": 348074, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -79], [10, 2, 1, -84], [12, 2, 1, -72], [3, 3, 12, -73], [4, 1, 0, -87], [5, 1, 0, -83], [6, 2, 1, -83], [7, 2, 1, -77], [8, 2, 1, -68]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 1, "counters": {"tx_data": 29, "generated": 29, "rx_advertisements": 514, "tx_adv": 66, "duplicate": 1, "tx_relay": 33}, "parent": 0, "ms": 350994, "node": 1}
+LOG {"reason": "advertisement", "rssi": -82, "mode": "dv", "ms": 353038, "node": 1, "hop": 2, "parent": 5, "run": 3, "event": "ROUTE", "old_parent": 0, "old_hop": 1}
+LOG {"bytes": 18, "counter": 7296, "mode": "dv", "ms": 353257, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7297, "mode": "dv", "ms": 358760, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -88], [10, 3, 1, -90], [12, 2, 1, -78], [3, 3, 12, -79], [4, 1, 0, -91], [5, 1, 0, -82], [6, 2, 1, -81], [7, 2, 4, -77], [8, 255, 255, -64]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 2, "counters": {"tx_data": 29, "generated": 29, "rx_advertisements": 526, "tx_adv": 68, "duplicate": 1, "tx_relay": 33}, "parent": 5, "ms": 361001, "node": 1}
+LOG {"reason": "advertisement", "rssi": -77, "mode": "dv", "ms": 363573, "node": 1, "hop": 3, "parent": 7, "run": 3, "event": "ROUTE", "old_parent": 5, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7298, "mode": "dv", "ms": 364135, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7299, "mode": "dv", "ms": 369535, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -90], [10, 2, 4, -91], [12, 2, 5, -82], [3, 3, 12, -81], [4, 1, 0, -89], [5, 1, 0, -90], [6, 2, 4, -84], [7, 2, 4, -82]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 29, "generated": 29, "rx_advertisements": 541, "tx_adv": 70, "duplicate": 1, "tx_relay": 33}, "parent": 7, "ms": 371004, "node": 1}
+LOG {"bytes": 18, "counter": 7300, "mode": "dv", "ms": 374557, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -84, "mode": "dv", "ms": 375586, "node": 1, "hop": 3, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 7, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7301, "mode": "dv", "ms": 379749, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"neighbors": [[0, 0, 0, -93], [10, 3, 7, -93], [12, 2, 5, -81], [3, 3, 12, -80], [4, 3, 12, -91], [5, 1, 0, -90], [6, 3, 12, -85], [7, 3, 12, -81]], "event": "STATUS", "run": 3, "mode": "dv", "hop": 3, "counters": {"tx_data": 29, "generated": 29, "rx_advertisements": 556, "tx_adv": 72, "duplicate": 1, "tx_relay": 33}, "parent": 12, "ms": 381010, "node": 1}
+LOG {"bytes": 18, "counter": 7302, "mode": "dv", "ms": 385136, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -85, "mode": "dv", "ms": 389553, "node": 1, "hop": 2, "parent": 5, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7303, "mode": "dv", "ms": 390559, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"mode": "dv", "phase": "finished", "run": 3, "event": "PHASE", "ms": 390826, "node": 1}
+LOG {"neighbors": [[0, 0, 0, -93], [10, 3, 1, -88], [12, 2, 5, -73], [3, 3, 12, -78], [4, 3, 12, -86], [5, 1, 0, -85], [6, 3, 12, -83], [7, 3, 12, -82]], "event": "COUNTERS", "run": 3, "mode": "dv", "hop": 2, "counters": {"tx_data": 29, "generated": 29, "rx_advertisements": 566, "tx_adv": 74, "duplicate": 1, "tx_relay": 33}, "parent": 5, "ms": 390828, "node": 1}
+LOG {"bytes": 18, "counter": 7304, "mode": "dv", "ms": 395764, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -74, "mode": "dv", "ms": 400099, "node": 1, "hop": 3, "parent": 12, "run": 3, "event": "ROUTE", "old_parent": 5, "old_hop": 2}
+LOG {"bytes": 18, "counter": 7305, "mode": "dv", "ms": 401031, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"reason": "advertisement", "rssi": -85, "mode": "dv", "ms": 405221, "node": 1, "hop": 1, "parent": 0, "run": 3, "event": "ROUTE", "old_parent": 12, "old_hop": 3}
+LOG {"bytes": 18, "counter": 7306, "mode": "dv", "ms": 406247, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+LOG {"bytes": 18, "counter": 7307, "mode": "dv", "ms": 411721, "node": 1, "seq": null, "send_result": "True", "run": 3, "event": "TX", "kind": "adv", "origin": null}
+Traceback (most recent call last):
+  File "main.py", line 354, in <module>
+  File "main.py", line 342, in run
+  File "espnow.py", line 20, in recv
+KeyboardInterrupt: 
+MicroPython v1.27.0 on 2025-12-09; Generic ESP32 module with ESP32
+Type "help()" for more information.
