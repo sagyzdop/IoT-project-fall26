@@ -1,0 +1,505 @@
+# node 8 mode=flood run_id=2 start_tx_counter=3842
+[   0s][WARMUP] node 8 mode=flood run=2 tx_power=17.25 dBm, warm-up 60 s, then 300 s of data, drain 60 s, tx_counter=3842, files: node8_events_flood_run2.csv node8_summary_flood_run2.txt
+[   0s][WARMUP] PHASE WARMUP
+[   5s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[   5s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  10s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  10s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  15s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  15s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  20s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  20s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  25s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  25s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  30s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  30s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  35s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  35s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  40s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  40s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  45s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  45s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  50s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  50s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  55s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=0
+[  55s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  60s][RUN] PHASE RUN
+[  60s][RUN] GENERATE seq=0 accel=9.776 m/s2 (N=187, rate=93.4 Hz)
+[  60s][RUN] TX DATA seq=0 -> dest=255
+[  60s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  60s][RUN] COUNTERS gen=1 acq_fail=0 noroute=0 own_tx=1 relay_tx=0 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  60s][RUN] TX RELAY origin=9 seq=0 -> dest=255 ttl=8
+[  60s][RUN] TX RELAY origin=7 seq=1 -> dest=255 ttl=7
+[  60s][RUN] TX RELAY origin=13 seq=0 -> dest=255 ttl=8
+[  61s][RUN] TX RELAY origin=10 seq=0 -> dest=255 ttl=8
+[  61s][RUN] TX RELAY origin=4 seq=0 -> dest=255 ttl=7
+[  62s][RUN] TX RELAY origin=1 seq=0 -> dest=255 ttl=7
+[  65s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  65s][RUN] COUNTERS gen=1 acq_fail=0 noroute=0 own_tx=1 relay_tx=6 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=26 ttl=0 queue=0 tx_err=0
+[  66s][RUN] TX RELAY origin=3 seq=0 -> dest=255 ttl=7
+[  67s][RUN] TX RELAY origin=12 seq=1 -> dest=255 ttl=6
+[  69s][RUN] TX RELAY origin=5 seq=1 -> dest=255 ttl=5
+[  70s][RUN] GENERATE seq=1 accel=9.781 m/s2 (N=190, rate=94.9 Hz)
+[  70s][RUN] TX DATA seq=1 -> dest=255
+[  70s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  70s][RUN] COUNTERS gen=2 acq_fail=0 noroute=0 own_tx=2 relay_tx=9 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=34 ttl=0 queue=0 tx_err=0
+[  71s][RUN] TX RELAY origin=9 seq=1 -> dest=255 ttl=6
+[  71s][RUN] TX RELAY origin=7 seq=2 -> dest=255 ttl=7
+[  71s][RUN] TX RELAY origin=10 seq=1 -> dest=255 ttl=7
+[  72s][RUN] TX RELAY origin=4 seq=1 -> dest=255 ttl=7
+[  72s][RUN] TX RELAY origin=1 seq=1 -> dest=255 ttl=6
+[  73s][RUN] TX RELAY origin=13 seq=1 -> dest=255 ttl=6
+[  75s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  75s][RUN] COUNTERS gen=2 acq_fail=0 noroute=0 own_tx=2 relay_tx=15 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=50 ttl=0 queue=0 tx_err=0
+[  77s][RUN] TX RELAY origin=3 seq=1 -> dest=255 ttl=7
+[  77s][RUN] TX RELAY origin=6 seq=0 -> dest=255 ttl=8
+[  78s][RUN] TX RELAY origin=12 seq=2 -> dest=255 ttl=8
+[  80s][RUN] GENERATE seq=2 accel=9.786 m/s2 (N=188, rate=93.9 Hz)
+[  80s][RUN] TX DATA seq=2 -> dest=255
+[  80s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  80s][RUN] COUNTERS gen=3 acq_fail=0 noroute=0 own_tx=3 relay_tx=18 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=57 ttl=0 queue=0 tx_err=0
+[  81s][RUN] TX RELAY origin=9 seq=2 -> dest=255 ttl=8
+[  81s][RUN] TX RELAY origin=7 seq=3 -> dest=255 ttl=7
+[  82s][RUN] TX RELAY origin=10 seq=2 -> dest=255 ttl=7
+[  82s][RUN] TX RELAY origin=4 seq=2 -> dest=255 ttl=6
+[  83s][RUN] TX RELAY origin=1 seq=2 -> dest=255 ttl=8
+[  84s][RUN] TX RELAY origin=13 seq=2 -> dest=255 ttl=7
+[  85s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  85s][RUN] COUNTERS gen=3 acq_fail=0 noroute=0 own_tx=3 relay_tx=24 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=81 ttl=0 queue=0 tx_err=0
+[  88s][RUN] TX RELAY origin=3 seq=2 -> dest=255 ttl=7
+[  88s][RUN] TX RELAY origin=6 seq=1 -> dest=255 ttl=7
+[  88s][RUN] TX RELAY origin=12 seq=3 -> dest=255 ttl=8
+[  90s][RUN] TX RELAY origin=5 seq=3 -> dest=255 ttl=5
+[  91s][RUN] GENERATE seq=3 accel=9.779 m/s2 (N=189, rate=94.5 Hz)
+[  91s][RUN] TX DATA seq=3 -> dest=255
+[  91s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  91s][RUN] COUNTERS gen=4 acq_fail=0 noroute=0 own_tx=4 relay_tx=28 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=87 ttl=0 queue=0 tx_err=0
+[  91s][RUN] TX RELAY origin=9 seq=3 -> dest=255 ttl=7
+[  92s][RUN] TX RELAY origin=7 seq=4 -> dest=255 ttl=6
+[  92s][RUN] TX RELAY origin=4 seq=3 -> dest=255 ttl=7
+[  92s][RUN] TX RELAY origin=10 seq=3 -> dest=255 ttl=6
+[  93s][RUN] TX RELAY origin=1 seq=3 -> dest=255 ttl=6
+[  94s][RUN] TX RELAY origin=13 seq=3 -> dest=255 ttl=8
+[  96s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[  96s][RUN] COUNTERS gen=4 acq_fail=0 noroute=0 own_tx=4 relay_tx=34 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=103 ttl=0 queue=0 tx_err=0
+[  98s][RUN] TX RELAY origin=3 seq=3 -> dest=255 ttl=6
+[  99s][RUN] TX RELAY origin=6 seq=2 -> dest=255 ttl=8
+[ 100s][RUN] TX RELAY origin=12 seq=4 -> dest=255 ttl=7
+[ 101s][RUN] GENERATE seq=4 accel=9.780 m/s2 (N=188, rate=94.0 Hz)
+[ 101s][RUN] TX DATA seq=4 -> dest=255
+[ 101s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 101s][RUN] COUNTERS gen=5 acq_fail=0 noroute=0 own_tx=5 relay_tx=37 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=109 ttl=0 queue=0 tx_err=0
+[ 101s][RUN] TX RELAY origin=9 seq=4 -> dest=255 ttl=7
+[ 102s][RUN] TX RELAY origin=7 seq=5 -> dest=255 ttl=7
+[ 103s][RUN] TX RELAY origin=10 seq=4 -> dest=255 ttl=7
+[ 103s][RUN] TX RELAY origin=4 seq=4 -> dest=255 ttl=7
+[ 104s][RUN] TX RELAY origin=1 seq=4 -> dest=255 ttl=6
+[ 105s][RUN] TX RELAY origin=13 seq=4 -> dest=255 ttl=8
+[ 106s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 106s][RUN] COUNTERS gen=5 acq_fail=0 noroute=0 own_tx=5 relay_tx=43 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=124 ttl=0 queue=0 tx_err=0
+[ 108s][RUN] TX RELAY origin=3 seq=4 -> dest=255 ttl=8
+[ 109s][RUN] TX RELAY origin=6 seq=3 -> dest=255 ttl=8
+[ 109s][RUN] TX RELAY origin=12 seq=5 -> dest=255 ttl=8
+[ 112s][RUN] TX RELAY origin=9 seq=5 -> dest=255 ttl=8
+[ 112s][RUN] GENERATE seq=5 accel=9.783 m/s2 (N=188, rate=94.0 Hz)
+[ 112s][RUN] TX DATA seq=5 -> dest=255
+[ 112s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 112s][RUN] COUNTERS gen=6 acq_fail=0 noroute=0 own_tx=6 relay_tx=47 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=136 ttl=0 queue=0 tx_err=0
+[ 113s][RUN] TX RELAY origin=7 seq=6 -> dest=255 ttl=7
+[ 114s][RUN] TX RELAY origin=10 seq=5 -> dest=255 ttl=7
+[ 114s][RUN] TX RELAY origin=1 seq=5 -> dest=255 ttl=7
+[ 116s][RUN] TX RELAY origin=13 seq=5 -> dest=255 ttl=8
+[ 117s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 117s][RUN] COUNTERS gen=6 acq_fail=0 noroute=0 own_tx=6 relay_tx=51 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=147 ttl=0 queue=0 tx_err=0
+[ 120s][RUN] TX RELAY origin=12 seq=6 -> dest=255 ttl=8
+[ 121s][RUN] TX RELAY origin=6 seq=4 -> dest=255 ttl=7
+[ 121s][RUN] TX RELAY origin=5 seq=6 -> dest=255 ttl=8
+[ 122s][RUN] TX RELAY origin=9 seq=6 -> dest=255 ttl=7
+[ 122s][RUN] GENERATE seq=6 accel=9.781 m/s2 (N=186, rate=93.0 Hz)
+[ 122s][RUN] TX DATA seq=6 -> dest=255
+[ 122s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 122s][RUN] COUNTERS gen=7 acq_fail=0 noroute=0 own_tx=7 relay_tx=55 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=158 ttl=0 queue=0 tx_err=0
+[ 124s][RUN] TX RELAY origin=7 seq=7 -> dest=255 ttl=6
+[ 124s][RUN] TX RELAY origin=4 seq=6 -> dest=255 ttl=7
+[ 124s][RUN] TX RELAY origin=1 seq=6 -> dest=255 ttl=8
+[ 124s][RUN] TX RELAY origin=10 seq=6 -> dest=255 ttl=7
+[ 127s][RUN] TX RELAY origin=13 seq=6 -> dest=255 ttl=8
+[ 127s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 127s][RUN] COUNTERS gen=7 acq_fail=0 noroute=0 own_tx=7 relay_tx=60 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=175 ttl=0 queue=0 tx_err=0
+[ 130s][RUN] TX RELAY origin=6 seq=5 -> dest=255 ttl=8
+[ 130s][RUN] TX RELAY origin=3 seq=6 -> dest=255 ttl=6
+[ 131s][RUN] TX RELAY origin=12 seq=7 -> dest=255 ttl=7
+[ 132s][RUN] TX RELAY origin=9 seq=7 -> dest=255 ttl=7
+[ 133s][RUN] GENERATE seq=7 accel=9.769 m/s2 (N=187, rate=93.5 Hz)
+[ 133s][RUN] TX DATA seq=7 -> dest=255
+[ 133s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 133s][RUN] COUNTERS gen=8 acq_fail=0 noroute=0 own_tx=8 relay_tx=64 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=180 ttl=0 queue=0 tx_err=0
+[ 133s][RUN] TX RELAY origin=5 seq=7 -> dest=255 ttl=6
+[ 134s][RUN] TX RELAY origin=7 seq=8 -> dest=255 ttl=7
+[ 134s][RUN] TX RELAY origin=4 seq=7 -> dest=255 ttl=6
+[ 134s][RUN] TX RELAY origin=10 seq=7 -> dest=255 ttl=7
+[ 135s][RUN] TX RELAY origin=1 seq=7 -> dest=255 ttl=7
+[ 138s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 138s][RUN] COUNTERS gen=8 acq_fail=0 noroute=0 own_tx=8 relay_tx=69 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=191 ttl=0 queue=0 tx_err=0
+[ 138s][RUN] TX RELAY origin=13 seq=7 -> dest=255 ttl=7
+[ 140s][RUN] TX RELAY origin=6 seq=6 -> dest=255 ttl=8
+[ 140s][RUN] TX RELAY origin=3 seq=7 -> dest=255 ttl=7
+[ 141s][RUN] TX RELAY origin=12 seq=8 -> dest=255 ttl=7
+[ 142s][RUN] TX RELAY origin=9 seq=8 -> dest=255 ttl=7
+[ 143s][RUN] GENERATE seq=8 accel=9.767 m/s2 (N=189, rate=94.5 Hz)
+[ 143s][RUN] TX DATA seq=8 -> dest=255
+[ 143s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 143s][RUN] COUNTERS gen=9 acq_fail=0 noroute=0 own_tx=9 relay_tx=74 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=205 ttl=0 queue=0 tx_err=0
+[ 144s][RUN] TX RELAY origin=7 seq=9 -> dest=255 ttl=7
+[ 145s][RUN] TX RELAY origin=10 seq=8 -> dest=255 ttl=7
+[ 145s][RUN] TX RELAY origin=4 seq=8 -> dest=255 ttl=6
+[ 145s][RUN] TX RELAY origin=1 seq=8 -> dest=255 ttl=8
+[ 148s][RUN] TX RELAY origin=13 seq=8 -> dest=255 ttl=8
+[ 148s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 148s][RUN] COUNTERS gen=9 acq_fail=0 noroute=0 own_tx=9 relay_tx=79 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=221 ttl=0 queue=0 tx_err=0
+[ 151s][RUN] TX RELAY origin=6 seq=7 -> dest=255 ttl=5
+[ 151s][RUN] TX RELAY origin=12 seq=9 -> dest=255 ttl=8
+[ 151s][RUN] TX RELAY origin=3 seq=8 -> dest=255 ttl=8
+[ 153s][RUN] TX RELAY origin=5 seq=9 -> dest=255 ttl=6
+[ 153s][RUN] TX RELAY origin=9 seq=9 -> dest=255 ttl=6
+[ 154s][RUN] GENERATE seq=9 accel=9.767 m/s2 (N=187, rate=93.5 Hz)
+[ 154s][RUN] TX DATA seq=9 -> dest=255
+[ 154s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 154s][RUN] COUNTERS gen=10 acq_fail=0 noroute=0 own_tx=10 relay_tx=84 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=234 ttl=0 queue=0 tx_err=0
+[ 155s][RUN] TX RELAY origin=7 seq=10 -> dest=255 ttl=7
+[ 156s][RUN] TX RELAY origin=1 seq=9 -> dest=255 ttl=8
+[ 156s][RUN] TX RELAY origin=10 seq=9 -> dest=255 ttl=7
+[ 156s][RUN] TX RELAY origin=4 seq=9 -> dest=255 ttl=5
+[ 159s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 159s][RUN] COUNTERS gen=10 acq_fail=0 noroute=0 own_tx=10 relay_tx=88 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=248 ttl=0 queue=0 tx_err=0
+[ 159s][RUN] TX RELAY origin=13 seq=9 -> dest=255 ttl=8
+[ 161s][RUN] TX RELAY origin=6 seq=8 -> dest=255 ttl=6
+[ 162s][RUN] TX RELAY origin=12 seq=10 -> dest=255 ttl=8
+[ 164s][RUN] TX RELAY origin=9 seq=10 -> dest=255 ttl=7
+[ 164s][RUN] GENERATE seq=10 accel=9.878 m/s2 (N=79, rate=39.5 Hz)
+[ 164s][RUN] TX DATA seq=10 -> dest=255
+[ 164s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 164s][RUN] COUNTERS gen=11 acq_fail=0 noroute=0 own_tx=11 relay_tx=92 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=265 ttl=0 queue=0 tx_err=0
+[ 164s][RUN] TX RELAY origin=5 seq=10 -> dest=255 ttl=7
+[ 166s][RUN] TX RELAY origin=1 seq=10 -> dest=255 ttl=8
+[ 166s][RUN] TX RELAY origin=10 seq=10 -> dest=255 ttl=8
+[ 167s][RUN] TX RELAY origin=7 seq=11 -> dest=255 ttl=6
+[ 169s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 169s][RUN] COUNTERS gen=11 acq_fail=0 noroute=0 own_tx=11 relay_tx=96 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=272 ttl=0 queue=0 tx_err=0
+[ 172s][RUN] TX RELAY origin=13 seq=10 -> dest=255 ttl=8
+[ 172s][RUN] TX RELAY origin=6 seq=9 -> dest=255 ttl=6
+[ 172s][RUN] TX RELAY origin=12 seq=11 -> dest=255 ttl=7
+[ 175s][RUN] GENERATE seq=11 accel=9.770 m/s2 (N=190, rate=95.0 Hz)
+[ 175s][RUN] TX DATA seq=11 -> dest=255
+[ 175s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 175s][RUN] COUNTERS gen=12 acq_fail=0 noroute=0 own_tx=12 relay_tx=99 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=278 ttl=0 queue=0 tx_err=0
+[ 177s][RUN] TX RELAY origin=7 seq=12 -> dest=255 ttl=8
+[ 177s][RUN] TX RELAY origin=1 seq=11 -> dest=255 ttl=7
+[ 180s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 180s][RUN] COUNTERS gen=12 acq_fail=0 noroute=0 own_tx=12 relay_tx=101 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=281 ttl=0 queue=0 tx_err=0
+[ 182s][RUN] TX RELAY origin=12 seq=12 -> dest=255 ttl=8
+[ 182s][RUN] TX RELAY origin=6 seq=10 -> dest=255 ttl=7
+[ 183s][RUN] TX RELAY origin=13 seq=11 -> dest=255 ttl=7
+[ 183s][RUN] TX RELAY origin=9 seq=12 -> dest=255 ttl=7
+[ 184s][RUN] TX RELAY origin=3 seq=11 -> dest=255 ttl=7
+[ 185s][RUN] GENERATE seq=12 accel=9.768 m/s2 (N=188, rate=94.0 Hz)
+[ 185s][RUN] TX DATA seq=12 -> dest=255
+[ 185s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 185s][RUN] COUNTERS gen=13 acq_fail=0 noroute=0 own_tx=13 relay_tx=106 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=293 ttl=0 queue=0 tx_err=0
+[ 187s][RUN] TX RELAY origin=10 seq=12 -> dest=255 ttl=7
+[ 187s][RUN] TX RELAY origin=1 seq=12 -> dest=255 ttl=7
+[ 188s][RUN] TX RELAY origin=7 seq=13 -> dest=255 ttl=6
+[ 190s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 190s][RUN] COUNTERS gen=13 acq_fail=0 noroute=0 own_tx=13 relay_tx=109 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=296 ttl=0 queue=0 tx_err=0
+[ 193s][RUN] TX RELAY origin=12 seq=13 -> dest=255 ttl=7
+[ 193s][RUN] TX RELAY origin=13 seq=12 -> dest=255 ttl=8
+[ 193s][RUN] TX RELAY origin=6 seq=11 -> dest=255 ttl=6
+[ 194s][RUN] TX RELAY origin=9 seq=13 -> dest=255 ttl=8
+[ 194s][RUN] TX RELAY origin=3 seq=12 -> dest=255 ttl=8
+[ 195s][RUN] GENERATE seq=13 accel=9.776 m/s2 (N=187, rate=93.4 Hz)
+[ 195s][RUN] TX DATA seq=13 -> dest=255
+[ 195s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 195s][RUN] COUNTERS gen=14 acq_fail=0 noroute=0 own_tx=14 relay_tx=114 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=306 ttl=0 queue=0 tx_err=0
+[ 198s][RUN] TX RELAY origin=10 seq=13 -> dest=255 ttl=8
+[ 198s][RUN] TX RELAY origin=1 seq=13 -> dest=255 ttl=8
+[ 199s][RUN] TX RELAY origin=7 seq=14 -> dest=255 ttl=4
+[ 200s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 200s][RUN] COUNTERS gen=14 acq_fail=0 noroute=0 own_tx=14 relay_tx=117 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=314 ttl=0 queue=0 tx_err=0
+[ 203s][RUN] TX RELAY origin=12 seq=14 -> dest=255 ttl=7
+[ 203s][RUN] TX RELAY origin=6 seq=12 -> dest=255 ttl=7
+[ 204s][RUN] TX RELAY origin=13 seq=13 -> dest=255 ttl=8
+[ 205s][RUN] TX RELAY origin=3 seq=13 -> dest=255 ttl=8
+[ 205s][RUN] GENERATE seq=14 accel=9.771 m/s2 (N=188, rate=93.9 Hz)
+[ 205s][RUN] TX DATA seq=14 -> dest=255
+[ 205s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 205s][RUN] COUNTERS gen=15 acq_fail=0 noroute=0 own_tx=15 relay_tx=121 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=321 ttl=0 queue=0 tx_err=0
+[ 207s][RUN] TX RELAY origin=5 seq=14 -> dest=255 ttl=6
+[ 207s][RUN] TX RELAY origin=4 seq=14 -> dest=255 ttl=6
+[ 208s][RUN] TX RELAY origin=1 seq=14 -> dest=255 ttl=8
+[ 209s][RUN] TX RELAY origin=7 seq=15 -> dest=255 ttl=8
+[ 209s][RUN] TX RELAY origin=10 seq=14 -> dest=255 ttl=7
+[ 210s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 210s][RUN] COUNTERS gen=15 acq_fail=0 noroute=0 own_tx=15 relay_tx=126 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=338 ttl=0 queue=0 tx_err=0
+[ 213s][RUN] TX RELAY origin=12 seq=15 -> dest=255 ttl=8
+[ 214s][RUN] TX RELAY origin=9 seq=15 -> dest=255 ttl=8
+[ 215s][RUN] TX RELAY origin=13 seq=14 -> dest=255 ttl=8
+[ 215s][RUN] TX RELAY origin=3 seq=14 -> dest=255 ttl=6
+[ 216s][RUN] GENERATE seq=15 accel=9.770 m/s2 (N=186, rate=93.0 Hz)
+[ 216s][RUN] TX DATA seq=15 -> dest=255
+[ 216s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 216s][RUN] COUNTERS gen=16 acq_fail=0 noroute=0 own_tx=16 relay_tx=130 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=347 ttl=0 queue=0 tx_err=0
+[ 218s][RUN] TX RELAY origin=1 seq=15 -> dest=255 ttl=7
+[ 219s][RUN] TX RELAY origin=7 seq=16 -> dest=255 ttl=6
+[ 220s][RUN] TX RELAY origin=10 seq=15 -> dest=255 ttl=8
+[ 221s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 221s][RUN] COUNTERS gen=16 acq_fail=0 noroute=0 own_tx=16 relay_tx=133 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=358 ttl=0 queue=0 tx_err=0
+[ 223s][RUN] TX RELAY origin=12 seq=16 -> dest=255 ttl=8
+[ 225s][RUN] TX RELAY origin=6 seq=14 -> dest=255 ttl=7
+[ 225s][RUN] TX RELAY origin=13 seq=15 -> dest=255 ttl=7
+[ 227s][RUN] GENERATE seq=16 accel=9.777 m/s2 (N=189, rate=94.5 Hz)
+[ 227s][RUN] TX DATA seq=16 -> dest=255
+[ 227s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 227s][RUN] COUNTERS gen=17 acq_fail=0 noroute=0 own_tx=17 relay_tx=136 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=361 ttl=0 queue=0 tx_err=0
+[ 227s][RUN] TX RELAY origin=5 seq=16 -> dest=255 ttl=8
+[ 227s][RUN] TX RELAY origin=4 seq=16 -> dest=255 ttl=6
+[ 229s][RUN] TX RELAY origin=1 seq=16 -> dest=255 ttl=7
+[ 230s][RUN] TX RELAY origin=7 seq=17 -> dest=255 ttl=8
+[ 230s][RUN] TX RELAY origin=10 seq=16 -> dest=255 ttl=8
+[ 232s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 232s][RUN] COUNTERS gen=17 acq_fail=0 noroute=0 own_tx=17 relay_tx=141 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=374 ttl=0 queue=0 tx_err=0
+[ 234s][RUN] TX RELAY origin=12 seq=17 -> dest=255 ttl=6
+[ 235s][RUN] TX RELAY origin=9 seq=17 -> dest=255 ttl=7
+[ 236s][RUN] TX RELAY origin=3 seq=16 -> dest=255 ttl=7
+[ 236s][RUN] TX RELAY origin=6 seq=15 -> dest=255 ttl=8
+[ 236s][RUN] TX RELAY origin=13 seq=16 -> dest=255 ttl=8
+[ 237s][RUN] TX RELAY origin=4 seq=17 -> dest=255 ttl=6
+[ 238s][RUN] GENERATE seq=17 accel=9.775 m/s2 (N=187, rate=93.5 Hz)
+[ 238s][RUN] TX DATA seq=17 -> dest=255
+[ 238s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 238s][RUN] COUNTERS gen=18 acq_fail=0 noroute=0 own_tx=18 relay_tx=147 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=388 ttl=0 queue=0 tx_err=0
+[ 239s][RUN] TX RELAY origin=1 seq=17 -> dest=255 ttl=7
+[ 241s][RUN] TX RELAY origin=10 seq=17 -> dest=255 ttl=8
+[ 242s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 242s][RUN] COUNTERS gen=18 acq_fail=0 noroute=0 own_tx=18 relay_tx=149 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=393 ttl=0 queue=0 tx_err=0
+[ 245s][RUN] TX RELAY origin=12 seq=18 -> dest=255 ttl=8
+[ 245s][RUN] TX RELAY origin=9 seq=18 -> dest=255 ttl=7
+[ 246s][RUN] TX RELAY origin=3 seq=17 -> dest=255 ttl=7
+[ 246s][RUN] TX RELAY origin=6 seq=16 -> dest=255 ttl=8
+[ 248s][RUN] TX RELAY origin=13 seq=17 -> dest=255 ttl=8
+[ 248s][RUN] GENERATE seq=18 accel=9.773 m/s2 (N=187, rate=93.5 Hz)
+[ 248s][RUN] TX DATA seq=18 -> dest=255
+[ 248s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 248s][RUN] COUNTERS gen=19 acq_fail=0 noroute=0 own_tx=19 relay_tx=154 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=403 ttl=0 queue=0 tx_err=0
+[ 250s][RUN] TX RELAY origin=1 seq=18 -> dest=255 ttl=7
+[ 251s][RUN] TX RELAY origin=7 seq=19 -> dest=255 ttl=7
+[ 252s][RUN] TX RELAY origin=10 seq=18 -> dest=255 ttl=7
+[ 253s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 253s][RUN] COUNTERS gen=19 acq_fail=0 noroute=0 own_tx=19 relay_tx=157 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=408 ttl=0 queue=0 tx_err=0
+[ 255s][RUN] TX RELAY origin=12 seq=19 -> dest=255 ttl=8
+[ 256s][RUN] TX RELAY origin=9 seq=19 -> dest=255 ttl=6
+[ 256s][RUN] TX RELAY origin=3 seq=18 -> dest=255 ttl=8
+[ 257s][RUN] TX RELAY origin=6 seq=17 -> dest=255 ttl=6
+[ 258s][RUN] TX RELAY origin=13 seq=18 -> dest=255 ttl=8
+[ 259s][RUN] TX RELAY origin=4 seq=19 -> dest=255 ttl=7
+[ 259s][RUN] TX RELAY origin=5 seq=19 -> dest=255 ttl=6
+[ 259s][RUN] GENERATE seq=19 accel=9.771 m/s2 (N=185, rate=92.4 Hz)
+[ 259s][RUN] TX DATA seq=19 -> dest=255
+[ 259s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 259s][RUN] COUNTERS gen=20 acq_fail=0 noroute=0 own_tx=20 relay_tx=164 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=422 ttl=0 queue=0 tx_err=0
+[ 260s][RUN] TX RELAY origin=1 seq=19 -> dest=255 ttl=7
+[ 261s][RUN] TX RELAY origin=7 seq=20 -> dest=255 ttl=7
+[ 264s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 264s][RUN] COUNTERS gen=20 acq_fail=0 noroute=0 own_tx=20 relay_tx=166 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=432 ttl=0 queue=0 tx_err=0
+[ 266s][RUN] TX RELAY origin=9 seq=20 -> dest=255 ttl=8
+[ 266s][RUN] TX RELAY origin=12 seq=20 -> dest=255 ttl=8
+[ 267s][RUN] TX RELAY origin=6 seq=18 -> dest=255 ttl=6
+[ 269s][RUN] TX RELAY origin=4 seq=20 -> dest=255 ttl=7
+[ 269s][RUN] TX RELAY origin=13 seq=19 -> dest=255 ttl=8
+[ 270s][RUN] TX RELAY origin=1 seq=20 -> dest=255 ttl=7
+[ 270s][RUN] TX RELAY origin=5 seq=20 -> dest=255 ttl=7
+[ 270s][RUN] GENERATE seq=20 accel=9.772 m/s2 (N=185, rate=92.5 Hz)
+[ 270s][RUN] TX DATA seq=20 -> dest=255
+[ 270s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 270s][RUN] COUNTERS gen=21 acq_fail=0 noroute=0 own_tx=21 relay_tx=173 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=447 ttl=0 queue=0 tx_err=0
+[ 271s][RUN] TX RELAY origin=7 seq=21 -> dest=255 ttl=7
+[ 273s][RUN] TX RELAY origin=10 seq=20 -> dest=255 ttl=8
+[ 275s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 275s][RUN] COUNTERS gen=21 acq_fail=0 noroute=0 own_tx=21 relay_tx=175 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=456 ttl=0 queue=0 tx_err=0
+[ 277s][RUN] TX RELAY origin=3 seq=20 -> dest=255 ttl=7
+[ 280s][RUN] GENERATE seq=21 accel=9.777 m/s2 (N=189, rate=94.5 Hz)
+[ 280s][RUN] TX DATA seq=21 -> dest=255
+[ 280s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 280s][RUN] COUNTERS gen=22 acq_fail=0 noroute=0 own_tx=22 relay_tx=176 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=458 ttl=0 queue=0 tx_err=0
+[ 280s][RUN] TX RELAY origin=5 seq=21 -> dest=255 ttl=7
+[ 281s][RUN] TX RELAY origin=1 seq=21 -> dest=255 ttl=7
+[ 282s][RUN] TX RELAY origin=7 seq=22 -> dest=255 ttl=8
+[ 284s][RUN] TX RELAY origin=10 seq=21 -> dest=255 ttl=8
+[ 285s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 285s][RUN] COUNTERS gen=22 acq_fail=0 noroute=0 own_tx=22 relay_tx=180 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=475 ttl=0 queue=0 tx_err=0
+[ 287s][RUN] TX RELAY origin=9 seq=22 -> dest=255 ttl=5
+[ 287s][RUN] TX RELAY origin=12 seq=22 -> dest=255 ttl=7
+[ 288s][RUN] TX RELAY origin=3 seq=21 -> dest=255 ttl=7
+[ 290s][RUN] TX RELAY origin=4 seq=22 -> dest=255 ttl=6
+[ 290s][RUN] TX RELAY origin=13 seq=21 -> dest=255 ttl=8
+[ 291s][RUN] TX RELAY origin=1 seq=22 -> dest=255 ttl=7
+[ 291s][RUN] GENERATE seq=22 accel=9.775 m/s2 (N=185, rate=92.5 Hz)
+[ 291s][RUN] TX DATA seq=22 -> dest=255
+[ 291s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 291s][RUN] COUNTERS gen=23 acq_fail=0 noroute=0 own_tx=23 relay_tx=186 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=486 ttl=0 queue=0 tx_err=0
+[ 291s][RUN] TX RELAY origin=5 seq=22 -> dest=255 ttl=4
+[ 295s][RUN] TX RELAY origin=7 seq=23 -> dest=255 ttl=6
+[ 295s][RUN] TX RELAY origin=10 seq=22 -> dest=255 ttl=8
+[ 296s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 296s][RUN] COUNTERS gen=23 acq_fail=0 noroute=0 own_tx=23 relay_tx=189 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=490 ttl=0 queue=0 tx_err=0
+[ 297s][RUN] TX RELAY origin=9 seq=23 -> dest=255 ttl=6
+[ 297s][RUN] TX RELAY origin=12 seq=23 -> dest=255 ttl=8
+[ 298s][RUN] TX RELAY origin=3 seq=22 -> dest=255 ttl=7
+[ 299s][RUN] TX RELAY origin=6 seq=21 -> dest=255 ttl=7
+[ 300s][RUN] TX RELAY origin=4 seq=23 -> dest=255 ttl=7
+[ 302s][RUN] TX RELAY origin=1 seq=23 -> dest=255 ttl=8
+[ 302s][RUN] GENERATE seq=23 accel=9.773 m/s2 (N=188, rate=94.0 Hz)
+[ 302s][RUN] TX DATA seq=23 -> dest=255
+[ 302s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 302s][RUN] COUNTERS gen=24 acq_fail=0 noroute=0 own_tx=24 relay_tx=195 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=506 ttl=0 queue=0 tx_err=0
+[ 302s][RUN] TX RELAY origin=13 seq=22 -> dest=255 ttl=6
+[ 302s][RUN] TX RELAY origin=5 seq=23 -> dest=255 ttl=5
+[ 304s][RUN] TX RELAY origin=7 seq=24 -> dest=255 ttl=7
+[ 305s][RUN] TX RELAY origin=10 seq=23 -> dest=255 ttl=7
+[ 307s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 307s][RUN] COUNTERS gen=24 acq_fail=0 noroute=0 own_tx=24 relay_tx=199 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=518 ttl=0 queue=0 tx_err=0
+[ 307s][RUN] TX RELAY origin=9 seq=24 -> dest=255 ttl=7
+[ 308s][RUN] TX RELAY origin=12 seq=24 -> dest=255 ttl=7
+[ 309s][RUN] TX RELAY origin=3 seq=23 -> dest=255 ttl=7
+[ 309s][RUN] TX RELAY origin=6 seq=22 -> dest=255 ttl=8
+[ 311s][RUN] TX RELAY origin=4 seq=24 -> dest=255 ttl=7
+[ 312s][RUN] TX RELAY origin=5 seq=24 -> dest=255 ttl=7
+[ 312s][RUN] GENERATE seq=24 accel=9.862 m/s2 (N=187, rate=93.5 Hz)
+[ 312s][RUN] TX DATA seq=24 -> dest=255
+[ 312s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 312s][RUN] COUNTERS gen=25 acq_fail=0 noroute=0 own_tx=25 relay_tx=205 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=537 ttl=0 queue=0 tx_err=0
+[ 313s][RUN] TX RELAY origin=1 seq=24 -> dest=255 ttl=6
+[ 313s][RUN] TX RELAY origin=13 seq=23 -> dest=255 ttl=8
+[ 315s][RUN] TX RELAY origin=7 seq=25 -> dest=255 ttl=8
+[ 316s][RUN] TX RELAY origin=10 seq=24 -> dest=255 ttl=7
+[ 317s][RUN] TX RELAY origin=9 seq=25 -> dest=255 ttl=7
+[ 317s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 317s][RUN] COUNTERS gen=25 acq_fail=0 noroute=0 own_tx=25 relay_tx=210 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=555 ttl=0 queue=0 tx_err=0
+[ 319s][RUN] TX RELAY origin=3 seq=24 -> dest=255 ttl=8
+[ 319s][RUN] TX RELAY origin=12 seq=25 -> dest=255 ttl=7
+[ 322s][RUN] GENERATE seq=25 accel=9.766 m/s2 (N=188, rate=94.0 Hz)
+[ 322s][RUN] TX DATA seq=25 -> dest=255
+[ 322s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 322s][RUN] COUNTERS gen=26 acq_fail=0 noroute=0 own_tx=26 relay_tx=212 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=561 ttl=0 queue=0 tx_err=0
+[ 323s][RUN] TX RELAY origin=1 seq=25 -> dest=255 ttl=8
+[ 323s][RUN] TX RELAY origin=13 seq=24 -> dest=255 ttl=7
+[ 325s][RUN] TX RELAY origin=7 seq=26 -> dest=255 ttl=8
+[ 326s][RUN] TX RELAY origin=10 seq=25 -> dest=255 ttl=7
+[ 327s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 327s][RUN] COUNTERS gen=26 acq_fail=0 noroute=0 own_tx=26 relay_tx=216 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=576 ttl=0 queue=0 tx_err=0
+[ 327s][RUN] TX RELAY origin=9 seq=26 -> dest=255 ttl=7
+[ 329s][RUN] TX RELAY origin=12 seq=26 -> dest=255 ttl=7
+[ 330s][RUN] TX RELAY origin=3 seq=25 -> dest=255 ttl=6
+[ 330s][RUN] TX RELAY origin=6 seq=24 -> dest=255 ttl=8
+[ 332s][RUN] TX RELAY origin=4 seq=26 -> dest=255 ttl=6
+[ 333s][RUN] TX RELAY origin=1 seq=26 -> dest=255 ttl=8
+[ 333s][RUN] GENERATE seq=26 accel=9.767 m/s2 (N=187, rate=93.5 Hz)
+[ 334s][RUN] TX DATA seq=26 -> dest=255
+[ 334s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 334s][RUN] COUNTERS gen=27 acq_fail=0 noroute=0 own_tx=27 relay_tx=222 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=592 ttl=0 queue=0 tx_err=0
+[ 335s][RUN] TX RELAY origin=13 seq=25 -> dest=255 ttl=7
+[ 336s][RUN] TX RELAY origin=7 seq=27 -> dest=255 ttl=7
+[ 336s][RUN] TX RELAY origin=10 seq=26 -> dest=255 ttl=8
+[ 338s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 338s][RUN] COUNTERS gen=27 acq_fail=0 noroute=0 own_tx=27 relay_tx=225 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=606 ttl=0 queue=0 tx_err=0
+[ 340s][RUN] TX RELAY origin=12 seq=27 -> dest=255 ttl=8
+[ 340s][RUN] TX RELAY origin=3 seq=26 -> dest=255 ttl=6
+[ 344s][RUN] GENERATE seq=27 accel=9.766 m/s2 (N=188, rate=94.0 Hz)
+[ 344s][RUN] TX DATA seq=27 -> dest=255
+[ 344s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 344s][RUN] COUNTERS gen=28 acq_fail=0 noroute=0 own_tx=28 relay_tx=227 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=609 ttl=0 queue=0 tx_err=0
+[ 344s][RUN] TX RELAY origin=1 seq=27 -> dest=255 ttl=7
+[ 345s][RUN] TX RELAY origin=13 seq=26 -> dest=255 ttl=8
+[ 346s][RUN] TX RELAY origin=7 seq=28 -> dest=255 ttl=7
+[ 347s][RUN] TX RELAY origin=10 seq=27 -> dest=255 ttl=7
+[ 348s][RUN] TX RELAY origin=9 seq=28 -> dest=255 ttl=7
+[ 349s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 349s][RUN] COUNTERS gen=28 acq_fail=0 noroute=0 own_tx=28 relay_tx=232 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=627 ttl=0 queue=0 tx_err=0
+[ 351s][RUN] TX RELAY origin=3 seq=27 -> dest=255 ttl=8
+[ 351s][RUN] TX RELAY origin=12 seq=28 -> dest=255 ttl=8
+[ 351s][RUN] TX RELAY origin=6 seq=26 -> dest=255 ttl=7
+[ 353s][RUN] TX RELAY origin=4 seq=28 -> dest=255 ttl=6
+[ 354s][RUN] GENERATE seq=28 accel=9.771 m/s2 (N=188, rate=94.0 Hz)
+[ 354s][RUN] TX DATA seq=28 -> dest=255
+[ 354s][RUN] RUN OVER: stopped generating, generated=29
+[ 354s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 354s][RUN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=236 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=634 ttl=0 queue=0 tx_err=0
+[ 355s][RUN] TX RELAY origin=1 seq=28 -> dest=255 ttl=4
+[ 356s][RUN] TX RELAY origin=13 seq=27 -> dest=255 ttl=7
+[ 356s][RUN] TX RELAY origin=7 seq=29 -> dest=255 ttl=8
+[ 357s][RUN] TX RELAY origin=10 seq=28 -> dest=255 ttl=8
+[ 359s][RUN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 359s][RUN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=240 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=652 ttl=0 queue=0 tx_err=0
+[ 359s][RUN] TX RELAY origin=9 seq=29 -> dest=255 ttl=7
+[ 360s][DRAIN] PHASE DRAIN
+[ 361s][DRAIN] TX RELAY origin=12 seq=29 -> dest=255 ttl=7
+[ 361s][DRAIN] TX RELAY origin=3 seq=28 -> dest=255 ttl=8
+[ 361s][DRAIN] TX RELAY origin=6 seq=27 -> dest=255 ttl=8
+[ 364s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 364s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 369s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 369s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 374s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 374s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 379s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 379s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 384s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 384s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 389s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 389s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 394s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 394s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 399s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 399s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 404s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 404s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 409s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 409s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 414s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 414s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 419s][DRAIN] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 419s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0
+[ 420s][DONE] PHASE DONE
+[ 420s][DONE] SUMMARY # iot-log format 1
+[ 420s][DONE] SUMMARY format=1
+[ 420s][DONE] SUMMARY device=node
+[ 420s][DONE] SUMMARY device_id=8
+[ 420s][DONE] SUMMARY sensor=MPU6050
+[ 420s][DONE] SUMMARY mode=flood
+[ 420s][DONE] SUMMARY run_id=2
+[ 420s][DONE] SUMMARY warmup_s=60
+[ 420s][DONE] SUMMARY run_s=300
+[ 420s][DONE] SUMMARY drain_s=60
+[ 420s][DONE] SUMMARY adv_interval_s=5
+[ 420s][DONE] SUMMARY data_interval_s=10
+[ 420s][DONE] SUMMARY tx_power_dbm=17.25
+[ 420s][DONE] SUMMARY generated=29
+[ 420s][DONE] SUMMARY acq_fail=0
+[ 420s][DONE] SUMMARY drop_noroute=0
+[ 420s][DONE] SUMMARY data_tx_own=29
+[ 420s][DONE] SUMMARY data_tx_relay=244
+[ 420s][DONE] SUMMARY adv_tx=0
+[ 420s][DONE] SUMMARY final_hop=
+[ 420s][DONE] SUMMARY final_parent=
+[ 420s][DONE] SUMMARY adv_rx=0
+[ 420s][DONE] SUMMARY drop_crc=0
+[ 420s][DONE] SUMMARY drop_dup=662
+[ 420s][DONE] SUMMARY drop_malformed=0
+[ 420s][DONE] SUMMARY drop_noroute_relay=0
+[ 420s][DONE] SUMMARY drop_queue=0
+[ 420s][DONE] SUMMARY drop_run=0
+[ 420s][DONE] SUMMARY drop_ttl=0
+[ 420s][DONE] SUMMARY rx_total=906
+[ 420s][DONE] SUMMARY tx_error=0
+[ 420s][DONE] SUMMARY written to node8_summary_flood_run2.txt
+[ 424s][DONE] TABLE me=8 parent=255 hop=255 nbrs=0
+[ 424s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=244 adv_tx=0 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=662 ttl=0 queue=0 tx_err=0

@@ -1,0 +1,33 @@
+# iot-log format 1
+# INTERRUPTED before the end of the drain - counters are partial
+format=1
+device=node
+device_id=8
+sensor=MPU6050
+mode=dv
+run_id=2
+warmup_s=60
+run_s=300
+drain_s=60
+adv_interval_s=5
+data_interval_s=10
+tx_power_dbm=17.0
+generated=22
+acq_fail=0
+drop_noroute=0
+data_tx_own=22
+data_tx_relay=4
+adv_tx=55
+final_hop=2
+final_parent=10
+adv_rx=174
+drop_crc=0
+drop_dup=0
+drop_malformed=0
+drop_noroute_relay=0
+drop_queue=0
+drop_run=4
+drop_ttl=0
+rx_total=273
+tx_error=0
+complete=0

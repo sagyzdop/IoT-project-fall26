@@ -1,0 +1,37 @@
+# node 8 mode=dv run_id=1 start_tx_counter=3357
+[   0s][WARMUP] node 8 mode=dv run=1 tx_power=17.0 dBm, warm-up 60 s, then 300 s of data, drain 60 s, tx_counter=3357, files: node8_events_dv_run1.csv node8_summary_dv_run1.txt
+[   0s][WARMUP] PHASE WARMUP
+[   2s][WARMUP] SUMMARY # iot-log format 1
+[   2s][WARMUP] SUMMARY # INTERRUPTED before the end of the drain - counters are partial
+[   2s][WARMUP] SUMMARY format=1
+[   2s][WARMUP] SUMMARY device=node
+[   2s][WARMUP] SUMMARY device_id=8
+[   2s][WARMUP] SUMMARY sensor=MPU6050
+[   2s][WARMUP] SUMMARY mode=dv
+[   2s][WARMUP] SUMMARY run_id=1
+[   2s][WARMUP] SUMMARY warmup_s=60
+[   2s][WARMUP] SUMMARY run_s=300
+[   2s][WARMUP] SUMMARY drain_s=60
+[   2s][WARMUP] SUMMARY adv_interval_s=5
+[   2s][WARMUP] SUMMARY data_interval_s=10
+[   2s][WARMUP] SUMMARY tx_power_dbm=17.0
+[   2s][WARMUP] SUMMARY generated=0
+[   2s][WARMUP] SUMMARY acq_fail=0
+[   2s][WARMUP] SUMMARY drop_noroute=0
+[   2s][WARMUP] SUMMARY data_tx_own=0
+[   2s][WARMUP] SUMMARY data_tx_relay=0
+[   2s][WARMUP] SUMMARY adv_tx=1
+[   2s][WARMUP] SUMMARY final_hop=255
+[   2s][WARMUP] SUMMARY final_parent=255
+[   2s][WARMUP] SUMMARY adv_rx=0
+[   2s][WARMUP] SUMMARY drop_crc=0
+[   2s][WARMUP] SUMMARY drop_dup=0
+[   2s][WARMUP] SUMMARY drop_malformed=0
+[   2s][WARMUP] SUMMARY drop_noroute_relay=0
+[   2s][WARMUP] SUMMARY drop_queue=0
+[   2s][WARMUP] SUMMARY drop_run=0
+[   2s][WARMUP] SUMMARY drop_ttl=0
+[   2s][WARMUP] SUMMARY rx_total=0
+[   2s][WARMUP] SUMMARY tx_error=0
+[   2s][WARMUP] SUMMARY complete=0
+[   2s][WARMUP] SUMMARY written to node8_summary_dv_run1.txt

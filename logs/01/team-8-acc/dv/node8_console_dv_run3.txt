@@ -1,0 +1,1026 @@
+# node 8 mode=dv run_id=3 start_tx_counter=3439
+[   0s][WARMUP] node 8 mode=dv run=3 tx_power=17.0 dBm, warm-up 60 s, then 300 s of data, drain 60 s, tx_counter=3439, files: node8_events_dv_run3.csv node8_summary_dv_run3.txt
+[   0s][WARMUP] PHASE WARMUP
+[   0s][WARMUP] NEIGHBOR NEW id=13 hop=255 parent=255 rssi=-78
+[   4s][WARMUP] NEIGHBOR NEW id=10 hop=255 parent=255 rssi=-77
+[   5s][WARMUP] TABLE me=8 parent=255 hop=255 nbrs=2
+[   5s][WARMUP]   id=10 hop=255 parent=255 rssi=-77 ema=-77.0 age=0.7s no_route
+[   5s][WARMUP]   id=13 hop=255 parent=255 rssi=-78 ema=-78.0 age=4.6s no_route
+[   5s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=1 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[   7s][WARMUP] NEIGHBOR NEW id=12 hop=255 parent=255 rssi=-83
+[   8s][WARMUP] NEIGHBOR NEW id=1 hop=255 parent=255 rssi=-86
+[   9s][WARMUP] ROUTE parent 255->10 hop 255->3 rss=-76.4 reason=first_route (adv from 10)
+[  10s][WARMUP] TABLE me=8 parent=10 hop=3 nbrs=4
+[  10s][WARMUP]   id=1 hop=255 parent=255 rssi=-86 ema=-86.0 age=1.7s no_route
+[  10s][WARMUP]   id=10 hop=2 parent=7 rssi=-75 ema=-76.4 age=0.8s PARENT
+[  10s][WARMUP]   id=12 hop=255 parent=255 rssi=-83 ema=-83.0 age=2.6s no_route
+[  10s][WARMUP]   id=13 hop=255 parent=255 rssi=-79 ema=-78.3 age=4.9s no_route
+[  10s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=2 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  15s][WARMUP] TABLE me=8 parent=10 hop=3 nbrs=4
+[  15s][WARMUP]   id=1 hop=3 parent=10 rssi=-84 ema=-85.4 age=1.2s backup
+[  15s][WARMUP]   id=10 hop=2 parent=7 rssi=-74 ema=-75.7 age=0.7s PARENT
+[  15s][WARMUP]   id=12 hop=255 parent=255 rssi=-83 ema=-83.0 age=7.6s no_route
+[  15s][WARMUP]   id=13 hop=255 parent=255 rssi=-79 ema=-78.3 age=9.9s no_route
+[  15s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=3 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  20s][WARMUP] TABLE me=8 parent=10 hop=3 nbrs=4
+[  20s][WARMUP]   id=1 hop=3 parent=10 rssi=-84 ema=-85.0 age=0.9s backup
+[  20s][WARMUP]   id=10 hop=2 parent=7 rssi=-76 ema=-75.8 age=0.4s PARENT
+[  20s][WARMUP]   id=12 hop=255 parent=255 rssi=-83 ema=-83.0 age=12.6s no_route
+[  20s][WARMUP]   id=13 hop=3 parent=10 rssi=-79 ema=-78.5 age=4.7s backup
+[  20s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=4 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  20s][WARMUP] NEIGHBOR NEW id=3 hop=4 parent=13 rssi=-85
+[  23s][WARMUP] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[  25s][WARMUP] ROUTE parent 10->10 hop 3->4 rss=-76.1 reason=hop_update (adv from 10)
+[  25s][WARMUP] TABLE me=8 parent=10 hop=4 nbrs=4
+[  25s][WARMUP]   id=1 hop=3 parent=10 rssi=-84 ema=-85.0 age=5.9s backup
+[  25s][WARMUP]   id=3 hop=4 parent=13 rssi=-85 ema=-85.0 age=4.4s backup
+[  25s][WARMUP]   id=10 hop=3 parent=9 rssi=-77 ema=-76.1 age=0.0s PARENT
+[  25s][WARMUP]   id=13 hop=3 parent=10 rssi=-80 ema=-79.0 age=4.3s backup
+[  25s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=5 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  25s][WARMUP] NEIGHBOR NEW id=9 hop=2 parent=7 rssi=-85
+[  25s][WARMUP] ROUTE parent 10->9 hop 4->3 rss=-85.0 reason=shorter_route (adv from 9)
+[  30s][WARMUP] TABLE me=8 parent=9 hop=3 nbrs=5
+[  30s][WARMUP]   id=1 hop=3 parent=10 rssi=-84 ema=-85.0 age=10.9s backup
+[  30s][WARMUP]   id=3 hop=4 parent=13 rssi=-85 ema=-85.0 age=9.4s backup
+[  30s][WARMUP]   id=9 hop=2 parent=7 rssi=-85 ema=-85.0 age=4.5s PARENT
+[  30s][WARMUP]   id=10 hop=3 parent=9 rssi=-77 ema=-76.1 age=5.0s backup
+[  30s][WARMUP]   id=13 hop=3 parent=9 rssi=-79 ema=-79.0 age=4.3s backup
+[  30s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=6 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  33s][WARMUP] NEIGHBOR NEW id=6 hop=3 parent=7 rssi=-89
+[  33s][WARMUP] NEIGHBOR NEW id=12 hop=2 parent=7 rssi=-81
+[  34s][WARMUP] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[  35s][WARMUP] TABLE me=8 parent=9 hop=3 nbrs=6
+[  35s][WARMUP]   id=3 hop=4 parent=13 rssi=-85 ema=-85.0 age=14.4s backup
+[  35s][WARMUP]   id=6 hop=3 parent=7 rssi=-89 ema=-89.0 age=1.5s backup
+[  35s][WARMUP]   id=9 hop=2 parent=4 rssi=-86 ema=-85.3 age=4.4s PARENT
+[  35s][WARMUP]   id=10 hop=3 parent=9 rssi=-78 ema=-76.7 age=4.8s backup
+[  35s][WARMUP]   id=12 hop=2 parent=7 rssi=-81 ema=-81.0 age=1.5s backup
+[  35s][WARMUP]   id=13 hop=3 parent=9 rssi=-79 ema=-79.0 age=9.3s backup
+[  35s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=7 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  36s][WARMUP] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[  40s][WARMUP] TABLE me=8 parent=9 hop=3 nbrs=5
+[  40s][WARMUP]   id=6 hop=3 parent=7 rssi=-89 ema=-89.0 age=6.5s backup
+[  40s][WARMUP]   id=9 hop=2 parent=4 rssi=-86 ema=-85.3 age=9.4s PARENT
+[  40s][WARMUP]   id=10 hop=3 parent=7 rssi=-77 ema=-76.8 age=4.8s backup
+[  40s][WARMUP]   id=12 hop=2 parent=7 rssi=-85 ema=-82.2 age=1.2s backup
+[  40s][WARMUP]   id=13 hop=3 parent=9 rssi=-80 ema=-79.3 age=3.8s backup
+[  40s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=8 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  44s][WARMUP] NEIGHBOR NEW id=1 hop=4 parent=10 rssi=-83
+[  45s][WARMUP] TABLE me=8 parent=9 hop=3 nbrs=6
+[  45s][WARMUP]   id=1 hop=4 parent=10 rssi=-83 ema=-83.0 age=0.5s backup
+[  45s][WARMUP]   id=6 hop=3 parent=7 rssi=-86 ema=-88.1 age=0.6s backup
+[  45s][WARMUP]   id=9 hop=2 parent=4 rssi=-86 ema=-85.3 age=14.4s PARENT
+[  45s][WARMUP]   id=10 hop=3 parent=7 rssi=-75 ema=-76.3 age=4.5s backup
+[  45s][WARMUP]   id=12 hop=4 parent=13 rssi=-83 ema=-82.4 age=1.0s backup
+[  45s][WARMUP]   id=13 hop=3 parent=12 rssi=-79 ema=-79.2 age=3.2s backup
+[  45s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=9 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  46s][WARMUP] ROUTE parent 9->10 hop 3->4 rss=-76.2 reason=parent_ineligible (adv from 10)
+[  46s][WARMUP] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[  46s][WARMUP] NEIGHBOR NEW id=3 hop=4 parent=8 rssi=-88
+[  50s][WARMUP] TABLE me=8 parent=10 hop=4 nbrs=6
+[  50s][WARMUP]   id=1 hop=4 parent=10 rssi=-83 ema=-83.0 age=5.5s backup
+[  50s][WARMUP]   id=3 hop=4 parent=8 rssi=-88 ema=-88.0 age=3.4s child
+[  50s][WARMUP]   id=6 hop=3 parent=7 rssi=-86 ema=-88.1 age=5.6s backup
+[  50s][WARMUP] NEIGHBOR NEW id=7 hop=1 parent=0 rssi=-84
+[  50s][WARMUP]   id=10 hop=3 parent=7 rssi=-76 ema=-76.2 age=4.0s PARENT
+[  50s][WARMUP] ROUTE parent 10->7 hop 4->2 rss=-84.0 reason=shorter_route (adv from 7)
+[  50s][WARMUP]   id=12 hop=4 parent=13 rssi=-83 ema=-82.6 age=0.6s backup
+[  50s][WARMUP]   id=13 hop=4 parent=10 rssi=-80 ema=-79.4 age=3.2s backup
+[  50s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=10 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  51s][WARMUP] NEIGHBOR NEW id=9 hop=2 parent=5 rssi=-87
+[  55s][WARMUP] TABLE me=8 parent=7 hop=2 nbrs=8
+[  55s][WARMUP]   id=1 hop=4 parent=10 rssi=-83 ema=-83.0 age=10.5s backup
+[  55s][WARMUP]   id=3 hop=4 parent=8 rssi=-88 ema=-88.0 age=8.4s child
+[  55s][WARMUP]   id=6 hop=3 parent=7 rssi=-86 ema=-88.1 age=10.6s backup
+[  55s][WARMUP]   id=7 hop=1 parent=0 rssi=-84 ema=-84.0 age=5.0s PARENT
+[  55s][WARMUP]   id=9 hop=2 parent=5 rssi=-87 ema=-87.0 age=3.5s backup
+[  55s][WARMUP]   id=10 hop=3 parent=7 rssi=-76 ema=-76.2 age=9.0s backup
+[  55s][WARMUP]   id=12 hop=3 parent=8 rssi=-84 ema=-83.0 age=0.2s child
+[  55s][WARMUP]   id=13 hop=3 parent=10 rssi=-80 ema=-79.6 age=2.8s backup
+[  55s][WARMUP] COUNTERS gen=0 acq_fail=0 noroute=0 own_tx=0 relay_tx=0 adv_tx=11 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  59s][WARMUP] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[  60s][RUN] PHASE RUN
+[  60s][RUN] GENERATE seq=0 accel=10.552 m/s2 (N=180, rate=90.0 Hz)
+[  60s][RUN] TX DATA seq=0 -> dest=7
+[  60s][RUN] TABLE me=8 parent=7 hop=2 nbrs=7
+[  60s][RUN]   id=1 hop=4 parent=10 rssi=-83 ema=-83.0 age=15.5s ineligible
+[  60s][RUN]   id=3 hop=4 parent=8 rssi=-88 ema=-88.0 age=13.4s child
+[  60s][RUN]   id=7 hop=1 parent=0 rssi=-84 ema=-84.0 age=10.0s PARENT
+[  60s][RUN]   id=9 hop=2 parent=5 rssi=-87 ema=-87.0 age=8.5s backup
+[  60s][RUN]   id=10 hop=2 parent=7 rssi=-75 ema=-75.8 age=3.4s backup
+[  60s][RUN]   id=12 hop=3 parent=8 rssi=-84 ema=-83.0 age=5.2s child
+[  60s][RUN]   id=13 hop=3 parent=10 rssi=-80 ema=-79.6 age=7.8s backup
+[  60s][RUN] COUNTERS gen=1 acq_fail=0 noroute=0 own_tx=1 relay_tx=0 adv_tx=12 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  60s][RUN] NEIGHBOR NEW id=6 hop=1 parent=0 rssi=-87
+[  60s][RUN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[  62s][RUN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[  65s][RUN] TABLE me=8 parent=7 hop=2 nbrs=6
+[  65s][RUN]   id=6 hop=1 parent=0 rssi=-87 ema=-87.0 age=4.8s backup
+[  65s][RUN]   id=7 hop=1 parent=0 rssi=-84 ema=-84.0 age=15.0s PARENT
+[  65s][RUN]   id=9 hop=2 parent=5 rssi=-87 ema=-87.0 age=13.5s backup
+[  65s][RUN]   id=10 hop=1 parent=0 rssi=-76 ema=-75.9 age=3.0s backup
+[  65s][RUN]   id=12 hop=3 parent=8 rssi=-82 ema=-82.7 age=4.8s child
+[  65s][RUN]   id=13 hop=3 parent=10 rssi=-83 ema=-80.6 age=2.2s backup
+[  65s][RUN] COUNTERS gen=1 acq_fail=0 noroute=0 own_tx=1 relay_tx=0 adv_tx=13 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  65s][RUN] NEIGHBOR NEW id=1 hop=2 parent=10 rssi=-83
+[  65s][RUN] ROUTE parent 7->10 hop 2->2 rss=-75.9 reason=parent_ineligible (adv from 1)
+[  65s][RUN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[  66s][RUN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[  70s][RUN] GENERATE seq=1 accel=10.551 m/s2 (N=183, rate=91.5 Hz)
+[  70s][RUN] TX DATA seq=1 -> dest=10
+[  70s][RUN] TABLE me=8 parent=10 hop=2 nbrs=5
+[  70s][RUN]   id=1 hop=2 parent=10 rssi=-83 ema=-83.0 age=4.8s backup
+[  70s][RUN]   id=6 hop=1 parent=0 rssi=-87 ema=-87.0 age=9.8s backup
+[  70s][RUN]   id=10 hop=1 parent=0 rssi=-75 ema=-75.6 age=2.7s PARENT
+[  70s][RUN]   id=12 hop=3 parent=8 rssi=-82 ema=-82.7 age=9.8s child
+[  70s][RUN]   id=13 hop=2 parent=6 rssi=-79 ema=-80.1 age=2.0s backup
+[  70s][RUN] COUNTERS gen=2 acq_fail=0 noroute=0 own_tx=2 relay_tx=0 adv_tx=14 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  75s][RUN] TABLE me=8 parent=10 hop=2 nbrs=5
+[  75s][RUN]   id=1 hop=2 parent=10 rssi=-82 ema=-82.7 age=4.6s backup
+[  75s][RUN]   id=6 hop=1 parent=0 rssi=-87 ema=-87.0 age=14.8s backup
+[  75s][RUN]   id=10 hop=1 parent=0 rssi=-75 ema=-75.4 age=2.4s PARENT
+[  75s][RUN]   id=12 hop=3 parent=8 rssi=-82 ema=-82.7 age=14.8s child
+[  75s][RUN]   id=13 hop=2 parent=6 rssi=-79 ema=-80.1 age=7.0s backup
+[  75s][RUN] COUNTERS gen=2 acq_fail=0 noroute=0 own_tx=2 relay_tx=0 adv_tx=15 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  76s][RUN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[  76s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[  76s][RUN] NEIGHBOR NEW id=12 hop=2 parent=10 rssi=-84
+[  78s][RUN] ROUTE parent 10->13 hop 2->3 rss=-80.1 reason=shorter_route (adv from 10)
+[  81s][RUN] GENERATE seq=2 accel=10.553 m/s2 (N=181, rate=90.5 Hz)
+[  81s][RUN] TX DATA seq=2 -> dest=13
+[  81s][RUN] TABLE me=8 parent=13 hop=3 nbrs=4
+[  81s][RUN]   id=1 hop=2 parent=10 rssi=-84 ema=-83.1 age=5.0s backup
+[  81s][RUN]   id=10 hop=3 parent=13 rssi=-78 ema=-76.2 age=2.6s backup
+[  81s][RUN]   id=12 hop=2 parent=10 rssi=-84 ema=-84.0 age=4.6s backup
+[  81s][RUN]   id=13 hop=2 parent=6 rssi=-80 ema=-80.1 age=2.1s PARENT
+[  81s][RUN] COUNTERS gen=3 acq_fail=0 noroute=0 own_tx=3 relay_tx=0 adv_tx=16 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  81s][RUN] NEIGHBOR NEW id=6 hop=2 parent=10 rssi=-86
+[  83s][RUN] NEIGHBOR NEW id=9 hop=2 parent=10 rssi=-89
+[  83s][RUN] NEIGHBOR NEW id=3 hop=3 parent=12 rssi=-88
+[  84s][RUN] ROUTE parent 13->12 hop 3->3 rss=-84.3 reason=shorter_route (adv from 13)
+[  86s][RUN] TABLE me=8 parent=12 hop=3 nbrs=7
+[  86s][RUN]   id=1 hop=3 parent=12 rssi=-85 ema=-83.7 age=4.7s backup
+[  86s][RUN]   id=3 hop=3 parent=12 rssi=-88 ema=-88.0 age=2.6s backup
+[  86s][RUN]   id=6 hop=2 parent=10 rssi=-86 ema=-86.0 age=4.3s backup
+[  86s][RUN]   id=9 hop=2 parent=10 rssi=-89 ema=-89.0 age=2.6s backup
+[  86s][RUN]   id=10 hop=3 parent=13 rssi=-80 ema=-77.3 age=2.2s backup
+[  86s][RUN]   id=12 hop=2 parent=10 rssi=-85 ema=-84.3 age=4.1s PARENT
+[  86s][RUN]   id=13 hop=3 parent=7 rssi=-81 ema=-80.4 age=1.8s backup
+[  86s][RUN] COUNTERS gen=3 acq_fail=0 noroute=0 own_tx=3 relay_tx=0 adv_tx=17 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  91s][RUN] GENERATE seq=3 accel=10.546 m/s2 (N=183, rate=91.5 Hz)
+[  91s][RUN] TX DATA seq=3 -> dest=12
+[  91s][RUN] TABLE me=8 parent=12 hop=3 nbrs=7
+[  91s][RUN]   id=1 hop=3 parent=12 rssi=-84 ema=-83.8 age=4.5s backup
+[  91s][RUN]   id=3 hop=3 parent=12 rssi=-88 ema=-88.0 age=7.9s backup
+[  91s][RUN]   id=6 hop=2 parent=10 rssi=-86 ema=-86.0 age=9.5s backup
+[  91s][RUN]   id=9 hop=2 parent=7 rssi=-87 ema=-88.4 age=2.4s backup
+[  91s][RUN]   id=10 hop=3 parent=9 rssi=-80 ema=-78.1 age=2.3s backup
+[  91s][RUN]   id=12 hop=2 parent=10 rssi=-85 ema=-84.3 age=9.4s PARENT
+[  91s][RUN]   id=13 hop=3 parent=9 rssi=-79 ema=-80.0 age=1.6s backup
+[  91s][RUN] COUNTERS gen=4 acq_fail=0 noroute=0 own_tx=4 relay_tx=0 adv_tx=18 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  96s][RUN] TABLE me=8 parent=12 hop=3 nbrs=7
+[  96s][RUN]   id=1 hop=3 parent=12 rssi=-84 ema=-83.8 age=9.5s backup
+[  96s][RUN]   id=3 hop=3 parent=12 rssi=-88 ema=-88.0 age=12.9s backup
+[  96s][RUN]   id=6 hop=2 parent=10 rssi=-86 ema=-86.0 age=14.5s backup
+[  96s][RUN]   id=9 hop=2 parent=7 rssi=-87 ema=-88.4 age=7.4s backup
+[  96s][RUN]   id=10 hop=3 parent=9 rssi=-78 ema=-78.1 age=2.0s backup
+[  96s][RUN]   id=12 hop=2 parent=10 rssi=-85 ema=-84.3 age=14.4s PARENT
+[  96s][RUN]   id=13 hop=3 parent=9 rssi=-79 ema=-79.7 age=1.1s backup
+[  96s][RUN] COUNTERS gen=4 acq_fail=0 noroute=0 own_tx=4 relay_tx=0 adv_tx=19 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[  97s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[  97s][RUN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[  97s][RUN] ROUTE parent 12->9 hop 3->3 rss=-88.4 reason=parent_ineligible (expired [12, 6])
+[  98s][RUN] NEIGHBOR NEW id=6 hop=2 parent=4 rssi=-82
+[  98s][RUN] NEIGHBOR NEW id=12 hop=3 parent=6 rssi=-86
+[  99s][RUN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 101s][RUN] NEIGHBOR NEW id=4 hop=1 parent=0 rssi=-95
+[ 102s][RUN] GENERATE seq=4 accel=10.550 m/s2 (N=185, rate=92.5 Hz)
+[ 102s][RUN] TX DATA seq=4 -> dest=9
+[ 102s][RUN] TABLE me=8 parent=9 hop=3 nbrs=7
+[ 102s][RUN]   id=1 hop=3 parent=12 rssi=-84 ema=-83.8 age=15.3s ineligible
+[ 102s][RUN]   id=4 hop=1 parent=0 rssi=-95 ema=-95.0 age=0.1s weak_rss
+[ 102s][RUN]   id=6 hop=2 parent=4 rssi=-82 ema=-82.0 age=3.7s backup
+[ 102s][RUN]   id=9 hop=2 parent=7 rssi=-84 ema=-87.1 age=2.3s PARENT
+[ 102s][RUN]   id=10 hop=3 parent=9 rssi=-78 ema=-78.1 age=2.7s backup
+[ 102s][RUN]   id=12 hop=3 parent=6 rssi=-86 ema=-86.0 age=3.7s backup
+[ 102s][RUN]   id=13 hop=3 parent=6 rssi=-82 ema=-80.4 age=1.7s backup
+[ 102s][RUN] COUNTERS gen=5 acq_fail=0 noroute=0 own_tx=5 relay_tx=0 adv_tx=20 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 102s][RUN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 107s][RUN] TABLE me=8 parent=9 hop=3 nbrs=6
+[ 107s][RUN]   id=4 hop=1 parent=0 rssi=-95 ema=-95.0 age=5.1s weak_rss
+[ 107s][RUN]   id=6 hop=2 parent=4 rssi=-82 ema=-82.0 age=8.7s backup
+[ 107s][RUN]   id=9 hop=2 parent=7 rssi=-84 ema=-87.1 age=7.3s PARENT
+[ 107s][RUN]   id=10 hop=3 parent=7 rssi=-80 ema=-78.6 age=2.3s backup
+[ 107s][RUN]   id=12 hop=3 parent=6 rssi=-85 ema=-85.7 age=3.9s backup
+[ 107s][RUN]   id=13 hop=3 parent=7 rssi=-81 ema=-80.6 age=1.4s backup
+[ 107s][RUN] COUNTERS gen=5 acq_fail=0 noroute=0 own_tx=5 relay_tx=0 adv_tx=21 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 107s][RUN] NEIGHBOR NEW id=1 hop=3 parent=6 rssi=-78
+[ 112s][RUN] GENERATE seq=5 accel=10.551 m/s2 (N=184, rate=92.0 Hz)
+[ 112s][RUN] TX DATA seq=5 -> dest=9
+[ 112s][RUN] TABLE me=8 parent=9 hop=3 nbrs=7
+[ 112s][RUN]   id=1 hop=3 parent=6 rssi=-78 ema=-78.0 age=4.7s backup
+[ 112s][RUN]   id=4 hop=1 parent=0 rssi=-95 ema=-95.0 age=10.3s weak_rss
+[ 112s][RUN]   id=6 hop=2 parent=4 rssi=-87 ema=-83.5 age=4.1s backup
+[ 112s][RUN]   id=9 hop=2 parent=4 rssi=-86 ema=-86.8 age=1.8s PARENT
+[ 112s][RUN]   id=10 hop=2 parent=7 rssi=-79 ema=-78.8 age=2.2s backup
+[ 112s][RUN]   id=12 hop=3 parent=6 rssi=-86 ema=-85.8 age=3.7s backup
+[ 112s][RUN]   id=13 hop=2 parent=7 rssi=-81 ema=-80.7 age=1.3s backup
+[ 112s][RUN] COUNTERS gen=6 acq_fail=0 noroute=0 own_tx=6 relay_tx=0 adv_tx=22 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 117s][RUN] TABLE me=8 parent=9 hop=3 nbrs=7
+[ 117s][RUN]   id=1 hop=3 parent=6 rssi=-78 ema=-78.0 age=9.7s backup
+[ 117s][RUN]   id=4 hop=1 parent=0 rssi=-95 ema=-95.0 age=15.3s weak_rss
+[ 117s][RUN]   id=6 hop=2 parent=4 rssi=-87 ema=-84.6 age=3.7s backup
+[ 117s][RUN]   id=9 hop=2 parent=4 rssi=-89 ema=-87.4 age=1.5s PARENT
+[ 117s][RUN]   id=10 hop=2 parent=7 rssi=-77 ema=-78.2 age=1.8s backup
+[ 117s][RUN]   id=12 hop=3 parent=6 rssi=-85 ema=-85.6 age=3.2s backup
+[ 117s][RUN]   id=13 hop=2 parent=7 rssi=-79 ema=-80.2 age=1.2s backup
+[ 117s][RUN] COUNTERS gen=6 acq_fail=0 noroute=0 own_tx=6 relay_tx=0 adv_tx=23 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 117s][RUN] NEIGHBOR EXPIRED id=4 (no advert for 15 s)
+[ 119s][RUN] NEIGHBOR NEW id=7 hop=1 parent=0 rssi=-85
+[ 119s][RUN] ROUTE parent 9->7 hop 3->2 rss=-85.0 reason=shorter_route (adv from 7)
+[ 122s][RUN] GENERATE seq=6 accel=10.555 m/s2 (N=182, rate=91.0 Hz)
+[ 122s][RUN] TX DATA seq=6 -> dest=7
+[ 122s][RUN] TABLE me=8 parent=7 hop=2 nbrs=7
+[ 122s][RUN]   id=1 hop=2 parent=7 rssi=-85 ema=-80.1 age=4.7s backup
+[ 122s][RUN]   id=6 hop=2 parent=4 rssi=-87 ema=-84.6 age=9.3s backup
+[ 122s][RUN]   id=7 hop=1 parent=0 rssi=-85 ema=-85.0 age=3.5s PARENT
+[ 122s][RUN]   id=9 hop=2 parent=4 rssi=-83 ema=-86.1 age=1.7s backup
+[ 122s][RUN]   id=10 hop=2 parent=7 rssi=-78 ema=-78.2 age=2.1s backup
+[ 122s][RUN]   id=12 hop=3 parent=6 rssi=-85 ema=-85.6 age=8.8s backup
+[ 122s][RUN]   id=13 hop=2 parent=7 rssi=-81 ema=-80.4 age=1.7s backup
+[ 122s][RUN] COUNTERS gen=7 acq_fail=0 noroute=0 own_tx=7 relay_tx=0 adv_tx=24 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 124s][RUN] ROUTE parent 7->7 hop 2->3 rss=-85.9 reason=hop_update (adv from 7)
+[ 127s][RUN] TABLE me=8 parent=7 hop=3 nbrs=7
+[ 127s][RUN]   id=1 hop=2 parent=7 rssi=-85 ema=-80.1 age=9.7s backup
+[ 127s][RUN]   id=6 hop=2 parent=7 rssi=-86 ema=-85.0 age=3.7s backup
+[ 127s][RUN]   id=7 hop=2 parent=4 rssi=-88 ema=-85.9 age=3.2s PARENT
+[ 127s][RUN]   id=9 hop=2 parent=4 rssi=-83 ema=-86.1 age=6.7s backup
+[ 127s][RUN]   id=10 hop=2 parent=7 rssi=-76 ema=-77.5 age=1.7s backup
+[ 127s][RUN]   id=12 hop=3 parent=6 rssi=-85 ema=-85.6 age=13.8s backup
+[ 127s][RUN]   id=13 hop=2 parent=7 rssi=-81 ema=-80.6 age=1.1s backup
+[ 127s][RUN] COUNTERS gen=7 acq_fail=0 noroute=0 own_tx=7 relay_tx=0 adv_tx=25 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 133s][RUN] GENERATE seq=7 accel=10.555 m/s2 (N=182, rate=91.0 Hz)
+[ 133s][RUN] TX DATA seq=7 -> dest=7
+[ 133s][RUN] TABLE me=8 parent=7 hop=3 nbrs=7
+[ 133s][RUN]   id=1 hop=2 parent=7 rssi=-78 ema=-79.5 age=5.1s backup
+[ 133s][RUN]   id=6 hop=2 parent=7 rssi=-86 ema=-85.0 age=9.5s backup
+[ 133s][RUN]   id=7 hop=2 parent=4 rssi=-88 ema=-85.9 age=9.1s PARENT
+[ 133s][RUN]   id=9 hop=2 parent=4 rssi=-83 ema=-86.1 age=12.5s backup
+[ 133s][RUN]   id=10 hop=2 parent=7 rssi=-76 ema=-77.5 age=7.6s backup
+[ 133s][RUN]   id=12 hop=3 parent=13 rssi=-84 ema=-85.1 age=3.9s backup
+[ 133s][RUN]   id=13 hop=2 parent=7 rssi=-81 ema=-80.6 age=6.9s backup
+[ 133s][RUN] COUNTERS gen=8 acq_fail=0 noroute=0 own_tx=8 relay_tx=0 adv_tx=26 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 136s][RUN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[ 138s][RUN] TABLE me=8 parent=7 hop=3 nbrs=6
+[ 138s][RUN]   id=1 hop=3 parent=10 rssi=-83 ema=-80.5 age=0.1s backup
+[ 138s][RUN]   id=6 hop=2 parent=5 rssi=-85 ema=-85.0 age=3.5s backup
+[ 138s][RUN]   id=7 hop=2 parent=4 rssi=-88 ema=-85.9 age=14.1s PARENT
+[ 138s][RUN]   id=10 hop=3 parent=7 rssi=-78 ema=-77.7 age=2.1s backup
+[ 138s][RUN]   id=12 hop=3 parent=13 rssi=-84 ema=-84.8 age=3.7s backup
+[ 138s][RUN]   id=13 hop=3 parent=1 rssi=-78 ema=-79.8 age=1.0s backup
+[ 138s][RUN] COUNTERS gen=8 acq_fail=0 noroute=0 own_tx=8 relay_tx=0 adv_tx=27 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 139s][RUN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 139s][RUN] ROUTE parent 7->6 hop 3->3 rss=-85.0 reason=parent_ineligible (expired [7])
+[ 143s][RUN] GENERATE seq=8 accel=10.554 m/s2 (N=184, rate=92.0 Hz)
+[ 143s][RUN] TX DATA seq=8 -> dest=6
+[ 143s][RUN] TABLE me=8 parent=6 hop=3 nbrs=5
+[ 143s][RUN]   id=1 hop=3 parent=10 rssi=-83 ema=-80.5 age=5.2s backup
+[ 143s][RUN]   id=6 hop=2 parent=5 rssi=-86 ema=-85.3 age=3.4s PARENT
+[ 143s][RUN]   id=10 hop=3 parent=7 rssi=-79 ema=-78.1 age=1.8s backup
+[ 143s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-84.5 age=3.7s backup
+[ 143s][RUN]   id=13 hop=3 parent=1 rssi=-80 ema=-79.9 age=0.8s backup
+[ 143s][RUN] COUNTERS gen=9 acq_fail=0 noroute=0 own_tx=9 relay_tx=0 adv_tx=28 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 148s][RUN] TABLE me=8 parent=6 hop=3 nbrs=5
+[ 148s][RUN]   id=1 hop=3 parent=6 rssi=-82 ema=-81.0 age=4.8s backup
+[ 148s][RUN]   id=6 hop=2 parent=5 rssi=-86 ema=-85.3 age=8.4s PARENT
+[ 148s][RUN]   id=10 hop=4 parent=7 rssi=-78 ema=-78.0 age=1.3s backup
+[ 148s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-84.5 age=8.7s backup
+[ 148s][RUN]   id=13 hop=3 parent=1 rssi=-80 ema=-79.9 age=5.8s backup
+[ 148s][RUN] COUNTERS gen=9 acq_fail=0 noroute=0 own_tx=9 relay_tx=0 adv_tx=29 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 153s][RUN] GENERATE seq=9 accel=10.549 m/s2 (N=182, rate=91.0 Hz)
+[ 153s][RUN] TX DATA seq=9 -> dest=6
+[ 153s][RUN] TABLE me=8 parent=6 hop=3 nbrs=5
+[ 153s][RUN]   id=1 hop=4 parent=8 rssi=-82 ema=-81.3 age=4.8s child
+[ 153s][RUN]   id=6 hop=2 parent=5 rssi=-86 ema=-85.3 age=13.5s PARENT
+[ 153s][RUN]   id=10 hop=4 parent=7 rssi=-77 ema=-77.7 age=1.0s backup
+[ 153s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-84.5 age=13.8s backup
+[ 153s][RUN]   id=13 hop=3 parent=1 rssi=-80 ema=-79.9 age=10.9s backup
+[ 153s][RUN] COUNTERS gen=10 acq_fail=0 noroute=0 own_tx=10 relay_tx=0 adv_tx=30 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 155s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 155s][RUN] NEIGHBOR NEW id=12 hop=4 parent=8 rssi=-85
+[ 155s][RUN] ROUTE parent 6->13 hop 3->4 rss=-79.9 reason=parent_ineligible (adv from 12)
+[ 155s][RUN] ROUTE parent 13->6 hop 4->3 rss=-85.2 reason=shorter_route (adv from 6)
+[ 158s][RUN] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 158s][RUN] TABLE me=8 parent=6 hop=3 nbrs=4
+[ 158s][RUN]   id=1 hop=4 parent=8 rssi=-82 ema=-81.3 age=9.8s child
+[ 158s][RUN]   id=6 hop=2 parent=7 rssi=-85 ema=-85.2 age=2.9s PARENT
+[ 158s][RUN]   id=10 hop=4 parent=7 rssi=-77 ema=-77.7 age=6.0s backup
+[ 158s][RUN]   id=12 hop=4 parent=8 rssi=-85 ema=-85.0 age=3.0s child
+[ 158s][RUN] COUNTERS gen=10 acq_fail=0 noroute=0 own_tx=10 relay_tx=0 adv_tx=30 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 159s][RUN] NEIGHBOR NEW id=13 hop=3 parent=6 rssi=-81
+[ 161s][RUN] NEIGHBOR NEW id=3 hop=3 parent=6 rssi=-93
+[ 164s][RUN] GENERATE seq=10 accel=10.547 m/s2 (N=184, rate=92.0 Hz)
+[ 164s][RUN] TX DATA seq=10 -> dest=6
+[ 164s][RUN] TABLE me=8 parent=6 hop=3 nbrs=6
+[ 164s][RUN]   id=1 hop=3 parent=9 rssi=-81 ema=-81.2 age=5.1s backup
+[ 164s][RUN]   id=3 hop=3 parent=6 rssi=-93 ema=-93.0 age=2.6s weak_rss
+[ 164s][RUN]   id=6 hop=2 parent=7 rssi=-86 ema=-85.4 age=3.1s PARENT
+[ 164s][RUN]   id=10 hop=4 parent=7 rssi=-77 ema=-77.7 age=11.7s backup
+[ 164s][RUN]   id=12 hop=4 parent=8 rssi=-84 ema=-84.7 age=3.7s child
+[ 164s][RUN]   id=13 hop=3 parent=6 rssi=-81 ema=-81.0 age=5.0s backup
+[ 164s][RUN] COUNTERS gen=11 acq_fail=0 noroute=0 own_tx=11 relay_tx=0 adv_tx=32 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 166s][RUN] NEIGHBOR NEW id=7 hop=1 parent=0 rssi=-87
+[ 166s][RUN] ROUTE parent 6->7 hop 3->2 rss=-87.0 reason=shorter_route (adv from 7)
+[ 168s][RUN] NEIGHBOR EXPIRED id=10 (no advert for 15 s)
+[ 168s][RUN] NEIGHBOR NEW id=10 hop=2 parent=7 rssi=-74
+[ 169s][RUN] TABLE me=8 parent=7 hop=2 nbrs=7
+[ 169s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-81.4 age=4.9s backup
+[ 169s][RUN]   id=3 hop=3 parent=6 rssi=-93 ema=-93.0 age=7.6s weak_rss
+[ 169s][RUN]   id=6 hop=2 parent=7 rssi=-86 ema=-85.4 age=8.1s backup
+[ 169s][RUN]   id=7 hop=1 parent=0 rssi=-87 ema=-87.0 age=3.3s PARENT
+[ 169s][RUN]   id=10 hop=2 parent=7 rssi=-74 ema=-74.0 age=1.1s backup
+[ 169s][RUN]   id=12 hop=3 parent=10 rssi=-85 ema=-84.8 age=3.7s backup
+[ 169s][RUN]   id=13 hop=3 parent=6 rssi=-82 ema=-81.3 age=4.7s backup
+[ 169s][RUN] COUNTERS gen=11 acq_fail=0 noroute=0 own_tx=11 relay_tx=0 adv_tx=32 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 175s][RUN] GENERATE seq=11 accel=10.554 m/s2 (N=184, rate=92.0 Hz)
+[ 175s][RUN] TX DATA seq=11 -> dest=7
+[ 175s][RUN] TABLE me=8 parent=7 hop=2 nbrs=7
+[ 175s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-81.4 age=10.4s backup
+[ 175s][RUN]   id=3 hop=3 parent=6 rssi=-93 ema=-93.0 age=13.1s weak_rss
+[ 175s][RUN]   id=6 hop=2 parent=7 rssi=-86 ema=-85.4 age=13.5s backup
+[ 175s][RUN]   id=7 hop=1 parent=0 rssi=-83 ema=-85.8 age=3.5s PARENT
+[ 175s][RUN]   id=10 hop=2 parent=7 rssi=-73 ema=-73.7 age=1.5s backup
+[ 175s][RUN]   id=12 hop=3 parent=10 rssi=-85 ema=-84.8 age=9.1s backup
+[ 175s][RUN]   id=13 hop=3 parent=6 rssi=-82 ema=-81.3 age=10.2s backup
+[ 175s][RUN] COUNTERS gen=12 acq_fail=0 noroute=0 own_tx=12 relay_tx=0 adv_tx=33 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 177s][RUN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 177s][RUN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[ 179s][RUN] TX RELAY origin=13 seq=11 -> dest=7 ttl=8
+[ 179s][RUN] TABLE me=8 parent=7 hop=2 nbrs=5
+[ 179s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-81.4 age=15.4s ineligible
+[ 179s][RUN]   id=7 hop=1 parent=0 rssi=-83 ema=-85.8 age=8.5s PARENT
+[ 179s][RUN]   id=10 hop=3 parent=7 rssi=-77 ema=-74.7 age=1.2s backup
+[ 180s][RUN]   id=12 hop=3 parent=10 rssi=-85 ema=-84.8 age=14.1s backup
+[ 180s][RUN]   id=13 hop=3 parent=6 rssi=-82 ema=-81.3 age=15.2s ineligible
+[ 180s][RUN] COUNTERS gen=12 acq_fail=0 noroute=0 own_tx=12 relay_tx=1 adv_tx=34 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 180s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 180s][RUN] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 180s][RUN] NEIGHBOR NEW id=13 hop=3 parent=8 rssi=-79
+[ 181s][RUN] NEIGHBOR NEW id=12 hop=2 parent=7 rssi=-86
+[ 185s][RUN] GENERATE seq=12 accel=10.556 m/s2 (N=184, rate=91.9 Hz)
+[ 185s][RUN] TX DATA seq=12 -> dest=7
+[ 185s][RUN] TABLE me=8 parent=7 hop=2 nbrs=5
+[ 185s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-81.6 age=4.2s backup
+[ 185s][RUN]   id=7 hop=1 parent=0 rssi=-83 ema=-85.8 age=13.7s PARENT
+[ 185s][RUN]   id=10 hop=3 parent=7 rssi=-79 ema=-76.0 age=1.1s backup
+[ 185s][RUN]   id=12 hop=2 parent=7 rssi=-86 ema=-86.0 age=3.7s backup
+[ 185s][RUN]   id=13 hop=3 parent=8 rssi=-79 ema=-79.0 age=4.2s child
+[ 185s][RUN] COUNTERS gen=13 acq_fail=0 noroute=0 own_tx=13 relay_tx=1 adv_tx=35 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 187s][RUN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 187s][RUN] ROUTE parent 7->1 hop 2->3 rss=-81.6 reason=parent_ineligible (expired [7])
+[ 188s][RUN] NEIGHBOR NEW id=3 hop=3 parent=1 rssi=-90
+[ 189s][RUN] NEIGHBOR NEW id=9 hop=3 parent=7 rssi=-87
+[ 190s][RUN] TABLE me=8 parent=1 hop=3 nbrs=6
+[ 190s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-81.6 age=9.2s PARENT
+[ 190s][RUN]   id=3 hop=3 parent=1 rssi=-90 ema=-90.0 age=1.5s backup
+[ 190s][RUN]   id=9 hop=3 parent=7 rssi=-87 ema=-87.0 age=0.4s backup
+[ 190s][RUN]   id=10 hop=3 parent=7 rssi=-82 ema=-77.8 age=1.0s backup
+[ 190s][RUN]   id=12 hop=2 parent=7 rssi=-86 ema=-86.0 age=8.7s backup
+[ 190s][RUN]   id=13 hop=3 parent=8 rssi=-79 ema=-79.0 age=9.2s child
+[ 190s][RUN] COUNTERS gen=13 acq_fail=0 noroute=0 own_tx=13 relay_tx=1 adv_tx=36 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 190s][RUN] TX RELAY origin=13 seq=12 -> dest=1 ttl=8
+[ 195s][RUN] GENERATE seq=13 accel=10.554 m/s2 (N=184, rate=92.0 Hz)
+[ 195s][RUN] TX DATA seq=13 -> dest=1
+[ 195s][RUN] TABLE me=8 parent=1 hop=3 nbrs=6
+[ 195s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-81.6 age=14.3s PARENT
+[ 195s][RUN]   id=3 hop=3 parent=1 rssi=-90 ema=-90.0 age=6.6s backup
+[ 195s][RUN]   id=9 hop=3 parent=7 rssi=-88 ema=-87.3 age=0.5s backup
+[ 195s][RUN]   id=10 hop=3 parent=1 rssi=-78 ema=-77.9 age=1.0s backup
+[ 195s][RUN]   id=12 hop=2 parent=7 rssi=-86 ema=-86.0 age=13.8s backup
+[ 195s][RUN]   id=13 hop=3 parent=8 rssi=-83 ema=-80.2 age=4.2s child
+[ 195s][RUN] COUNTERS gen=14 acq_fail=0 noroute=0 own_tx=14 relay_tx=2 adv_tx=37 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 196s][RUN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 196s][RUN] ROUTE parent 1->12 hop 3->3 rss=-86.0 reason=parent_ineligible (expired [1])
+[ 196s][RUN] NEIGHBOR NEW id=1 hop=2 parent=6 rssi=-86
+[ 197s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 197s][RUN] ROUTE parent 12->1 hop 3->3 rss=-86.0 reason=parent_ineligible (expired [12])
+[ 197s][RUN] NEIGHBOR NEW id=12 hop=2 parent=7 rssi=-82
+[ 197s][RUN] NEIGHBOR NEW id=6 hop=3 parent=7 rssi=-85
+[ 200s][RUN] TABLE me=8 parent=1 hop=3 nbrs=7
+[ 200s][RUN]   id=1 hop=2 parent=6 rssi=-86 ema=-86.0 age=4.1s PARENT
+[ 200s][RUN]   id=3 hop=3 parent=1 rssi=-90 ema=-90.0 age=11.6s backup
+[ 200s][RUN]   id=6 hop=3 parent=7 rssi=-85 ema=-85.0 age=2.3s backup
+[ 200s][RUN]   id=9 hop=3 parent=7 rssi=-88 ema=-87.3 age=5.5s backup
+[ 200s][RUN]   id=10 hop=3 parent=1 rssi=-76 ema=-77.3 age=1.0s backup
+[ 200s][RUN]   id=12 hop=2 parent=7 rssi=-82 ema=-82.0 age=3.0s backup
+[ 200s][RUN]   id=13 hop=3 parent=8 rssi=-79 ema=-79.8 age=4.1s child
+[ 200s][RUN] COUNTERS gen=14 acq_fail=0 noroute=0 own_tx=14 relay_tx=2 adv_tx=38 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 205s][RUN] GENERATE seq=14 accel=10.554 m/s2 (N=183, rate=91.5 Hz)
+[ 205s][RUN] TX DATA seq=14 -> dest=1
+[ 205s][RUN] TABLE me=8 parent=1 hop=3 nbrs=7
+[ 205s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-84.8 age=3.8s PARENT
+[ 205s][RUN]   id=3 hop=3 parent=12 rssi=-87 ema=-89.1 age=1.4s backup
+[ 205s][RUN]   id=6 hop=3 parent=7 rssi=-84 ema=-84.7 age=2.0s backup
+[ 205s][RUN]   id=9 hop=3 parent=7 rssi=-88 ema=-87.3 age=10.5s backup
+[ 205s][RUN]   id=10 hop=3 parent=1 rssi=-76 ema=-77.3 age=6.0s backup
+[ 205s][RUN]   id=12 hop=2 parent=7 rssi=-82 ema=-82.0 age=8.0s backup
+[ 205s][RUN]   id=13 hop=3 parent=1 rssi=-79 ema=-79.6 age=3.9s backup
+[ 205s][RUN] COUNTERS gen=15 acq_fail=0 noroute=0 own_tx=15 relay_tx=2 adv_tx=39 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 210s][RUN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[ 210s][RUN] TABLE me=8 parent=1 hop=3 nbrs=6
+[ 210s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-84.8 age=8.8s PARENT
+[ 210s][RUN]   id=3 hop=3 parent=12 rssi=-87 ema=-89.1 age=6.4s backup
+[ 210s][RUN]   id=6 hop=3 parent=7 rssi=-87 ema=-85.4 age=1.9s backup
+[ 210s][RUN]   id=10 hop=2 parent=7 rssi=-83 ema=-79.0 age=0.7s backup
+[ 210s][RUN]   id=12 hop=2 parent=7 rssi=-82 ema=-82.0 age=13.0s backup
+[ 210s][RUN]   id=13 hop=3 parent=1 rssi=-79 ema=-79.4 age=3.5s backup
+[ 210s][RUN] COUNTERS gen=15 acq_fail=0 noroute=0 own_tx=15 relay_tx=2 adv_tx=40 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 213s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 213s][RUN] NEIGHBOR NEW id=12 hop=4 parent=13 rssi=-83
+[ 215s][RUN] GENERATE seq=15 accel=10.552 m/s2 (N=186, rate=93.0 Hz)
+[ 215s][RUN] TX DATA seq=15 -> dest=1
+[ 215s][RUN] TABLE me=8 parent=1 hop=3 nbrs=6
+[ 215s][RUN]   id=1 hop=2 parent=7 rssi=-82 ema=-84.8 age=14.2s PARENT
+[ 215s][RUN]   id=3 hop=3 parent=12 rssi=-87 ema=-89.1 age=11.8s backup
+[ 215s][RUN]   id=6 hop=3 parent=7 rssi=-87 ema=-85.4 age=7.3s backup
+[ 215s][RUN]   id=10 hop=2 parent=7 rssi=-77 ema=-78.4 age=0.7s backup
+[ 215s][RUN]   id=12 hop=4 parent=13 rssi=-83 ema=-83.0 age=2.3s backup
+[ 215s][RUN]   id=13 hop=3 parent=1 rssi=-79 ema=-79.3 age=3.4s backup
+[ 215s][RUN] COUNTERS gen=16 acq_fail=0 noroute=0 own_tx=16 relay_tx=2 adv_tx=41 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 217s][RUN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 217s][RUN] ROUTE parent 1->10 hop 3->3 rss=-78.4 reason=parent_ineligible (expired [1])
+[ 217s][RUN] NEIGHBOR NEW id=1 hop=2 parent=7 rssi=-87
+[ 219s][RUN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 220s][RUN] ROUTE parent 10->1 hop 3->3 rss=-87.0 reason=shorter_route (adv from 10)
+[ 220s][RUN] TABLE me=8 parent=1 hop=3 nbrs=5
+[ 220s][RUN]   id=1 hop=2 parent=7 rssi=-87 ema=-87.0 age=3.3s PARENT
+[ 220s][RUN]   id=6 hop=3 parent=7 rssi=-87 ema=-85.4 age=12.3s backup
+[ 220s][RUN]   id=10 hop=3 parent=9 rssi=-79 ema=-78.6 age=0.2s backup
+[ 220s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-83.3 age=2.0s backup
+[ 220s][RUN]   id=13 hop=3 parent=1 rssi=-80 ema=-79.5 age=3.0s backup
+[ 220s][RUN] COUNTERS gen=16 acq_fail=0 noroute=0 own_tx=16 relay_tx=2 adv_tx=42 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 223s][RUN] NEIGHBOR NEW id=7 hop=2 parent=4 rssi=-85
+[ 224s][RUN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[ 226s][RUN] GENERATE seq=16 accel=10.550 m/s2 (N=185, rate=92.5 Hz)
+[ 226s][RUN] TX DATA seq=16 -> dest=1
+[ 226s][RUN] TABLE me=8 parent=1 hop=3 nbrs=5
+[ 226s][RUN]   id=1 hop=2 parent=7 rssi=-87 ema=-87.0 age=8.7s PARENT
+[ 226s][RUN]   id=7 hop=2 parent=4 rssi=-85 ema=-85.0 age=2.2s backup
+[ 226s][RUN]   id=10 hop=3 parent=9 rssi=-76 ema=-77.8 age=0.3s backup
+[ 226s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-83.3 age=7.4s backup
+[ 226s][RUN]   id=13 hop=3 parent=10 rssi=-79 ema=-79.4 age=2.9s backup
+[ 226s][RUN] COUNTERS gen=17 acq_fail=0 noroute=0 own_tx=17 relay_tx=2 adv_tx=43 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 228s][RUN] ROUTE parent 1->7 hop 3->3 rss=-85.0 reason=shorter_route (adv from 1)
+[ 231s][RUN] TABLE me=8 parent=7 hop=3 nbrs=5
+[ 231s][RUN]   id=1 hop=3 parent=6 rssi=-86 ema=-86.7 age=2.9s backup
+[ 231s][RUN]   id=7 hop=2 parent=4 rssi=-85 ema=-85.0 age=7.2s PARENT
+[ 231s][RUN]   id=10 hop=3 parent=9 rssi=-78 ema=-77.9 age=0.1s backup
+[ 231s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-83.5 age=1.9s backup
+[ 231s][RUN]   id=13 hop=3 parent=10 rssi=-79 ema=-79.4 age=7.9s backup
+[ 231s][RUN] COUNTERS gen=17 acq_fail=0 noroute=0 own_tx=17 relay_tx=2 adv_tx=44 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 235s][RUN] NEIGHBOR NEW id=6 hop=2 parent=4 rssi=-86
+[ 236s][RUN] NEIGHBOR NEW id=3 hop=4 parent=1 rssi=-90
+[ 236s][RUN] GENERATE seq=17 accel=10.550 m/s2 (N=182, rate=91.0 Hz)
+[ 236s][RUN] TX DATA seq=17 -> dest=7
+[ 236s][RUN] TABLE me=8 parent=7 hop=3 nbrs=7
+[ 236s][RUN]   id=1 hop=3 parent=6 rssi=-86 ema=-86.7 age=8.2s backup
+[ 236s][RUN]   id=3 hop=4 parent=1 rssi=-90 ema=-90.0 age=0.3s backup
+[ 236s][RUN]   id=6 hop=2 parent=4 rssi=-86 ema=-86.0 age=0.4s backup
+[ 236s][RUN]   id=7 hop=2 parent=4 rssi=-85 ema=-85.0 age=12.5s PARENT
+[ 236s][RUN]   id=10 hop=3 parent=9 rssi=-78 ema=-77.9 age=0.0s backup
+[ 236s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-83.5 age=7.2s backup
+[ 236s][RUN]   id=13 hop=3 parent=10 rssi=-79 ema=-79.4 age=13.2s backup
+[ 236s][RUN] COUNTERS gen=18 acq_fail=0 noroute=0 own_tx=18 relay_tx=2 adv_tx=45 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 236s][RUN] NEIGHBOR NEW id=9 hop=3 parent=7 rssi=-89
+[ 238s][RUN] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 239s][RUN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 239s][RUN] ROUTE parent 7->6 hop 3->3 rss=-86.0 reason=parent_ineligible (expired [7])
+[ 241s][RUN] ROUTE parent 6->10 hop 3->4 rss=-77.9 reason=parent_ineligible (adv from 6)
+[ 241s][RUN] TABLE me=8 parent=10 hop=4 nbrs=6
+[ 241s][RUN]   id=1 hop=3 parent=6 rssi=-86 ema=-86.7 age=13.2s backup
+[ 241s][RUN]   id=3 hop=4 parent=1 rssi=-90 ema=-90.0 age=5.3s backup
+[ 241s][RUN]   id=6 hop=4 parent=8 rssi=-86 ema=-86.0 age=0.3s child
+[ 241s][RUN]   id=9 hop=3 parent=7 rssi=-89 ema=-89.0 age=4.7s backup
+[ 241s][RUN]   id=10 hop=3 parent=9 rssi=-78 ema=-77.9 age=5.0s PARENT
+[ 241s][RUN]   id=12 hop=3 parent=10 rssi=-84 ema=-83.5 age=12.2s backup
+[ 241s][RUN] COUNTERS gen=18 acq_fail=0 noroute=0 own_tx=18 relay_tx=2 adv_tx=46 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=0 ttl=0 queue=0 tx_err=0
+[ 243s][RUN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 243s][RUN] TX RELAY origin=6 seq=13 -> dest=10 ttl=8
+[ 243s][RUN] NEIGHBOR NEW id=1 hop=4 parent=9 rssi=-79
+[ 244s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 244s][RUN] NEIGHBOR NEW id=13 hop=3 parent=7 rssi=-82
+[ 247s][RUN] GENERATE seq=18 accel=10.555 m/s2 (N=185, rate=92.4 Hz)
+[ 247s][RUN] ROUTE parent 10->13 hop 4->4 rss=-82.0 reason=parent_ineligible (adv from 10)
+[ 247s][RUN] TX DATA seq=18 -> dest=10
+[ 247s][RUN] TABLE me=8 parent=13 hop=4 nbrs=6
+[ 247s][RUN]   id=1 hop=4 parent=9 rssi=-79 ema=-79.0 age=3.1s backup
+[ 247s][RUN]   id=3 hop=4 parent=1 rssi=-90 ema=-90.0 age=10.9s backup
+[ 247s][RUN]   id=6 hop=4 parent=8 rssi=-86 ema=-86.0 age=6.0s child
+[ 247s][RUN]   id=9 hop=4 parent=13 rssi=-88 ema=-88.7 age=0.2s backup
+[ 247s][RUN]   id=10 hop=4 parent=8 rssi=-81 ema=-78.8 age=-0.1s child
+[ 247s][RUN]   id=13 hop=3 parent=7 rssi=-82 ema=-82.0 age=2.3s PARENT
+[ 247s][RUN] COUNTERS gen=19 acq_fail=0 noroute=0 own_tx=19 relay_tx=3 adv_tx=47 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 247s][RUN] TX RELAY origin=12 seq=18 -> dest=13 ttl=7
+[ 247s][RUN] TX RELAY origin=10 seq=18 -> dest=13 ttl=8
+[ 249s][RUN] ROUTE parent 13->13 hop 4->5 rss=-81.4 reason=hop_update (adv from 13)
+[ 250s][RUN] NEIGHBOR NEW id=12 hop=4 parent=10 rssi=-85
+[ 251s][RUN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 251s][RUN] ROUTE parent 13->6 hop 5->3 rss=-85.7 reason=shorter_route (adv from 6)
+[ 252s][RUN] TABLE me=8 parent=6 hop=3 nbrs=6
+[ 252s][RUN]   id=1 hop=4 parent=9 rssi=-81 ema=-79.6 age=2.8s backup
+[ 252s][RUN]   id=6 hop=2 parent=5 rssi=-85 ema=-85.7 age=0.3s PARENT
+[ 252s][RUN]   id=9 hop=4 parent=13 rssi=-88 ema=-88.7 age=5.2s backup
+[ 252s][RUN]   id=10 hop=4 parent=8 rssi=-81 ema=-78.8 age=4.9s child
+[ 252s][RUN]   id=12 hop=4 parent=10 rssi=-85 ema=-85.0 age=1.8s backup
+[ 252s][RUN]   id=13 hop=4 parent=10 rssi=-80 ema=-81.4 age=2.1s backup
+[ 252s][RUN] COUNTERS gen=19 acq_fail=0 noroute=0 own_tx=19 relay_tx=5 adv_tx=48 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 257s][RUN] GENERATE seq=19 accel=10.554 m/s2 (N=184, rate=92.0 Hz)
+[ 257s][RUN] TX DATA seq=19 -> dest=6
+[ 257s][RUN] TABLE me=8 parent=6 hop=3 nbrs=6
+[ 257s][RUN]   id=1 hop=4 parent=9 rssi=-82 ema=-80.3 age=3.2s backup
+[ 257s][RUN]   id=6 hop=2 parent=5 rssi=-85 ema=-85.7 age=5.7s PARENT
+[ 257s][RUN]   id=9 hop=4 parent=13 rssi=-88 ema=-88.7 age=10.7s backup
+[ 257s][RUN]   id=10 hop=5 parent=8 rssi=-80 ema=-79.2 age=5.3s child
+[ 257s][RUN]   id=12 hop=4 parent=10 rssi=-85 ema=-85.0 age=7.3s backup
+[ 257s][RUN]   id=13 hop=4 parent=10 rssi=-80 ema=-81.4 age=7.6s backup
+[ 257s][RUN] COUNTERS gen=20 acq_fail=0 noroute=0 own_tx=20 relay_tx=5 adv_tx=49 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 261s][RUN] NEIGHBOR NEW id=3 hop=4 parent=13 rssi=-89
+[ 262s][RUN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[ 262s][RUN] TABLE me=8 parent=6 hop=3 nbrs=6
+[ 262s][RUN]   id=1 hop=4 parent=9 rssi=-82 ema=-80.3 age=8.2s backup
+[ 262s][RUN]   id=3 hop=4 parent=13 rssi=-89 ema=-89.0 age=0.5s backup
+[ 262s][RUN]   id=6 hop=2 parent=5 rssi=-85 ema=-85.5 age=0.2s PARENT
+[ 262s][RUN]   id=10 hop=5 parent=8 rssi=-80 ema=-79.2 age=10.3s child
+[ 262s][RUN]   id=12 hop=4 parent=10 rssi=-83 ema=-84.4 age=1.6s backup
+[ 262s][RUN]   id=13 hop=3 parent=7 rssi=-79 ema=-80.7 age=2.3s backup
+[ 262s][RUN] COUNTERS gen=20 acq_fail=0 noroute=0 own_tx=20 relay_tx=5 adv_tx=50 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 267s][RUN] GENERATE seq=20 accel=10.554 m/s2 (N=185, rate=92.4 Hz)
+[ 267s][RUN] TX DATA seq=20 -> dest=6
+[ 267s][RUN] TABLE me=8 parent=6 hop=3 nbrs=6
+[ 267s][RUN]   id=1 hop=4 parent=9 rssi=-82 ema=-80.3 age=13.5s backup
+[ 267s][RUN]   id=3 hop=4 parent=13 rssi=-88 ema=-88.7 age=0.7s backup
+[ 267s][RUN]   id=6 hop=2 parent=4 rssi=-87 ema=-85.9 age=0.2s PARENT
+[ 267s][RUN]   id=10 hop=3 parent=7 rssi=-81 ema=-79.7 age=0.1s backup
+[ 267s][RUN]   id=12 hop=4 parent=10 rssi=-84 ema=-84.3 age=1.5s backup
+[ 267s][RUN]   id=13 hop=3 parent=7 rssi=-78 ema=-79.9 age=2.3s backup
+[ 267s][RUN] COUNTERS gen=21 acq_fail=0 noroute=0 own_tx=21 relay_tx=5 adv_tx=51 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 269s][RUN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 272s][RUN] TABLE me=8 parent=6 hop=3 nbrs=5
+[ 272s][RUN]   id=3 hop=4 parent=13 rssi=-88 ema=-88.7 age=5.7s backup
+[ 272s][RUN]   id=6 hop=2 parent=4 rssi=-87 ema=-85.9 age=5.2s PARENT
+[ 272s][RUN]   id=10 hop=3 parent=7 rssi=-81 ema=-79.7 age=5.1s backup
+[ 272s][RUN]   id=12 hop=4 parent=10 rssi=-84 ema=-84.3 age=6.5s backup
+[ 272s][RUN]   id=13 hop=3 parent=7 rssi=-78 ema=-79.3 age=2.1s backup
+[ 272s][RUN] COUNTERS gen=21 acq_fail=0 noroute=0 own_tx=21 relay_tx=5 adv_tx=52 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 277s][RUN] GENERATE seq=21 accel=10.555 m/s2 (N=183, rate=91.5 Hz)
+[ 277s][RUN] TX DATA seq=21 -> dest=6
+[ 277s][RUN] TABLE me=8 parent=6 hop=3 nbrs=5
+[ 277s][RUN]   id=3 hop=4 parent=13 rssi=-88 ema=-88.7 age=10.8s backup
+[ 277s][RUN]   id=6 hop=2 parent=4 rssi=-87 ema=-85.9 age=10.2s PARENT
+[ 278s][RUN]   id=10 hop=3 parent=6 rssi=-80 ema=-79.8 age=4.7s backup
+[ 278s][RUN]   id=12 hop=4 parent=8 rssi=-83 ema=-83.9 age=1.1s child
+[ 278s][RUN]   id=13 hop=3 parent=9 rssi=-83 ema=-80.4 age=1.7s backup
+[ 278s][RUN] COUNTERS gen=22 acq_fail=0 noroute=0 own_tx=22 relay_tx=5 adv_tx=53 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 278s][RUN] TX RELAY origin=12 seq=21 -> dest=6 ttl=8
+[ 282s][RUN] NEIGHBOR NEW id=7 hop=1 parent=0 rssi=-94
+[ 282s][RUN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 282s][RUN] TABLE me=8 parent=6 hop=3 nbrs=5
+[ 282s][RUN]   id=6 hop=2 parent=4 rssi=-87 ema=-85.9 age=15.2s PARENT
+[ 282s][RUN]   id=7 hop=1 parent=0 rssi=-94 ema=-94.0 age=0.7s weak_rss
+[ 282s][RUN]   id=10 hop=3 parent=9 rssi=-76 ema=-78.6 age=4.6s backup
+[ 282s][RUN]   id=12 hop=4 parent=8 rssi=-83 ema=-83.6 age=0.8s child
+[ 282s][RUN]   id=13 hop=3 parent=9 rssi=-81 ema=-80.6 age=1.3s backup
+[ 282s][RUN] COUNTERS gen=22 acq_fail=0 noroute=0 own_tx=22 relay_tx=6 adv_tx=54 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 283s][RUN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[ 283s][RUN] ROUTE parent 6->10 hop 3->4 rss=-78.6 reason=parent_ineligible (expired [6])
+[ 283s][RUN] NEIGHBOR NEW id=6 hop=2 parent=7 rssi=-85
+[ 283s][RUN] ROUTE parent 10->6 hop 4->3 rss=-85.0 reason=shorter_route (adv from 6)
+[ 283s][RUN] NEIGHBOR NEW id=9 hop=2 parent=4 rssi=-85
+[ 285s][RUN] NEIGHBOR NEW id=1 hop=3 parent=7 rssi=-79
+[ 286s][RUN] NEIGHBOR NEW id=4 hop=2 parent=7 rssi=-93
+[ 288s][RUN] GENERATE seq=22 accel=10.554 m/s2 (N=184, rate=92.0 Hz)
+[ 288s][RUN] TX DATA seq=22 -> dest=6
+[ 288s][RUN] TABLE me=8 parent=6 hop=3 nbrs=8
+[ 288s][RUN]   id=1 hop=3 parent=7 rssi=-79 ema=-79.0 age=2.8s backup
+[ 288s][RUN]   id=4 hop=2 parent=7 rssi=-93 ema=-93.0 age=2.2s weak_rss
+[ 288s][RUN]   id=6 hop=2 parent=7 rssi=-85 ema=-85.0 age=5.0s PARENT
+[ 288s][RUN]   id=7 hop=1 parent=0 rssi=-94 ema=-94.0 age=6.4s weak_rss
+[ 288s][RUN]   id=9 hop=2 parent=4 rssi=-85 ema=-85.0 age=4.8s backup
+[ 288s][RUN]   id=10 hop=3 parent=9 rssi=-76 ema=-78.6 age=10.3s backup
+[ 288s][RUN]   id=12 hop=4 parent=8 rssi=-83 ema=-83.6 age=6.5s child
+[ 288s][RUN]   id=13 hop=3 parent=9 rssi=-81 ema=-80.6 age=7.0s backup
+[ 288s][RUN] COUNTERS gen=23 acq_fail=0 noroute=0 own_tx=23 relay_tx=6 adv_tx=55 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 293s][RUN] TABLE me=8 parent=6 hop=3 nbrs=8
+[ 293s][RUN]   id=1 hop=3 parent=7 rssi=-79 ema=-79.0 age=7.8s backup
+[ 293s][RUN]   id=4 hop=2 parent=7 rssi=-93 ema=-93.0 age=7.2s weak_rss
+[ 293s][RUN] NEIGHBOR EXPIRED id=10 (no advert for 15 s)
+[ 293s][RUN]   id=6 hop=2 parent=7 rssi=-83 ema=-84.4 age=3.9s PARENT
+[ 293s][RUN]   id=7 hop=1 parent=0 rssi=-94 ema=-94.0 age=11.4s weak_rss
+[ 293s][RUN]   id=9 hop=2 parent=4 rssi=-85 ema=-85.0 age=9.8s backup
+[ 293s][RUN]   id=10 hop=3 parent=9 rssi=-76 ema=-78.6 age=15.3s ineligible
+[ 293s][RUN]   id=12 hop=4 parent=8 rssi=-83 ema=-83.6 age=11.5s child
+[ 293s][RUN]   id=13 hop=3 parent=9 rssi=-81 ema=-80.6 age=12.0s backup
+[ 293s][RUN] COUNTERS gen=23 acq_fail=0 noroute=0 own_tx=23 relay_tx=6 adv_tx=56 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 294s][RUN] NEIGHBOR NEW id=10 hop=3 parent=9 rssi=-79
+[ 297s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 297s][RUN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 297s][RUN] NEIGHBOR NEW id=12 hop=2 parent=7 rssi=-84
+[ 299s][RUN] GENERATE seq=23 accel=10.555 m/s2 (N=184, rate=92.0 Hz)
+[ 299s][RUN] TX DATA seq=23 -> dest=6
+[ 299s][RUN] TABLE me=8 parent=6 hop=3 nbrs=7
+[ 299s][RUN]   id=1 hop=3 parent=12 rssi=-87 ema=-81.4 age=2.5s backup
+[ 299s][RUN]   id=4 hop=2 parent=7 rssi=-93 ema=-93.0 age=12.6s weak_rss
+[ 299s][RUN]   id=6 hop=2 parent=7 rssi=-83 ema=-84.4 age=9.3s PARENT
+[ 299s][RUN]   id=9 hop=2 parent=4 rssi=-85 ema=-85.0 age=15.2s ineligible
+[ 299s][RUN]   id=10 hop=3 parent=9 rssi=-79 ema=-79.0 age=4.9s backup
+[ 299s][RUN]   id=12 hop=2 parent=7 rssi=-84 ema=-84.0 age=1.1s backup
+[ 299s][RUN]   id=13 hop=3 parent=4 rssi=-79 ema=-80.1 age=1.5s backup
+[ 299s][RUN] COUNTERS gen=24 acq_fail=0 noroute=0 own_tx=24 relay_tx=6 adv_tx=57 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 299s][RUN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[ 301s][RUN] NEIGHBOR EXPIRED id=4 (no advert for 15 s)
+[ 303s][RUN] NEIGHBOR NEW id=7 hop=2 parent=4 rssi=-93
+[ 304s][RUN] TABLE me=8 parent=6 hop=3 nbrs=6
+[ 304s][RUN]   id=1 hop=3 parent=12 rssi=-87 ema=-81.4 age=7.5s backup
+[ 304s][RUN]   id=6 hop=2 parent=7 rssi=-83 ema=-84.4 age=14.3s PARENT
+[ 304s][RUN]   id=7 hop=2 parent=4 rssi=-93 ema=-93.0 age=0.5s weak_rss
+[ 304s][RUN]   id=10 hop=3 parent=9 rssi=-79 ema=-79.0 age=9.9s backup
+[ 304s][RUN]   id=12 hop=2 parent=7 rssi=-84 ema=-84.0 age=6.1s backup
+[ 304s][RUN]   id=13 hop=3 parent=12 rssi=-78 ema=-79.5 age=1.4s backup
+[ 304s][RUN] COUNTERS gen=24 acq_fail=0 noroute=0 own_tx=24 relay_tx=6 adv_tx=58 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 304s][RUN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[ 304s][RUN] ROUTE parent 6->12 hop 3->3 rss=-84.0 reason=parent_ineligible (expired [6])
+[ 308s][RUN] ROUTE parent 12->10 hop 3->4 rss=-78.7 reason=shorter_route (adv from 12)
+[ 309s][RUN] GENERATE seq=24 accel=10.557 m/s2 (N=179, rate=89.5 Hz)
+[ 309s][RUN] TX DATA seq=24 -> dest=10
+[ 309s][RUN] TABLE me=8 parent=10 hop=4 nbrs=5
+[ 309s][RUN]   id=1 hop=3 parent=12 rssi=-86 ema=-82.8 age=2.1s backup
+[ 309s][RUN]   id=7 hop=2 parent=4 rssi=-93 ema=-93.0 age=5.8s weak_rss
+[ 309s][RUN]   id=10 hop=3 parent=7 rssi=-78 ema=-78.7 age=4.8s PARENT
+[ 309s][RUN]   id=12 hop=4 parent=10 rssi=-82 ema=-83.4 age=1.3s backup
+[ 309s][RUN]   id=13 hop=3 parent=12 rssi=-78 ema=-79.5 age=6.8s backup
+[ 309s][RUN] COUNTERS gen=25 acq_fail=0 noroute=0 own_tx=25 relay_tx=6 adv_tx=59 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 309s][RUN] NEIGHBOR NEW id=9 hop=3 parent=4 rssi=-90
+[ 310s][RUN] NEIGHBOR NEW id=6 hop=2 parent=4 rssi=-84
+[ 310s][RUN] ROUTE parent 10->6 hop 4->3 rss=-84.0 reason=shorter_route (adv from 6)
+[ 314s][RUN] TABLE me=8 parent=6 hop=3 nbrs=7
+[ 314s][RUN]   id=1 hop=4 parent=13 rssi=-85 ema=-83.4 age=1.6s backup
+[ 314s][RUN]   id=6 hop=2 parent=4 rssi=-84 ema=-84.0 age=4.1s PARENT
+[ 314s][RUN]   id=7 hop=2 parent=4 rssi=-93 ema=-93.0 age=10.8s weak_rss
+[ 314s][RUN]   id=9 hop=3 parent=4 rssi=-90 ema=-90.0 age=4.4s backup
+[ 314s][RUN]   id=10 hop=3 parent=7 rssi=-78 ema=-78.5 age=4.8s backup
+[ 314s][RUN]   id=12 hop=4 parent=10 rssi=-82 ema=-83.4 age=6.3s backup
+[ 314s][RUN]   id=13 hop=3 parent=12 rssi=-78 ema=-79.5 age=11.8s backup
+[ 314s][RUN] COUNTERS gen=25 acq_fail=0 noroute=0 own_tx=25 relay_tx=6 adv_tx=60 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 315s][RUN] NEIGHBOR NEW id=3 hop=4 parent=13 rssi=-92
+[ 317s][RUN] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 318s][RUN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 319s][RUN] GENERATE seq=25 accel=10.550 m/s2 (N=185, rate=92.5 Hz)
+[ 319s][RUN] TX DATA seq=25 -> dest=6
+[ 319s][RUN] TABLE me=8 parent=6 hop=3 nbrs=6
+[ 319s][RUN]   id=1 hop=4 parent=13 rssi=-86 ema=-84.2 age=1.7s backup
+[ 319s][RUN]   id=3 hop=4 parent=13 rssi=-92 ema=-92.0 age=4.2s weak_rss
+[ 319s][RUN]   id=6 hop=2 parent=4 rssi=-84 ema=-84.0 age=9.3s PARENT
+[ 319s][RUN]   id=9 hop=3 parent=4 rssi=-90 ema=-90.0 age=9.5s backup
+[ 319s][RUN]   id=10 hop=4 parent=8 rssi=-78 ema=-78.3 age=4.5s child
+[ 319s][RUN]   id=12 hop=4 parent=13 rssi=-85 ema=-83.9 age=1.2s backup
+[ 319s][RUN] COUNTERS gen=26 acq_fail=0 noroute=0 own_tx=26 relay_tx=6 adv_tx=61 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 320s][RUN] TX RELAY origin=12 seq=25 -> dest=6 ttl=7
+[ 321s][RUN] TX RELAY origin=10 seq=25 -> dest=6 ttl=8
+[ 321s][RUN] TX RELAY origin=1 seq=25 -> dest=6 ttl=7
+[ 324s][RUN] TX RELAY origin=7 seq=26 -> dest=6 ttl=8
+[ 324s][RUN] NEIGHBOR NEW id=13 hop=4 parent=8 rssi=-83
+[ 324s][RUN] TABLE me=8 parent=6 hop=3 nbrs=7
+[ 324s][RUN]   id=1 hop=4 parent=13 rssi=-86 ema=-84.2 age=6.7s backup
+[ 324s][RUN]   id=3 hop=4 parent=13 rssi=-92 ema=-92.0 age=9.2s weak_rss
+[ 324s][RUN]   id=6 hop=2 parent=4 rssi=-84 ema=-84.0 age=14.3s PARENT
+[ 324s][RUN]   id=9 hop=3 parent=4 rssi=-90 ema=-90.0 age=14.5s backup
+[ 324s][RUN]   id=10 hop=4 parent=8 rssi=-82 ema=-79.4 age=4.0s child
+[ 324s][RUN]   id=12 hop=4 parent=13 rssi=-84 ema=-83.9 age=0.3s backup
+[ 324s][RUN]   id=13 hop=4 parent=8 rssi=-83 ema=-83.0 age=0.3s child
+[ 324s][RUN] COUNTERS gen=26 acq_fail=0 noroute=0 own_tx=26 relay_tx=10 adv_tx=62 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 324s][RUN] NEIGHBOR NEW id=7 hop=4 parent=8 rssi=-87
+[ 325s][RUN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[ 325s][RUN] ROUTE parent 6->6 hop 3->2 rss=-84.0 reason=hop_update (adv from 6)
+[ 330s][RUN] GENERATE seq=26 accel=10.553 m/s2 (N=184, rate=91.9 Hz)
+[ 330s][RUN] TX DATA seq=26 -> dest=6
+[ 330s][RUN] TABLE me=8 parent=6 hop=2 nbrs=7
+[ 330s][RUN]   id=1 hop=4 parent=9 rssi=-85 ema=-84.4 age=2.1s backup
+[ 330s][RUN]   id=3 hop=4 parent=13 rssi=-92 ema=-92.0 age=14.9s weak_rss
+[ 330s][RUN]   id=6 hop=1 parent=0 rssi=-84 ema=-84.0 age=4.6s PARENT
+[ 330s][RUN]   id=7 hop=4 parent=8 rssi=-87 ema=-87.0 age=5.5s child
+[ 330s][RUN]   id=10 hop=4 parent=8 rssi=-82 ema=-79.4 age=9.7s child
+[ 330s][RUN]   id=12 hop=4 parent=13 rssi=-84 ema=-83.9 age=1.7s backup
+[ 330s][RUN]   id=13 hop=4 parent=8 rssi=-83 ema=-83.0 age=6.1s child
+[ 330s][RUN] COUNTERS gen=27 acq_fail=0 noroute=0 own_tx=27 relay_tx=10 adv_tx=63 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 330s][RUN] NEIGHBOR NEW id=9 hop=5 parent=7 rssi=-89
+[ 331s][RUN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 335s][RUN] TABLE me=8 parent=6 hop=2 nbrs=7
+[ 335s][RUN]   id=1 hop=5 parent=12 rssi=-84 ema=-84.3 age=1.7s backup
+[ 335s][RUN]   id=6 hop=1 parent=0 rssi=-87 ema=-84.9 age=4.5s PARENT
+[ 335s][RUN]   id=7 hop=4 parent=8 rssi=-87 ema=-87.0 age=10.5s child
+[ 335s][RUN]   id=9 hop=5 parent=7 rssi=-89 ema=-89.0 age=4.3s backup
+[ 335s][RUN]   id=10 hop=4 parent=8 rssi=-82 ema=-79.4 age=14.7s child
+[ 335s][RUN]   id=12 hop=5 parent=1 rssi=-84 ema=-84.0 age=1.6s backup
+[ 335s][RUN]   id=13 hop=4 parent=8 rssi=-83 ema=-83.0 age=11.1s child
+[ 335s][RUN] COUNTERS gen=27 acq_fail=0 noroute=0 own_tx=27 relay_tx=10 adv_tx=64 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 336s][RUN] NEIGHBOR EXPIRED id=10 (no advert for 15 s)
+[ 336s][RUN] NEIGHBOR NEW id=10 hop=3 parent=8 rssi=-82
+[ 339s][RUN] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 339s][RUN] NEIGHBOR NEW id=13 hop=2 parent=6 rssi=-81
+[ 340s][RUN] GENERATE seq=27 accel=10.555 m/s2 (N=182, rate=91.0 Hz)
+[ 340s][RUN] TX DATA seq=27 -> dest=6
+[ 340s][RUN] TABLE me=8 parent=6 hop=2 nbrs=7
+[ 340s][RUN]   id=1 hop=5 parent=12 rssi=-84 ema=-84.3 age=6.8s backup
+[ 340s][RUN]   id=6 hop=1 parent=0 rssi=-83 ema=-84.3 age=4.3s PARENT
+[ 340s][RUN]   id=7 hop=2 parent=4 rssi=-87 ema=-87.0 age=5.0s backup
+[ 340s][RUN]   id=9 hop=2 parent=4 rssi=-86 ema=-88.1 age=4.0s backup
+[ 340s][RUN]   id=10 hop=3 parent=8 rssi=-82 ema=-82.0 age=3.9s child
+[ 340s][RUN]   id=12 hop=5 parent=1 rssi=-84 ema=-84.0 age=6.8s backup
+[ 340s][RUN]   id=13 hop=2 parent=6 rssi=-81 ema=-81.0 age=0.8s backup
+[ 340s][RUN] COUNTERS gen=28 acq_fail=0 noroute=0 own_tx=28 relay_tx=10 adv_tx=65 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 341s][RUN] TX RELAY origin=10 seq=27 -> dest=6 ttl=8
+[ 345s][RUN] TABLE me=8 parent=6 hop=2 nbrs=7
+[ 345s][RUN]   id=1 hop=5 parent=12 rssi=-84 ema=-84.3 age=11.8s backup
+[ 345s][RUN]   id=6 hop=1 parent=0 rssi=-85 ema=-84.5 age=4.1s PARENT
+[ 345s][RUN]   id=7 hop=2 parent=4 rssi=-87 ema=-87.0 age=10.0s backup
+[ 345s][RUN]   id=9 hop=2 parent=4 rssi=-86 ema=-88.1 age=9.0s backup
+[ 345s][RUN]   id=10 hop=3 parent=8 rssi=-79 ema=-81.1 age=3.6s child
+[ 345s][RUN]   id=12 hop=3 parent=13 rssi=-86 ema=-84.6 age=1.1s backup
+[ 345s][RUN]   id=13 hop=2 parent=6 rssi=-81 ema=-81.0 age=5.8s backup
+[ 345s][RUN] COUNTERS gen=28 acq_fail=0 noroute=0 own_tx=28 relay_tx=11 adv_tx=66 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 349s][RUN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 351s][RUN] GENERATE seq=28 accel=10.552 m/s2 (N=182, rate=91.0 Hz)
+[ 351s][RUN] TX DATA seq=28 -> dest=6
+[ 351s][RUN] RUN OVER: stopped generating, generated=29
+[ 351s][RUN] TABLE me=8 parent=6 hop=2 nbrs=6
+[ 351s][RUN]   id=6 hop=1 parent=0 rssi=-85 ema=-84.5 age=9.7s PARENT
+[ 351s][RUN]   id=7 hop=2 parent=4 rssi=-87 ema=-87.0 age=15.6s ineligible
+[ 351s][RUN]   id=9 hop=2 parent=4 rssi=-85 ema=-87.2 age=4.3s backup
+[ 351s][RUN]   id=10 hop=3 parent=8 rssi=-76 ema=-79.6 age=3.8s child
+[ 351s][RUN]   id=12 hop=3 parent=13 rssi=-86 ema=-84.6 age=6.7s backup
+[ 351s][RUN]   id=13 hop=2 parent=6 rssi=-81 ema=-81.0 age=11.4s backup
+[ 351s][RUN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=11 adv_tx=67 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 351s][RUN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 352s][RUN] TX RELAY origin=10 seq=28 -> dest=6 ttl=8
+[ 354s][RUN] NEIGHBOR NEW id=1 hop=2 parent=6 rssi=-85
+[ 355s][RUN] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 355s][RUN] NEIGHBOR NEW id=13 hop=3 parent=1 rssi=-80
+[ 356s][RUN] TABLE me=8 parent=6 hop=2 nbrs=6
+[ 356s][RUN]   id=1 hop=2 parent=6 rssi=-85 ema=-85.0 age=1.6s backup
+[ 356s][RUN]   id=6 hop=1 parent=0 rssi=-85 ema=-84.7 age=4.4s PARENT
+[ 356s][RUN]   id=9 hop=2 parent=4 rssi=-81 ema=-85.3 age=4.0s backup
+[ 356s][RUN]   id=10 hop=3 parent=8 rssi=-78 ema=-79.1 age=3.7s child
+[ 356s][RUN]   id=12 hop=3 parent=13 rssi=-86 ema=-84.6 age=11.7s backup
+[ 356s][RUN]   id=13 hop=3 parent=1 rssi=-80 ema=-80.0 age=0.3s backup
+[ 356s][RUN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=12 adv_tx=68 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 359s][RUN] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 359s][RUN] NEIGHBOR NEW id=12 hop=3 parent=1 rssi=-83
+[ 360s][DRAIN] PHASE DRAIN
+[ 361s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=6
+[ 361s][DRAIN]   id=1 hop=3 parent=8 rssi=-85 ema=-85.0 age=1.3s child
+[ 361s][DRAIN]   id=6 hop=1 parent=0 rssi=-85 ema=-84.7 age=9.4s PARENT
+[ 361s][DRAIN]   id=9 hop=2 parent=4 rssi=-86 ema=-85.5 age=3.8s backup
+[ 361s][DRAIN]   id=10 hop=3 parent=8 rssi=-78 ema=-79.1 age=8.7s child
+[ 361s][DRAIN]   id=12 hop=3 parent=1 rssi=-83 ema=-83.0 age=1.0s backup
+[ 361s][DRAIN]   id=13 hop=3 parent=1 rssi=-80 ema=-80.0 age=5.3s backup
+[ 361s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=12 adv_tx=69 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 361s][DRAIN] TX RELAY origin=12 seq=29 -> dest=6 ttl=7
+[ 362s][DRAIN] NEIGHBOR NEW id=7 hop=1 parent=0 rssi=-89
+[ 362s][DRAIN] ROUTE parent 6->7 hop 2->2 rss=-89.0 reason=shorter_route (adv from 6)
+[ 363s][DRAIN] NEIGHBOR NEW id=0 hop=0 parent=0 rssi=-94
+[ 366s][DRAIN] TABLE me=8 parent=7 hop=2 nbrs=8
+[ 366s][DRAIN]   id=0 hop=0 parent=0 rssi=-94 ema=-94.0 age=2.2s weak_rss
+[ 366s][DRAIN]   id=1 hop=3 parent=8 rssi=-83 ema=-84.4 age=0.9s child
+[ 366s][DRAIN]   id=6 hop=2 parent=4 rssi=-84 ema=-84.5 age=3.8s backup
+[ 366s][DRAIN]   id=7 hop=1 parent=0 rssi=-89 ema=-89.0 age=3.9s PARENT
+[ 366s][DRAIN]   id=9 hop=3 parent=7 rssi=-85 ema=-85.4 age=3.4s backup
+[ 366s][DRAIN]   id=10 hop=2 parent=7 rssi=-80 ema=-79.4 age=3.3s backup
+[ 366s][DRAIN]   id=12 hop=3 parent=1 rssi=-85 ema=-83.6 age=0.7s backup
+[ 366s][DRAIN]   id=13 hop=3 parent=8 rssi=-78 ema=-79.4 age=4.8s child
+[ 366s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=70 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 371s][DRAIN] TABLE me=8 parent=7 hop=2 nbrs=8
+[ 371s][DRAIN]   id=0 hop=0 parent=0 rssi=-94 ema=-94.0 age=7.2s weak_rss
+[ 371s][DRAIN]   id=1 hop=2 parent=7 rssi=-85 ema=-84.6 age=0.4s backup
+[ 371s][DRAIN]   id=6 hop=2 parent=4 rssi=-83 ema=-84.0 age=3.8s backup
+[ 371s][DRAIN]   id=7 hop=1 parent=0 rssi=-91 ema=-89.6 age=3.9s PARENT
+[ 371s][DRAIN]   id=9 hop=2 parent=7 rssi=-82 ema=-84.4 age=3.4s backup
+[ 371s][DRAIN]   id=10 hop=2 parent=7 rssi=-79 ema=-79.3 age=2.9s backup
+[ 371s][DRAIN]   id=12 hop=3 parent=1 rssi=-85 ema=-83.6 age=5.7s backup
+[ 371s][DRAIN]   id=13 hop=3 parent=8 rssi=-83 ema=-80.5 age=4.7s child
+[ 371s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=71 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 372s][DRAIN] NEIGHBOR NEW id=3 hop=3 parent=10 rssi=-91
+[ 376s][DRAIN] TABLE me=8 parent=7 hop=2 nbrs=9
+[ 376s][DRAIN]   id=0 hop=0 parent=0 rssi=-94 ema=-94.0 age=12.2s weak_rss
+[ 376s][DRAIN]   id=1 hop=2 parent=7 rssi=-85 ema=-84.6 age=5.4s backup
+[ 376s][DRAIN]   id=3 hop=3 parent=10 rssi=-91 ema=-91.0 age=3.1s weak_rss
+[ 376s][DRAIN]   id=6 hop=1 parent=0 rssi=-84 ema=-84.0 age=2.5s backup
+[ 376s][DRAIN]   id=7 hop=1 parent=0 rssi=-91 ema=-89.6 age=8.9s PARENT
+[ 376s][DRAIN]   id=9 hop=2 parent=7 rssi=-82 ema=-84.4 age=8.4s backup
+[ 376s][DRAIN]   id=10 hop=2 parent=7 rssi=-79 ema=-79.2 age=2.7s backup
+[ 376s][DRAIN]   id=12 hop=3 parent=8 rssi=-86 ema=-84.3 age=0.1s child
+[ 376s][DRAIN]   id=13 hop=3 parent=8 rssi=-83 ema=-80.5 age=9.7s child
+[ 376s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=72 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 377s][DRAIN] ROUTE parent 7->6 hop 2->2 rss=-84.0 reason=parent_ineligible (adv from 7)
+[ 379s][DRAIN] NEIGHBOR EXPIRED id=0 (no advert for 15 s)
+[ 381s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=8
+[ 381s][DRAIN]   id=1 hop=2 parent=7 rssi=-85 ema=-84.6 age=10.4s backup
+[ 381s][DRAIN]   id=3 hop=3 parent=10 rssi=-91 ema=-91.0 age=8.1s weak_rss
+[ 381s][DRAIN]   id=6 hop=1 parent=0 rssi=-85 ema=-84.3 age=2.3s PARENT
+[ 381s][DRAIN]   id=7 hop=2 parent=6 rssi=-92 ema=-90.3 age=3.7s weak_rss
+[ 381s][DRAIN]   id=9 hop=2 parent=7 rssi=-82 ema=-84.4 age=13.4s backup
+[ 381s][DRAIN]   id=10 hop=2 parent=7 rssi=-79 ema=-79.2 age=7.7s backup
+[ 381s][DRAIN]   id=12 hop=3 parent=8 rssi=-86 ema=-84.3 age=5.1s child
+[ 381s][DRAIN]   id=13 hop=3 parent=8 rssi=-83 ema=-80.5 age=14.7s child
+[ 381s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=73 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 381s][DRAIN] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 382s][DRAIN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[ 383s][DRAIN] NEIGHBOR NEW id=9 hop=3 parent=7 rssi=-83
+[ 386s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=7
+[ 386s][DRAIN]   id=1 hop=2 parent=7 rssi=-79 ema=-82.9 age=4.7s backup
+[ 386s][DRAIN]   id=3 hop=3 parent=10 rssi=-93 ema=-91.6 age=2.6s weak_rss
+[ 386s][DRAIN]   id=6 hop=1 parent=0 rssi=-88 ema=-85.4 age=2.1s PARENT
+[ 386s][DRAIN]   id=7 hop=2 parent=6 rssi=-92 ema=-90.3 age=8.7s weak_rss
+[ 386s][DRAIN]   id=9 hop=3 parent=7 rssi=-83 ema=-83.0 age=2.6s backup
+[ 386s][DRAIN]   id=10 hop=2 parent=7 rssi=-79 ema=-79.2 age=12.7s backup
+[ 386s][DRAIN]   id=12 hop=3 parent=8 rssi=-86 ema=-84.3 age=10.1s child
+[ 386s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=74 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 387s][DRAIN] NEIGHBOR NEW id=13 hop=3 parent=7 rssi=-82
+[ 388s][DRAIN] NEIGHBOR EXPIRED id=10 (no advert for 15 s)
+[ 388s][DRAIN] NEIGHBOR NEW id=10 hop=2 parent=6 rssi=-77
+[ 391s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=8
+[ 391s][DRAIN]   id=1 hop=2 parent=7 rssi=-79 ema=-82.9 age=9.7s backup
+[ 391s][DRAIN]   id=3 hop=3 parent=8 rssi=-90 ema=-91.1 age=2.3s child
+[ 391s][DRAIN]   id=6 hop=1 parent=0 rssi=-88 ema=-85.4 age=7.1s PARENT
+[ 391s][DRAIN]   id=7 hop=2 parent=6 rssi=-92 ema=-90.3 age=13.7s weak_rss
+[ 391s][DRAIN]   id=9 hop=3 parent=7 rssi=-83 ema=-83.0 age=7.6s backup
+[ 391s][DRAIN]   id=10 hop=2 parent=6 rssi=-77 ema=-77.0 age=2.1s backup
+[ 391s][DRAIN]   id=12 hop=3 parent=8 rssi=-85 ema=-84.5 age=4.5s child
+[ 391s][DRAIN]   id=13 hop=3 parent=7 rssi=-82 ema=-82.0 age=3.3s backup
+[ 391s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=75 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 392s][DRAIN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 392s][DRAIN] NEIGHBOR NEW id=7 hop=1 parent=0 rssi=-91
+[ 396s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=8
+[ 396s][DRAIN]   id=1 hop=2 parent=7 rssi=-79 ema=-82.9 age=14.7s backup
+[ 396s][DRAIN]   id=3 hop=3 parent=8 rssi=-90 ema=-91.1 age=7.3s child
+[ 396s][DRAIN]   id=6 hop=1 parent=0 rssi=-88 ema=-85.4 age=12.1s PARENT
+[ 396s][DRAIN]   id=7 hop=1 parent=0 rssi=-91 ema=-91.0 age=3.1s weak_rss
+[ 396s][DRAIN]   id=9 hop=3 parent=7 rssi=-83 ema=-83.0 age=12.6s backup
+[ 396s][DRAIN]   id=10 hop=2 parent=6 rssi=-76 ema=-76.7 age=1.7s backup
+[ 396s][DRAIN]   id=12 hop=3 parent=8 rssi=-85 ema=-84.5 age=9.5s child
+[ 396s][DRAIN]   id=13 hop=3 parent=7 rssi=-78 ema=-80.8 age=3.1s backup
+[ 396s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=76 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 396s][DRAIN] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 396s][DRAIN] NEIGHBOR NEW id=1 hop=2 parent=7 rssi=-84
+[ 398s][DRAIN] NEIGHBOR EXPIRED id=9 (no advert for 15 s)
+[ 399s][DRAIN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[ 399s][DRAIN] ROUTE parent 6->10 hop 2->3 rss=-76.7 reason=parent_ineligible (expired [6])
+[ 401s][DRAIN] TABLE me=8 parent=10 hop=3 nbrs=6
+[ 401s][DRAIN]   id=1 hop=2 parent=7 rssi=-84 ema=-84.0 age=4.1s backup
+[ 401s][DRAIN]   id=3 hop=3 parent=8 rssi=-90 ema=-91.1 age=12.3s child
+[ 401s][DRAIN]   id=7 hop=1 parent=0 rssi=-91 ema=-91.0 age=8.1s weak_rss
+[ 401s][DRAIN]   id=10 hop=2 parent=6 rssi=-76 ema=-76.7 age=6.7s PARENT
+[ 401s][DRAIN]   id=12 hop=3 parent=10 rssi=-81 ema=-83.5 age=3.8s backup
+[ 401s][DRAIN]   id=13 hop=3 parent=1 rssi=-77 ema=-79.7 age=2.7s backup
+[ 401s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=77 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 403s][DRAIN] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 404s][DRAIN] NEIGHBOR NEW id=6 hop=1 parent=0 rssi=-90
+[ 404s][DRAIN] ROUTE parent 10->6 hop 3->2 rss=-90.0 reason=shorter_route (adv from 6)
+[ 406s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=6
+[ 406s][DRAIN]   id=1 hop=2 parent=7 rssi=-86 ema=-84.6 age=3.8s backup
+[ 406s][DRAIN]   id=6 hop=1 parent=0 rssi=-90 ema=-90.0 age=1.0s PARENT
+[ 406s][DRAIN]   id=7 hop=1 parent=0 rssi=-91 ema=-91.0 age=13.1s weak_rss
+[ 406s][DRAIN]   id=10 hop=2 parent=7 rssi=-82 ema=-78.3 age=1.2s backup
+[ 406s][DRAIN]   id=12 hop=3 parent=10 rssi=-86 ema=-84.2 age=3.6s backup
+[ 406s][DRAIN]   id=13 hop=3 parent=1 rssi=-82 ema=-80.4 age=2.5s backup
+[ 406s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=78 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 407s][DRAIN] NEIGHBOR EXPIRED id=7 (no advert for 15 s)
+[ 411s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=5
+[ 411s][DRAIN]   id=1 hop=2 parent=7 rssi=-83 ema=-84.1 age=3.7s backup
+[ 411s][DRAIN]   id=6 hop=1 parent=0 rssi=-90 ema=-90.0 age=6.0s PARENT
+[ 411s][DRAIN]   id=10 hop=2 parent=7 rssi=-82 ema=-78.3 age=6.2s backup
+[ 411s][DRAIN]   id=12 hop=3 parent=10 rssi=-86 ema=-84.2 age=8.6s backup
+[ 411s][DRAIN]   id=13 hop=3 parent=1 rssi=-81 ema=-80.6 age=1.5s backup
+[ 411s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=79 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 416s][DRAIN] TABLE me=8 parent=6 hop=2 nbrs=5
+[ 416s][DRAIN]   id=1 hop=3 parent=10 rssi=-84 ema=-84.1 age=3.3s backup
+[ 416s][DRAIN]   id=6 hop=1 parent=0 rssi=-90 ema=-90.0 age=11.0s PARENT
+[ 416s][DRAIN]   id=10 hop=2 parent=6 rssi=-76 ema=-77.6 age=0.7s backup
+[ 416s][DRAIN]   id=12 hop=3 parent=8 rssi=-81 ema=-83.3 age=3.2s child
+[ 416s][DRAIN]   id=13 hop=3 parent=8 rssi=-80 ema=-80.4 age=1.3s child
+[ 416s][DRAIN] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=80 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 419s][DRAIN] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[ 419s][DRAIN] ROUTE parent 6->10 hop 2->3 rss=-77.6 reason=parent_ineligible (expired [6])
+[ 420s][DONE] PHASE DONE
+[ 421s][DONE] SUMMARY # iot-log format 1
+[ 421s][DONE] SUMMARY format=1
+[ 421s][DONE] SUMMARY device=node
+[ 421s][DONE] SUMMARY device_id=8
+[ 421s][DONE] SUMMARY sensor=MPU6050
+[ 421s][DONE] SUMMARY mode=dv
+[ 421s][DONE] SUMMARY run_id=3
+[ 421s][DONE] SUMMARY warmup_s=60
+[ 421s][DONE] SUMMARY run_s=300
+[ 421s][DONE] SUMMARY drain_s=60
+[ 421s][DONE] SUMMARY adv_interval_s=5
+[ 421s][DONE] SUMMARY data_interval_s=10
+[ 421s][DONE] SUMMARY tx_power_dbm=17.0
+[ 421s][DONE] SUMMARY generated=29
+[ 421s][DONE] SUMMARY acq_fail=0
+[ 421s][DONE] SUMMARY drop_noroute=0
+[ 421s][DONE] SUMMARY data_tx_own=29
+[ 421s][DONE] SUMMARY data_tx_relay=13
+[ 421s][DONE] SUMMARY adv_tx=80
+[ 421s][DONE] SUMMARY final_hop=3
+[ 421s][DONE] SUMMARY final_parent=10
+[ 421s][DONE] SUMMARY adv_rx=286
+[ 421s][DONE] SUMMARY drop_crc=0
+[ 421s][DONE] SUMMARY drop_dup=1
+[ 421s][DONE] SUMMARY drop_malformed=0
+[ 421s][DONE] SUMMARY drop_noroute_relay=0
+[ 421s][DONE] SUMMARY drop_queue=0
+[ 421s][DONE] SUMMARY drop_run=0
+[ 421s][DONE] SUMMARY drop_ttl=0
+[ 421s][DONE] SUMMARY rx_total=426
+[ 421s][DONE] SUMMARY tx_error=0
+[ 421s][DONE] SUMMARY written to node8_summary_dv_run3.txt
+[ 421s][DONE] TABLE me=8 parent=10 hop=3 nbrs=4
+[ 421s][DONE]   id=1 hop=3 parent=10 rssi=-84 ema=-84.1 age=8.4s backup
+[ 421s][DONE]   id=10 hop=2 parent=7 rssi=-79 ema=-78.0 age=0.2s PARENT
+[ 421s][DONE]   id=12 hop=3 parent=8 rssi=-81 ema=-83.3 age=8.4s child
+[ 421s][DONE]   id=13 hop=3 parent=8 rssi=-80 ema=-80.4 age=6.5s child
+[ 421s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=80 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 426s][DONE] NEIGHBOR NEW id=6 hop=2 parent=4 rssi=-87
+[ 426s][DONE] TABLE me=8 parent=10 hop=3 nbrs=5
+[ 426s][DONE]   id=1 hop=3 parent=10 rssi=-84 ema=-84.1 age=13.4s backup
+[ 426s][DONE]   id=6 hop=2 parent=4 rssi=-87 ema=-87.0 age=0.1s backup
+[ 426s][DONE]   id=10 hop=2 parent=7 rssi=-79 ema=-78.0 age=5.2s PARENT
+[ 426s][DONE]   id=12 hop=3 parent=8 rssi=-81 ema=-83.3 age=13.4s child
+[ 426s][DONE]   id=13 hop=3 parent=8 rssi=-80 ema=-80.4 age=11.5s child
+[ 426s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=81 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 428s][DONE] NEIGHBOR EXPIRED id=1 (no advert for 15 s)
+[ 428s][DONE] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 428s][DONE] NEIGHBOR NEW id=12 hop=3 parent=10 rssi=-80
+[ 430s][DONE] NEIGHBOR EXPIRED id=13 (no advert for 15 s)
+[ 431s][DONE] TABLE me=8 parent=10 hop=3 nbrs=3
+[ 431s][DONE]   id=6 hop=2 parent=4 rssi=-87 ema=-87.0 age=5.1s backup
+[ 431s][DONE]   id=10 hop=2 parent=7 rssi=-79 ema=-78.0 age=10.2s PARENT
+[ 431s][DONE]   id=12 hop=3 parent=10 rssi=-80 ema=-80.0 age=2.6s backup
+[ 431s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=82 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 436s][DONE] ROUTE parent 10->10 hop 3->4 rss=-78.3 reason=hop_update (adv from 10)
+[ 436s][DONE] TABLE me=8 parent=10 hop=4 nbrs=3
+[ 436s][DONE]   id=6 hop=4 parent=10 rssi=-88 ema=-87.3 age=4.7s backup
+[ 436s][DONE]   id=10 hop=3 parent=7 rssi=-79 ema=-78.3 age=0.1s PARENT
+[ 436s][DONE]   id=12 hop=4 parent=3 rssi=-82 ema=-80.6 age=2.5s backup
+[ 436s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=83 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 441s][DONE] TABLE me=8 parent=10 hop=4 nbrs=3
+[ 441s][DONE]   id=6 hop=4 parent=10 rssi=-88 ema=-87.3 age=9.7s backup
+[ 441s][DONE]   id=10 hop=3 parent=7 rssi=-79 ema=-78.3 age=5.1s PARENT
+[ 441s][DONE]   id=12 hop=4 parent=3 rssi=-82 ema=-80.6 age=7.5s backup
+[ 441s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=84 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 441s][DONE] ROUTE parent 10->10 hop 4->3 rss=-78.5 reason=hop_update (adv from 10)
+[ 446s][DONE] TABLE me=8 parent=10 hop=3 nbrs=3
+[ 446s][DONE]   id=6 hop=4 parent=10 rssi=-88 ema=-87.3 age=14.7s backup
+[ 446s][DONE]   id=10 hop=2 parent=7 rssi=-79 ema=-78.5 age=4.7s PARENT
+[ 446s][DONE]   id=12 hop=4 parent=3 rssi=-82 ema=-80.6 age=12.5s backup
+[ 446s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=85 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 447s][DONE] NEIGHBOR EXPIRED id=6 (no advert for 15 s)
+[ 449s][DONE] NEIGHBOR EXPIRED id=12 (no advert for 15 s)
+[ 449s][DONE] NEIGHBOR NEW id=12 hop=2 parent=7 rssi=-84
+[ 451s][DONE] NEIGHBOR NEW id=3 hop=3 parent=10 rssi=-93
+[ 451s][DONE] TABLE me=8 parent=10 hop=3 nbrs=3
+[ 451s][DONE]   id=3 hop=3 parent=10 rssi=-93 ema=-93.0 age=0.1s weak_rss
+[ 451s][DONE]   id=10 hop=2 parent=7 rssi=-79 ema=-78.5 age=9.7s PARENT
+[ 451s][DONE]   id=12 hop=2 parent=7 rssi=-84 ema=-84.0 age=1.6s backup
+[ 451s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=86 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 456s][DONE] TABLE me=8 parent=10 hop=3 nbrs=3
+[ 456s][DONE]   id=3 hop=3 parent=10 rssi=-93 ema=-93.0 age=5.1s weak_rss
+[ 456s][DONE]   id=10 hop=2 parent=7 rssi=-81 ema=-79.3 age=4.1s PARENT
+[ 456s][DONE]   id=12 hop=4 parent=7 rssi=-83 ema=-83.7 age=1.2s backup
+[ 456s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=87 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 461s][DONE] TABLE me=8 parent=10 hop=3 nbrs=3
+[ 461s][DONE]   id=3 hop=3 parent=10 rssi=-93 ema=-93.0 age=10.1s weak_rss
+[ 461s][DONE]   id=10 hop=2 parent=7 rssi=-81 ema=-79.3 age=9.1s PARENT
+[ 461s][DONE]   id=12 hop=4 parent=7 rssi=-87 ema=-84.7 age=1.1s backup
+[ 461s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=88 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 462s][DONE] NEIGHBOR NEW id=7 hop=4 parent=8 rssi=-88
+[ 466s][DONE] TABLE me=8 parent=10 hop=3 nbrs=4
+[ 466s][DONE]   id=3 hop=3 parent=10 rssi=-93 ema=-93.0 age=15.1s weak_rss
+[ 466s][DONE]   id=7 hop=4 parent=8 rssi=-88 ema=-88.0 age=4.0s child
+[ 466s][DONE]   id=10 hop=2 parent=7 rssi=-81 ema=-79.3 age=14.1s PARENT
+[ 466s][DONE]   id=12 hop=4 parent=7 rssi=-83 ema=-84.2 age=0.7s backup
+[ 466s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=89 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 466s][DONE] NEIGHBOR EXPIRED id=3 (no advert for 15 s)
+[ 467s][DONE] NEIGHBOR EXPIRED id=10 (no advert for 15 s)
+[ 467s][DONE] ROUTE parent 10->12 hop 3->5 rss=-84.2 reason=parent_ineligible (expired [10])
+[ 470s][DONE] ROUTE parent 12->255 hop 5->255 rss=- reason=no_eligible_candidate (adv from 12)
+[ 471s][DONE] TABLE me=8 parent=255 hop=255 nbrs=2
+[ 471s][DONE]   id=7 hop=4 parent=8 rssi=-88 ema=-88.0 age=9.0s child
+[ 471s][DONE]   id=12 hop=255 parent=255 rssi=-83 ema=-83.8 age=0.6s no_route
+[ 471s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=90 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
+[ 473s][DONE] NEIGHBOR NEW id=10 hop=5 parent=7 rssi=-81
+[ 473s][DONE] ROUTE parent 255->10 hop 255->6 rss=-81.0 reason=first_route (adv from 10)
+[ 476s][DONE] TABLE me=8 parent=10 hop=6 nbrs=3
+[ 476s][DONE]   id=7 hop=4 parent=8 rssi=-88 ema=-88.0 age=14.0s child
+[ 476s][DONE]   id=10 hop=5 parent=7 rssi=-81 ema=-81.0 age=3.0s PARENT
+[ 476s][DONE]   id=12 hop=255 parent=255 rssi=-83 ema=-83.8 age=5.6s no_route
+[ 476s][DONE] COUNTERS gen=29 acq_fail=0 noroute=0 own_tx=29 relay_tx=13 adv_tx=91 | drops: noroute_relay=0 crc=0 run=0 mal=0 dup=1 ttl=0 queue=0 tx_err=0
