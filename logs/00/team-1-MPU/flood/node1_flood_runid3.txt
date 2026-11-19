@@ -1,0 +1,327 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4200
+load:0x40078000,len:15236
+load:0x40080400,len:3332
+entry 0x400805a8
+LOG {"mode": "flood", "channel": 1, "run": 3, "event": "BOOT", "ms": 1007, "node": 1}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {}, "parent": 255, "ms": 11014, "node": 1}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {}, "parent": 255, "ms": 21018, "node": 1}
+LOG {"bytes": 28, "counter": 8448, "mode": "flood", "ms": 24372, "node": 1, "seq": 0, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"mode": "flood", "phase": "measurement", "run": 3, "event": "PHASE", "ms": 31018, "node": 1}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"duplicate": 4, "tx_relay": 1}, "parent": 255, "ms": 31023, "node": 1}
+LOG {"bytes": 28, "counter": 8449, "mode": "flood", "ms": 31194, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8450, "mode": "flood", "ms": 31485, "node": 1, "seq": 0, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8451, "mode": "flood", "ms": 32610, "node": 1, "seq": 0, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.893417, "mode": "flood", "ms": 33019, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 0, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8452, "mode": "flood", "ms": 33037, "node": 1, "seq": 0, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8453, "mode": "flood", "ms": 33244, "node": 1, "seq": 0, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 8454, "mode": "flood", "ms": 34476, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8455, "mode": "flood", "ms": 35074, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8456, "mode": "flood", "ms": 40503, "node": 1, "seq": 0, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 1, "tx_relay": 8, "tx_data": 1, "duplicate": 37}, "parent": 255, "ms": 41021, "node": 1}
+LOG {"bytes": 28, "counter": 8457, "mode": "flood", "ms": 41902, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8458, "mode": "flood", "ms": 42109, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8459, "mode": "flood", "ms": 43062, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.895748, "mode": "flood", "ms": 43155, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 1, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8460, "mode": "flood", "ms": 43167, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8461, "mode": "flood", "ms": 43576, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 8462, "mode": "flood", "ms": 44893, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8463, "mode": "flood", "ms": 45991, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8464, "mode": "flood", "ms": 47701, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 2, "tx_relay": 15, "tx_data": 2, "duplicate": 86}, "parent": 255, "ms": 51027, "node": 1}
+LOG {"bytes": 24, "counter": 8465, "mode": "flood", "ms": 51072, "node": 1, "seq": 1, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8466, "mode": "flood", "ms": 52459, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8467, "mode": "flood", "ms": 52484, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8468, "mode": "flood", "ms": 53189, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.893728, "mode": "flood", "ms": 53644, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 2, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8469, "mode": "flood", "ms": 53658, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8470, "mode": "flood", "ms": 54066, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 8471, "mode": "flood", "ms": 55667, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8472, "mode": "flood", "ms": 56467, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8473, "mode": "flood", "ms": 57862, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 3, "tx_relay": 23, "tx_data": 3, "duplicate": 129}, "parent": 255, "ms": 61027, "node": 1}
+LOG {"bytes": 24, "counter": 8474, "mode": "flood", "ms": 61755, "node": 1, "seq": 2, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 21, "counter": 8475, "mode": "flood", "ms": 62766, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 28, "counter": 8476, "mode": "flood", "ms": 63125, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8477, "mode": "flood", "ms": 64149, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.869726, "mode": "flood", "ms": 64326, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 3, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8478, "mode": "flood", "ms": 64337, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8479, "mode": "flood", "ms": 64413, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 8480, "mode": "flood", "ms": 66000, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8481, "mode": "flood", "ms": 66716, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8482, "mode": "flood", "ms": 68344, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 4, "tx_relay": 31, "tx_data": 4, "duplicate": 177}, "parent": 255, "ms": 71033, "node": 1}
+LOG {"bytes": 24, "counter": 8483, "mode": "flood", "ms": 72526, "node": 1, "seq": 3, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8484, "mode": "flood", "ms": 73573, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8485, "mode": "flood", "ms": 74549, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"magnitude": 9.868085, "mode": "flood", "ms": 74774, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 4, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8486, "mode": "flood", "ms": 74791, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8487, "mode": "flood", "ms": 74801, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 28, "counter": 8488, "mode": "flood", "ms": 76298, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8489, "mode": "flood", "ms": 77410, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8490, "mode": "flood", "ms": 78416, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 5, "tx_relay": 38, "tx_data": 5, "duplicate": 223}, "parent": 255, "ms": 81032, "node": 1}
+LOG {"bytes": 24, "counter": 8491, "mode": "flood", "ms": 82871, "node": 1, "seq": 4, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8492, "mode": "flood", "ms": 84142, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8493, "mode": "flood", "ms": 84313, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8494, "mode": "flood", "ms": 84964, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 24, "counter": 8495, "mode": "flood", "ms": 85448, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"magnitude": 9.864841, "mode": "flood", "ms": 85732, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 5, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8496, "mode": "flood", "ms": 85747, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 28, "counter": 8497, "mode": "flood", "ms": 87689, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8498, "mode": "flood", "ms": 87878, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8499, "mode": "flood", "ms": 89061, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 6, "tx_relay": 46, "tx_data": 6, "duplicate": 266}, "parent": 255, "ms": 91040, "node": 1}
+LOG {"bytes": 24, "counter": 8500, "mode": "flood", "ms": 93113, "node": 1, "seq": 5, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8501, "mode": "flood", "ms": 94620, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8502, "mode": "flood", "ms": 95058, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 21, "counter": 8503, "mode": "flood", "ms": 95123, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8504, "mode": "flood", "ms": 95938, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"magnitude": 9.862735, "mode": "flood", "ms": 96496, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 6, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8505, "mode": "flood", "ms": 96507, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8506, "mode": "flood", "ms": 98035, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 28, "counter": 8507, "mode": "flood", "ms": 98428, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8508, "mode": "flood", "ms": 99374, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 7, "tx_relay": 54, "tx_data": 7, "duplicate": 310}, "parent": 255, "ms": 101042, "node": 1}
+LOG {"bytes": 24, "counter": 8509, "mode": "flood", "ms": 103496, "node": 1, "seq": 6, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 21, "counter": 8510, "mode": "flood", "ms": 105206, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 28, "counter": 8511, "mode": "flood", "ms": 105234, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8512, "mode": "flood", "ms": 105532, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 24, "counter": 8513, "mode": "flood", "ms": 106624, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"magnitude": 9.866031, "mode": "flood", "ms": 106973, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 7, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8514, "mode": "flood", "ms": 106987, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 28, "counter": 8515, "mode": "flood", "ms": 108472, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8516, "mode": "flood", "ms": 108783, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8517, "mode": "flood", "ms": 109664, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 8, "tx_relay": 62, "tx_data": 8, "duplicate": 358}, "parent": 255, "ms": 111050, "node": 1}
+LOG {"bytes": 24, "counter": 8518, "mode": "flood", "ms": 113897, "node": 1, "seq": 7, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 21, "counter": 8519, "mode": "flood", "ms": 115433, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 28, "counter": 8520, "mode": "flood", "ms": 115859, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8521, "mode": "flood", "ms": 115918, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 24, "counter": 8522, "mode": "flood", "ms": 117343, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"magnitude": 9.863806, "mode": "flood", "ms": 117967, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 8, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8523, "mode": "flood", "ms": 117977, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 28, "counter": 8524, "mode": "flood", "ms": 119251, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8525, "mode": "flood", "ms": 119733, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8526, "mode": "flood", "ms": 120210, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 9, "tx_relay": 70, "tx_data": 9, "duplicate": 405}, "parent": 255, "ms": 121054, "node": 1}
+LOG {"bytes": 24, "counter": 8527, "mode": "flood", "ms": 123994, "node": 1, "seq": 8, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8528, "mode": "flood", "ms": 126218, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8529, "mode": "flood", "ms": 126404, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8530, "mode": "flood", "ms": 126678, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 24, "counter": 8531, "mode": "flood", "ms": 127748, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"magnitude": 9.86528, "mode": "flood", "ms": 128720, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 9, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8532, "mode": "flood", "ms": 128737, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 28, "counter": 8533, "mode": "flood", "ms": 129898, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 21, "counter": 8534, "mode": "flood", "ms": 130109, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8535, "mode": "flood", "ms": 130602, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 10, "tx_relay": 78, "tx_data": 10, "duplicate": 443}, "parent": 255, "ms": 131058, "node": 1}
+LOG {"bytes": 24, "counter": 8536, "mode": "flood", "ms": 134929, "node": 1, "seq": 9, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 21, "counter": 8537, "mode": "flood", "ms": 137087, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 28, "counter": 8538, "mode": "flood", "ms": 137172, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8539, "mode": "flood", "ms": 137419, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 24, "counter": 8540, "mode": "flood", "ms": 138612, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"magnitude": 9.881493, "mode": "flood", "ms": 139069, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 10, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8541, "mode": "flood", "ms": 139087, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8542, "mode": "flood", "ms": 140205, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 28, "counter": 8543, "mode": "flood", "ms": 140698, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 11, "tx_relay": 85, "tx_data": 11, "duplicate": 484}, "parent": 255, "ms": 141066, "node": 1}
+LOG {"bytes": 24, "counter": 8544, "mode": "flood", "ms": 141102, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 24, "counter": 8545, "mode": "flood", "ms": 144863, "node": 1, "seq": 10, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8546, "mode": "flood", "ms": 147488, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8547, "mode": "flood", "ms": 147843, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 21, "counter": 8548, "mode": "flood", "ms": 148017, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"magnitude": 9.8810216, "mode": "flood", "ms": 149244, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 11, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8549, "mode": "flood", "ms": 149257, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8550, "mode": "flood", "ms": 149616, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 21, "counter": 8551, "mode": "flood", "ms": 150212, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 28, "counter": 8552, "mode": "flood", "ms": 151066, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 12, "tx_relay": 93, "tx_data": 12, "duplicate": 521}, "parent": 255, "ms": 151084, "node": 1}
+LOG {"bytes": 24, "counter": 8553, "mode": "flood", "ms": 151641, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 24, "counter": 8554, "mode": "flood", "ms": 154864, "node": 1, "seq": 11, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8555, "mode": "flood", "ms": 158005, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8556, "mode": "flood", "ms": 158671, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 21, "counter": 8557, "mode": "flood", "ms": 158996, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"magnitude": 9.863319, "mode": "flood", "ms": 159731, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 12, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8558, "mode": "flood", "ms": 159747, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8559, "mode": "flood", "ms": 160396, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 21, "counter": 8560, "mode": "flood", "ms": 160694, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 13, "tx_relay": 100, "tx_data": 13, "duplicate": 559}, "parent": 255, "ms": 161088, "node": 1}
+LOG {"bytes": 28, "counter": 8561, "mode": "flood", "ms": 161299, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8562, "mode": "flood", "ms": 162048, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 24, "counter": 8563, "mode": "flood", "ms": 165101, "node": 1, "seq": 12, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 21, "counter": 8564, "mode": "flood", "ms": 168916, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 28, "counter": 8565, "mode": "flood", "ms": 169092, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8566, "mode": "flood", "ms": 169439, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.91229, "mode": "flood", "ms": 170004, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 13, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8567, "mode": "flood", "ms": 170017, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 14, "tx_relay": 106, "tx_data": 14, "duplicate": 597}, "parent": 255, "ms": 171098, "node": 1}
+LOG {"bytes": 21, "counter": 8568, "mode": "flood", "ms": 171127, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8569, "mode": "flood", "ms": 171229, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 8570, "mode": "flood", "ms": 172049, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8571, "mode": "flood", "ms": 172523, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 24, "counter": 8572, "mode": "flood", "ms": 175748, "node": 1, "seq": 13, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 21, "counter": 8573, "mode": "flood", "ms": 179303, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 28, "counter": 8574, "mode": "flood", "ms": 179732, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"magnitude": 9.8530448, "mode": "flood", "ms": 180217, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 14, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8575, "mode": "flood", "ms": 180228, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8576, "mode": "flood", "ms": 180415, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 15, "tx_relay": 114, "tx_data": 15, "duplicate": 643}, "parent": 255, "ms": 181100, "node": 1}
+LOG {"bytes": 21, "counter": 8577, "mode": "flood", "ms": 181205, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8578, "mode": "flood", "ms": 181681, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8579, "mode": "flood", "ms": 182819, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8580, "mode": "flood", "ms": 183149, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8581, "mode": "flood", "ms": 185805, "node": 1, "seq": 14, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8582, "mode": "flood", "ms": 189836, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8583, "mode": "flood", "ms": 190088, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"magnitude": 9.85206, "mode": "flood", "ms": 190423, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 15, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8584, "mode": "flood", "ms": 190437, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8585, "mode": "flood", "ms": 190951, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 16, "tx_relay": 122, "tx_data": 16, "duplicate": 693}, "parent": 255, "ms": 191108, "node": 1}
+LOG {"bytes": 21, "counter": 8586, "mode": "flood", "ms": 192092, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8587, "mode": "flood", "ms": 192244, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8588, "mode": "flood", "ms": 192888, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8589, "mode": "flood", "ms": 193349, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8590, "mode": "flood", "ms": 196803, "node": 1, "seq": 15, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8591, "mode": "flood", "ms": 200244, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8592, "mode": "flood", "ms": 200482, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 16, "tx_relay": 129, "tx_data": 16, "duplicate": 726}, "parent": 255, "ms": 201115, "node": 1}
+LOG {"bytes": 24, "counter": 8593, "mode": "flood", "ms": 201308, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.41604, "mode": "flood", "ms": 201379, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 16, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8594, "mode": "flood", "ms": 201392, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8595, "mode": "flood", "ms": 202313, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 21, "counter": 8596, "mode": "flood", "ms": 202469, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8597, "mode": "flood", "ms": 203545, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8598, "mode": "flood", "ms": 204224, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8599, "mode": "flood", "ms": 206803, "node": 1, "seq": 16, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 21, "counter": 8600, "mode": "flood", "ms": 211120, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 17, "tx_relay": 136, "tx_data": 17, "duplicate": 767}, "parent": 255, "ms": 211146, "node": 1}
+LOG {"bytes": 28, "counter": 8601, "mode": "flood", "ms": 211280, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8602, "mode": "flood", "ms": 211395, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.258191, "mode": "flood", "ms": 211898, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 17, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8603, "mode": "flood", "ms": 211907, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8604, "mode": "flood", "ms": 212665, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8605, "mode": "flood", "ms": 212965, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8606, "mode": "flood", "ms": 214066, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8607, "mode": "flood", "ms": 214862, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8608, "mode": "flood", "ms": 217397, "node": 1, "seq": 17, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 18, "tx_relay": 143, "tx_data": 18, "duplicate": 823}, "parent": 255, "ms": 221145, "node": 1}
+LOG {"bytes": 28, "counter": 8609, "mode": "flood", "ms": 221552, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8610, "mode": "flood", "ms": 221612, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 21, "counter": 8611, "mode": "flood", "ms": 221671, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"magnitude": 9.070673, "mode": "flood", "ms": 222581, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 18, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8612, "mode": "flood", "ms": 222597, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8613, "mode": "flood", "ms": 223054, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8614, "mode": "flood", "ms": 223795, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8615, "mode": "flood", "ms": 224772, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8616, "mode": "flood", "ms": 225522, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8617, "mode": "flood", "ms": 228073, "node": 1, "seq": 18, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 19, "tx_relay": 151, "tx_data": 19, "duplicate": 876}, "parent": 255, "ms": 231149, "node": 1}
+LOG {"bytes": 28, "counter": 8618, "mode": "flood", "ms": 231841, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8619, "mode": "flood", "ms": 231894, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.053175, "mode": "flood", "ms": 232658, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 19, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8620, "mode": "flood", "ms": 232677, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8621, "mode": "flood", "ms": 233130, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8622, "mode": "flood", "ms": 234463, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8623, "mode": "flood", "ms": 235483, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8624, "mode": "flood", "ms": 236498, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8625, "mode": "flood", "ms": 238215, "node": 1, "seq": 19, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 20, "tx_relay": 158, "tx_data": 20, "duplicate": 927}, "parent": 255, "ms": 241158, "node": 1}
+LOG {"bytes": 28, "counter": 8626, "mode": "flood", "ms": 242271, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8627, "mode": "flood", "ms": 242734, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.026556, "mode": "flood", "ms": 243296, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 20, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8628, "mode": "flood", "ms": 243307, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8629, "mode": "flood", "ms": 243705, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8630, "mode": "flood", "ms": 244570, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8631, "mode": "flood", "ms": 246349, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8632, "mode": "flood", "ms": 246921, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8633, "mode": "flood", "ms": 248406, "node": 1, "seq": 20, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 21, "tx_relay": 165, "tx_data": 21, "duplicate": 976}, "parent": 255, "ms": 251162, "node": 1}
+LOG {"bytes": 28, "counter": 8634, "mode": "flood", "ms": 252317, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8635, "mode": "flood", "ms": 252920, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 9.026862, "mode": "flood", "ms": 253531, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 21, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8636, "mode": "flood", "ms": 253549, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8637, "mode": "flood", "ms": 253745, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 21, "counter": 8638, "mode": "flood", "ms": 254075, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 24, "counter": 8639, "mode": "flood", "ms": 254928, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8640, "mode": "flood", "ms": 256897, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8641, "mode": "flood", "ms": 257247, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8642, "mode": "flood", "ms": 258979, "node": 1, "seq": 21, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 22, "tx_relay": 173, "tx_data": 22, "duplicate": 1023}, "parent": 255, "ms": 261169, "node": 1}
+LOG {"bytes": 28, "counter": 8643, "mode": "flood", "ms": 262549, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8644, "mode": "flood", "ms": 263444, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 11.01794, "mode": "flood", "ms": 264324, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 22, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8645, "mode": "flood", "ms": 264337, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8646, "mode": "flood", "ms": 264470, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 12}
+LOG {"bytes": 21, "counter": 8647, "mode": "flood", "ms": 264494, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8648, "mode": "flood", "ms": 265015, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 8649, "mode": "flood", "ms": 267427, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8650, "mode": "flood", "ms": 268286, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 24, "counter": 8651, "mode": "flood", "ms": 268921, "node": 1, "seq": 22, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 23, "tx_relay": 181, "tx_data": 23, "duplicate": 1079}, "parent": 255, "ms": 271174, "node": 1}
+LOG {"bytes": 28, "counter": 8652, "mode": "flood", "ms": 272699, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8653, "mode": "flood", "ms": 273499, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 8.83163, "mode": "flood", "ms": 274939, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 23, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8654, "mode": "flood", "ms": 274958, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8655, "mode": "flood", "ms": 275038, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 28, "counter": 8656, "mode": "flood", "ms": 278428, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8657, "mode": "flood", "ms": 278453, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 24, "counter": 8658, "mode": "flood", "ms": 279868, "node": 1, "seq": 23, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 24, "tx_relay": 187, "tx_data": 24, "duplicate": 1115}, "parent": 255, "ms": 281184, "node": 1}
+LOG {"bytes": 28, "counter": 8659, "mode": "flood", "ms": 283450, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8660, "mode": "flood", "ms": 283659, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 21, "counter": 8661, "mode": "flood", "ms": 284854, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"magnitude": 8.903945, "mode": "flood", "ms": 285060, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 24, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8662, "mode": "flood", "ms": 285077, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8663, "mode": "flood", "ms": 286003, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8664, "mode": "flood", "ms": 288672, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8665, "mode": "flood", "ms": 288785, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8666, "mode": "flood", "ms": 290553, "node": 1, "seq": 24, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 25, "tx_relay": 194, "tx_data": 25, "duplicate": 1155}, "parent": 255, "ms": 291188, "node": 1}
+LOG {"bytes": 24, "counter": 8667, "mode": "flood", "ms": 293961, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 28, "counter": 8668, "mode": "flood", "ms": 294413, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 21, "counter": 8669, "mode": "flood", "ms": 295965, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"magnitude": 8.967303, "mode": "flood", "ms": 296009, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 25, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8670, "mode": "flood", "ms": 296028, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8671, "mode": "flood", "ms": 296868, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8672, "mode": "flood", "ms": 298612, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8673, "mode": "flood", "ms": 298883, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8674, "mode": "flood", "ms": 301026, "node": 1, "seq": 25, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 26, "tx_relay": 201, "tx_data": 26, "duplicate": 1199}, "parent": 255, "ms": 301198, "node": 1}
+LOG {"bytes": 24, "counter": 8675, "mode": "flood", "ms": 304412, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 28, "counter": 8676, "mode": "flood", "ms": 304865, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"magnitude": 9.052851, "mode": "flood", "ms": 306045, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 26, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8677, "mode": "flood", "ms": 306057, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8678, "mode": "flood", "ms": 306874, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8679, "mode": "flood", "ms": 309394, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8680, "mode": "flood", "ms": 309888, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 27, "tx_relay": 206, "tx_data": 27, "duplicate": 1231}, "parent": 255, "ms": 311206, "node": 1}
+LOG {"bytes": 24, "counter": 8681, "mode": "flood", "ms": 312051, "node": 1, "seq": 26, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 28, "counter": 8682, "mode": "flood", "ms": 314867, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"bytes": 24, "counter": 8683, "mode": "flood", "ms": 315139, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"magnitude": 8.989752, "mode": "flood", "ms": 316769, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 27, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8684, "mode": "flood", "ms": 316788, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 24, "counter": 8685, "mode": "flood", "ms": 317598, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 21, "counter": 8686, "mode": "flood", "ms": 318056, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8687, "mode": "flood", "ms": 319430, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"bytes": 28, "counter": 8688, "mode": "flood", "ms": 320561, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 28, "tx_relay": 213, "tx_data": 28, "duplicate": 1268}, "parent": 255, "ms": 321213, "node": 1}
+LOG {"bytes": 24, "counter": 8689, "mode": "flood", "ms": 322149, "node": 1, "seq": 27, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 24, "counter": 8690, "mode": "flood", "ms": 325514, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 10}
+LOG {"bytes": 28, "counter": 8691, "mode": "flood", "ms": 325808, "node": 1, "seq": 29, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 7}
+LOG {"magnitude": 8.894794, "mode": "flood", "ms": 326884, "code": 5, "node": 1, "sample_hz": 50.0, "seq": 28, "run": 3, "event": "GENERATE", "origin": 1, "n": 100}
+LOG {"bytes": 24, "counter": 8692, "mode": "flood", "ms": 326897, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "data", "origin": 1}
+LOG {"bytes": 21, "counter": 8693, "mode": "flood", "ms": 327594, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 5}
+LOG {"bytes": 24, "counter": 8694, "mode": "flood", "ms": 328019, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 3}
+LOG {"bytes": 24, "counter": 8695, "mode": "flood", "ms": 330188, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"mode": "flood", "phase": "drain", "run": 3, "event": "PHASE", "ms": 331016, "node": 1}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 29, "tx_relay": 219, "tx_data": 29, "duplicate": 1304}, "parent": 255, "ms": 331214, "node": 1}
+LOG {"bytes": 28, "counter": 8696, "mode": "flood", "ms": 331486, "node": 1, "seq": 29, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 6}
+LOG {"bytes": 24, "counter": 8697, "mode": "flood", "ms": 333211, "node": 1, "seq": 28, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 4}
+LOG {"bytes": 24, "counter": 8698, "mode": "flood", "ms": 340573, "node": 1, "seq": 29, "send_result": "True", "run": 3, "event": "TX", "kind": "relay", "origin": 8}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 29, "tx_relay": 222, "tx_data": 29, "duplicate": 1320}, "parent": 255, "ms": 341223, "node": 1}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 29, "tx_relay": 222, "tx_data": 29, "duplicate": 1320}, "parent": 255, "ms": 351225, "node": 1}
+LOG {"neighbors": [], "event": "STATUS", "run": 3, "mode": "flood", "hop": 255, "counters": {"generated": 29, "tx_relay": 222, "tx_data": 29, "duplicate": 1320}, "parent": 255, "ms": 361233, "node": 1}
