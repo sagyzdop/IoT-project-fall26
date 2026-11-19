@@ -1,0 +1,855 @@
+BOOTUP: Device 7, Mode=DV, run_id=2, txpower=17.5
+--- neighbors | me=7 parent=255 hop=255 ---
+id=  3 hop=255 parent=255 rssi= -79 srssi= -79.0 age=  108ms
+--- neighbors | me=7 parent=255 hop=255 ---
+id=  3 hop=255 parent=255 rssi= -79 srssi= -79.0 age= 5198ms
+id=  8 hop=255 parent=255 rssi= -79 srssi= -79.0 age= 1618ms
+id= 10 hop=255 parent=255 rssi= -74 srssi= -74.0 age= 3056ms
+--- neighbors | me=7 parent=255 hop=255 ---
+id=  3 hop=255 parent=255 rssi= -79 srssi= -79.0 age=10268ms
+id=  8 hop=255 parent=255 rssi= -79 srssi= -79.0 age= 6688ms
+id= 10 hop=255 parent=255 rssi= -76 srssi= -74.6 age= 2927ms
+id= 12 hop=255 parent=255 rssi= -77 srssi= -77.0 age= 4917ms
+--- neighbors | me=7 parent=255 hop=255 ---
+id=  3 hop=255 parent=255 rssi= -79 srssi= -79.0 age=15348ms
+id=  8 hop=255 parent=255 rssi= -79 srssi= -79.0 age=11768ms
+id= 10 hop=255 parent=255 rssi= -76 srssi= -75.0 age= 2728ms
+id= 12 hop=255 parent=255 rssi= -77 srssi= -77.0 age= 9997ms
+NEIGHBOR EXPIRED t=20983 id=3
+NEIGHBOR EXPIRED t=25043 id=8
+--- neighbors | me=7 parent=255 hop=255 ---
+id= 10 hop=255 parent=255 rssi= -76 srssi= -75.0 age= 7818ms
+id= 12 hop=255 parent=255 rssi= -80 srssi= -77.9 age= 4657ms
+PARENT CHANGE t=28257 255 -> 10, hop 255 -> 2, srssi -75.6, reason: advert from 10
+--- STATS t=30673 mode=DV ---
+no_rssi:0 generated:0 relay_queue_drops:0 data_relayed:0 tx_fail:0 data_originated:0 no_route_drops:0 adv_sent:6 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:2 sensor_queue_drops:0 neighbor_expired:2
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  8 hop=  2 parent=  5 rssi= -81 srssi= -81.0 age=  837ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -75.6 age= 2747ms
+id= 12 hop=255 parent=255 rssi= -80 srssi= -77.9 age= 9707ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  3 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age= 4087ms
+id=  8 hop=  2 parent=  5 rssi= -81 srssi= -81.0 age= 5897ms
+id=  9 hop=  3 parent=  8 rssi= -81 srssi= -81.0 age= 2827ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -76.0 age= 2328ms
+id= 12 hop=255 parent=255 rssi= -80 srssi= -77.9 age=14767ms
+NEIGHBOR EXPIRED t=36493 id=12
+PARENT CHANGE t=39030 10 -> 3, hop 2 -> 3, srssi -79.7, reason: advert from 10
+--- neighbors | me=7 parent=3 hop=3 ---
+id=  3 hop=  2 parent= 10 rssi= -79 srssi= -79.7 age= 3828ms
+id=  8 hop=  3 parent=  6 rssi= -81 srssi= -81.0 age=  407ms
+id=  9 hop=  3 parent=  8 rssi= -81 srssi= -81.0 age= 7867ms
+id= 10 hop=  3 parent=  8 rssi= -75 srssi= -75.7 age= 2077ms
+id= 12 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age= 4087ms
+--- neighbors | me=7 parent=3 hop=3 ---
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.2 age= 3737ms
+id=  8 hop=  3 parent=  6 rssi= -81 srssi= -81.0 age= 5417ms
+id=  9 hop=  3 parent=  8 rssi= -81 srssi= -81.0 age=12877ms
+id= 10 hop=  3 parent=  8 rssi= -72 srssi= -74.6 age= 1928ms
+id= 12 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age= 9097ms
+NEIGHBOR EXPIRED t=48953 id=9
+--- neighbors | me=7 parent=3 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -73 srssi= -73.0 age= 2027ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.2 age= 8787ms
+id=  8 hop=  3 parent=  6 rssi= -81 srssi= -81.0 age=10467ms
+id= 10 hop=  3 parent=  8 rssi= -75 srssi= -74.7 age= 1838ms
+id= 12 hop=  3 parent=  3 rssi= -79 srssi= -81.1 age= 3528ms
+--- neighbors | me=7 parent=3 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -73 srssi= -73.0 age= 1718ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.2 age=13807ms
+id=  8 hop=  3 parent=  6 rssi= -81 srssi= -81.0 age=15487ms
+id= 10 hop=  3 parent=  8 rssi= -75 srssi= -74.7 age= 6858ms
+id= 12 hop=  3 parent=  3 rssi= -79 srssi= -81.1 age= 8548ms
+NEIGHBOR EXPIRED t=56213 id=8
+PARENT CHANGE t=58117 3 -> 1, hop 3 -> 4, srssi -73.0, reason: advert from 3
+PARENT CHANGE t=59610 1 -> 10, hop 4 -> 4, srssi -74.7, reason: advert from 1
+GENERATED,60648,7,1,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=60723 mode=DV ---
+no_rssi:0 generated:1 relay_queue_drops:0 data_relayed:0 tx_fail:0 data_originated:1 no_route_drops:0 adv_sent:12 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:5 sensor_queue_drops:0 neighbor_expired:5
+--- neighbors | me=7 parent=10 hop=4 ---
+id=  1 hop=  4 parent=  7 rssi= -74 srssi= -73.3 age= 1637ms
+id=  3 hop=  5 parent= 10 rssi= -82 srssi= -80.0 age= 3127ms
+id=  6 hop=  3 parent=  9 rssi= -81 srssi= -81.0 age= 1677ms
+id=  8 hop=  4 parent=  7 rssi= -81 srssi= -81.0 age= 4947ms
+id= 10 hop=  3 parent=  8 rssi= -75 srssi= -74.7 age=11918ms
+id= 12 hop=  3 parent=  3 rssi= -79 srssi= -81.1 age=13608ms
+NEIGHBOR EXPIRED t=63433 id=12
+NEIGHBOR EXPIRED t=64444 id=10
+PARENT CHANGE t=64445 10 -> 6, hop 4 -> 4, srssi -81.0, reason: parent expired
+PARENT CHANGE t=64450 6 -> 12, hop 4 -> 3, srssi -82.0, reason: advert from 12
+--- neighbors | me=7 parent=12 hop=3 ---
+id=  1 hop=  2 parent= 10 rssi= -73 srssi= -73.2 age= 1557ms
+id=  3 hop=  5 parent= 10 rssi= -82 srssi= -80.0 age= 8207ms
+id=  6 hop=  2 parent= 10 rssi= -83 srssi= -81.6 age= 1368ms
+id=  8 hop=  3 parent=  9 rssi= -81 srssi= -81.0 age= 4907ms
+id=  9 hop=  2 parent= 10 rssi= -85 srssi= -85.0 age= 1118ms
+id= 12 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age= 1873ms
+PARENT CHANGE t=69902 12 -> 10, hop 3 -> 2, srssi -76.0, reason: advert from 10
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -74.3 age= 1127ms
+id=  3 hop=  3 parent= 12 rssi= -81 srssi= -80.3 age= 2878ms
+id=  6 hop=  2 parent= 10 rssi= -83 srssi= -81.6 age= 6438ms
+id=  8 hop=  3 parent=  9 rssi= -80 srssi= -80.7 age= 4927ms
+id=  9 hop=  2 parent= 10 rssi= -85 srssi= -85.0 age= 6188ms
+id= 10 hop=  1 parent=  0 rssi= -76 srssi= -76.0 age= 1498ms
+id= 12 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age= 6943ms
+GENERATED,71559,7,2,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -74.3 age= 6187ms
+id=  3 hop=  3 parent= 12 rssi= -81 srssi= -80.3 age= 7938ms
+id=  6 hop=  2 parent= 10 rssi= -82 srssi= -81.7 age= 1018ms
+id=  8 hop=  3 parent=  9 rssi= -78 srssi= -79.9 age= 4712ms
+id=  9 hop=  2 parent= 10 rssi= -85 srssi= -85.0 age=11248ms
+id= 10 hop=  1 parent=  0 rssi= -73 srssi= -75.1 age= 1388ms
+id= 12 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age=12003ms
+NEIGHBOR EXPIRED t=80123 id=12
+NEIGHBOR EXPIRED t=81163 id=9
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -73 srssi= -73.9 age=  518ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.6 age= 2578ms
+id=  6 hop=  2 parent= 10 rssi= -82 srssi= -81.7 age= 6038ms
+id=  8 hop=  3 parent=  9 rssi= -78 srssi= -79.9 age= 9732ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -75.7 age= 1277ms
+id= 13 hop=255 parent=255 rssi= -84 srssi= -84.0 age=  302ms
+GENERATED,82172,7,3,3,71.39830 deg lon,51.09040 deg lat
+PARENT CHANGE t=85295 10 -> 1, hop 2 -> 3, srssi -73.9, reason: advert from 10
+--- neighbors | me=7 parent=1 hop=3 ---
+id=  1 hop=  2 parent= 10 rssi= -73 srssi= -73.9 age= 5588ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.6 age= 7648ms
+id=  6 hop=  2 parent= 10 rssi= -82 srssi= -81.7 age=11108ms
+id=  8 hop=  3 parent=  9 rssi= -78 srssi= -79.9 age=14802ms
+id= 10 hop=  4 parent=  9 rssi= -75 srssi= -75.5 age= 1257ms
+id= 12 hop=  2 parent= 10 rssi= -81 srssi= -81.0 age= 1017ms
+id= 13 hop=255 parent=255 rssi= -84 srssi= -84.0 age= 5372ms
+NEIGHBOR EXPIRED t=87293 id=8
+--- STATS t=90793 mode=DV ---
+no_rssi:0 generated:3 relay_queue_drops:0 data_relayed:0 tx_fail:0 data_originated:3 no_route_drops:0 adv_sent:18 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:10
+PARENT CHANGE t=91376 1 -> 3, hop 3 -> 3, srssi -79.1, reason: advert from 1
+NEIGHBOR EXPIRED t=91474 id=6
+--- neighbors | me=7 parent=3 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -81 srssi= -76.1 age=  228ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.1 age= 1918ms
+id=  6 hop=  3 parent=  8 rssi= -81 srssi= -81.0 age=  110ms
+id=  8 hop=  3 parent=  6 rssi= -79 srssi= -79.0 age= 4217ms
+id= 10 hop=  4 parent=  9 rssi= -75 srssi= -75.5 age= 6307ms
+id= 12 hop=  3 parent=  3 rssi= -82 srssi= -81.3 age=  637ms
+id= 13 hop=255 parent=255 rssi= -84 srssi= -84.0 age=10422ms
+GENERATED,92478,7,4,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=3 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -73 srssi= -75.1 age=  208ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.1 age= 6978ms
+id=  6 hop=  3 parent=  8 rssi= -81 srssi= -81.0 age= 5170ms
+id=  8 hop=  3 parent=  1 rssi= -84 srssi= -80.5 age= 3897ms
+id= 10 hop=  4 parent=  9 rssi= -73 srssi= -74.7 age=  728ms
+id= 12 hop=  3 parent=  3 rssi= -82 srssi= -81.3 age= 5697ms
+id= 13 hop=255 parent=255 rssi= -84 srssi= -84.0 age=15482ms
+NEIGHBOR EXPIRED t=96685 id=13
+--- neighbors | me=7 parent=3 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -75 srssi= -75.1 age=  128ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -79.1 age=12018ms
+id=  6 hop=  3 parent=  7 rssi= -87 srssi= -82.8 age= 4908ms
+id=  8 hop=  3 parent=  1 rssi= -84 srssi= -80.5 age= 8937ms
+id= 10 hop=  3 parent= 13 rssi= -77 srssi= -75.4 age=  728ms
+id= 12 hop=  3 parent=  3 rssi= -79 srssi= -80.6 age=  118ms
+GENERATED,103487,7,5,3,71.39830 deg lon,51.09040 deg lat
+NEIGHBOR EXPIRED t=104843 id=3
+PARENT CHANGE t=104852 3 -> 1, hop 3 -> 4, srssi -75.1, reason: parent expired
+PARENT CHANGE t=106427 1 -> 10, hop 4 -> 2, srssi -76.2, reason: advert from 10
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent=  3 rssi= -75 srssi= -75.1 age= 5168ms
+id=  6 hop=  3 parent=  7 rssi= -87 srssi= -82.8 age= 9948ms
+id=  8 hop=  3 parent= 13 rssi= -80 srssi= -80.3 age= 3517ms
+id= 10 hop=  1 parent=  0 rssi= -78 srssi= -76.2 age=  307ms
+id= 12 hop=  3 parent=  3 rssi= -79 srssi= -80.6 age= 5158ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent=  3 rssi= -75 srssi= -75.1 age=10228ms
+id=  6 hop=  3 parent=  7 rssi= -87 srssi= -82.8 age=15008ms
+id=  8 hop=  3 parent= 13 rssi= -80 srssi= -80.3 age= 8577ms
+id= 10 hop=  1 parent=  0 rssi= -78 srssi= -76.2 age= 5367ms
+id= 12 hop=  4 parent= 10 rssi= -80 srssi= -80.4 age= 4847ms
+NEIGHBOR EXPIRED t=112073 id=6
+GENERATED,113899,7,6,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -79 srssi= -76.3 age= 4657ms
+id=  8 hop=  3 parent=  9 rssi= -81 srssi= -80.5 age= 3138ms
+id=  9 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 3778ms
+id= 10 hop=  1 parent=  0 rssi= -78 srssi= -76.2 age=10377ms
+id= 12 hop=  2 parent= 10 rssi= -79 srssi= -80.0 age= 4837ms
+PARENT CHANGE t=116933 10 -> 1, hop 2 -> 3, srssi -76.3, reason: advert from 10
+PARENT CHANGE t=117306 1 -> 12, hop 3 -> 3, srssi -80.0, reason: advert from 1
+--- STATS t=120853 mode=DV ---
+no_rssi:0 generated:6 relay_queue_drops:0 data_relayed:0 tx_fail:0 data_originated:6 no_route_drops:0 adv_sent:23 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:14
+--- neighbors | me=7 parent=12 hop=3 ---
+id=  1 hop=  3 parent=  7 rssi= -77 srssi= -76.5 age= 4548ms
+id=  8 hop=  3 parent=  9 rssi= -81 srssi= -80.7 age= 3147ms
+id=  9 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 8828ms
+id= 10 hop=  3 parent= 13 rssi= -76 srssi= -76.1 age= 4927ms
+id= 12 hop=  2 parent= 10 rssi= -79 srssi= -80.0 age= 9887ms
+GENERATED,124719,7,7,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=12 hop=3 ---
+id=  1 hop=  3 parent=  7 rssi= -77 srssi= -76.5 age= 9548ms
+id=  6 hop=  3 parent= 13 rssi= -79 srssi= -79.0 age= 3687ms
+id=  8 hop=  3 parent=  7 rssi= -79 srssi= -80.2 age= 3138ms
+id=  9 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age=13828ms
+id= 10 hop=  3 parent= 13 rssi= -76 srssi= -76.1 age= 9927ms
+id= 12 hop=  2 parent= 10 rssi= -79 srssi= -80.0 age=14887ms
+PARENT CHANGE t=127075 12 -> 9, hop 3 -> 3, srssi -84.0, reason: advert from 10
+NEIGHBOR EXPIRED t=127583 id=12
+PARENT CHANGE t=128486 9 -> 1, hop 3 -> 4, srssi -76.3, reason: advert from 6
+NEIGHBOR EXPIRED t=128593 id=9
+--- neighbors | me=7 parent=1 hop=4 ---
+id=  1 hop=  3 parent=  3 rssi= -76 srssi= -76.3 age= 3947ms
+id=  6 hop=  3 parent= 13 rssi= -78 srssi= -78.7 age= 3468ms
+id=  8 hop=  3 parent=  7 rssi= -85 srssi= -81.6 age= 3228ms
+id=  9 hop=  3 parent= 13 rssi= -84 srssi= -84.0 age= 3267ms
+id= 10 hop=  4 parent=  1 rssi= -78 srssi= -76.7 age= 4887ms
+GENERATED,135227,7,8,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=1 hop=4 ---
+id=  1 hop=  3 parent=  3 rssi= -76 srssi= -76.3 age= 8947ms
+id=  3 hop=  4 parent= 12 rssi= -80 srssi= -80.0 age= 4717ms
+id=  6 hop=  3 parent= 13 rssi= -78 srssi= -78.7 age= 8468ms
+id=  8 hop=  3 parent=  7 rssi= -85 srssi= -81.6 age= 8228ms
+id=  9 hop=  3 parent= 13 rssi= -84 srssi= -84.0 age= 8267ms
+id= 10 hop=  4 parent=  1 rssi= -78 srssi= -76.7 age= 9887ms
+id= 12 hop=  3 parent=  3 rssi= -84 srssi= -84.0 age= 4428ms
+PARENT CHANGE t=138586 1 -> 6, hop 4 -> 4, srssi -78.7, reason: advert from 1
+--- neighbors | me=7 parent=6 hop=4 ---
+id=  1 hop=  4 parent=  8 rssi= -82 srssi= -78.0 age= 3379ms
+id=  3 hop=  4 parent=  8 rssi= -83 srssi= -80.9 age= 4678ms
+id=  6 hop=  3 parent= 13 rssi= -78 srssi= -78.7 age=13479ms
+id=  8 hop=  3 parent= 13 rssi= -85 srssi= -82.6 age= 2578ms
+id=  9 hop=  4 parent=  8 rssi= -86 srssi= -84.6 age= 2338ms
+id= 10 hop=  4 parent=  1 rssi= -78 srssi= -76.7 age=14898ms
+id= 12 hop=  3 parent=  3 rssi= -84 srssi= -84.0 age= 9439ms
+PARENT CHANGE t=142005 6 -> 4, hop 4 -> 3, srssi -83.0, reason: advert from 4
+NEIGHBOR EXPIRED t=143023 id=10
+NEIGHBOR EXPIRED t=144113 id=6
+GENERATED,145633,7,9,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=4 hop=3 ---
+id=  1 hop=  4 parent=  8 rssi= -82 srssi= -78.0 age= 8438ms
+id=  3 hop=  4 parent=  8 rssi= -83 srssi= -80.9 age= 9737ms
+id=  4 hop=  2 parent=  5 rssi= -83 srssi= -83.0 age= 5019ms
+id=  8 hop=  3 parent= 13 rssi= -85 srssi= -82.6 age= 7637ms
+id=  9 hop=  3 parent=  8 rssi= -91 srssi= -86.5 age= 2337ms
+id= 12 hop=  4 parent=  8 rssi= -78 srssi= -82.2 age= 3927ms
+--- STATS t=150873 mode=DV ---
+no_rssi:0 generated:9 relay_queue_drops:0 data_relayed:2 tx_fail:0 data_originated:9 no_route_drops:0 adv_sent:29 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:18
+--- neighbors | me=7 parent=4 hop=3 ---
+id=  1 hop=  2 parent=  6 rssi= -78 srssi= -78.0 age= 3038ms
+id=  3 hop=  5 parent= 12 rssi= -87 srssi= -82.7 age= 4297ms
+id=  4 hop=  2 parent=  5 rssi= -83 srssi= -83.0 age=10099ms
+id=  8 hop=  3 parent= 13 rssi= -85 srssi= -82.6 age=12717ms
+id=  9 hop=  3 parent=  8 rssi= -86 srssi= -86.4 age= 2358ms
+id= 12 hop=  4 parent=  8 rssi= -78 srssi= -82.2 age= 9007ms
+PARENT CHANGE t=153086 4 -> 10, hop 3 -> 2, srssi -76.0, reason: advert from 10
+NEIGHBOR EXPIRED t=154594 id=8
+GENERATED,156446,7,10,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent=  6 rssi= -77 srssi= -77.7 age= 2867ms
+id=  3 hop=  2 parent= 10 rssi= -83 srssi= -82.8 age= 2628ms
+id=  4 hop=  2 parent=  5 rssi= -89 srssi= -84.8 age= 4867ms
+id=  6 hop=  2 parent= 10 rssi= -81 srssi= -81.0 age= 2506ms
+id=  8 hop=  2 parent=  6 rssi= -85 srssi= -85.0 age= 2037ms
+id=  9 hop=  3 parent=  8 rssi= -86 srssi= -86.4 age= 7358ms
+id= 10 hop=  1 parent=  0 rssi= -76 srssi= -76.0 age= 4018ms
+id= 12 hop=  4 parent=  8 rssi= -78 srssi= -82.2 age=14007ms
+id= 13 hop=  2 parent=  6 rssi= -82 srssi= -82.0 age= 2698ms
+NEIGHBOR EXPIRED t=158793 id=12
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent=  6 rssi= -78 srssi= -77.8 age= 2427ms
+id=  3 hop=  2 parent= 10 rssi= -83 srssi= -82.8 age= 7668ms
+id=  4 hop=  2 parent=  5 rssi= -89 srssi= -84.8 age= 9907ms
+id=  6 hop=  2 parent= 10 rssi= -82 srssi= -81.3 age= 2228ms
+id=  8 hop=  2 parent=  6 rssi= -85 srssi= -85.0 age= 7077ms
+id=  9 hop=  3 parent=  8 rssi= -86 srssi= -86.4 age=12398ms
+id= 10 hop=  1 parent=  0 rssi= -75 srssi= -75.7 age= 3957ms
+id= 13 hop=  2 parent=  6 rssi= -82 srssi= -82.0 age= 7738ms
+NEIGHBOR EXPIRED t=164893 id=9
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -76 srssi= -77.3 age= 2268ms
+id=  3 hop=  2 parent= 10 rssi= -83 srssi= -82.8 age=12708ms
+id=  4 hop=  2 parent=  5 rssi= -89 srssi= -84.8 age=14947ms
+id=  6 hop=  2 parent= 10 rssi= -82 srssi= -81.3 age= 7268ms
+id=  8 hop=  2 parent=  6 rssi= -85 srssi= -85.0 age=12117ms
+id= 10 hop=  1 parent=  0 rssi= -78 srssi= -76.4 age= 3608ms
+id= 13 hop=  2 parent=  6 rssi= -82 srssi= -82.0 age=12778ms
+GENERATED,167362,7,11,3,71.39830 deg lon,51.09040 deg lat
+NEIGHBOR EXPIRED t=170073 id=3
+NEIGHBOR EXPIRED t=170073 id=13
+NEIGHBOR EXPIRED t=170073 id=8
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -76 srssi= -77.3 age= 7288ms
+id=  3 hop=  3 parent= 12 rssi= -87 srssi= -87.0 age= 1997ms
+id=  4 hop=  2 parent=  5 rssi= -87 srssi= -85.5 age= 4588ms
+id=  6 hop=  2 parent= 10 rssi= -82 srssi= -81.3 age=12288ms
+id=  9 hop=  3 parent= 13 rssi= -82 srssi= -82.0 age= 1627ms
+id= 10 hop=  1 parent=  0 rssi= -78 srssi= -76.4 age= 8628ms
+id= 12 hop=  2 parent= 10 rssi= -83 srssi= -83.0 age= 2737ms
+id= 13 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age= 1767ms
+NEIGHBOR EXPIRED t=175164 id=6
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -79 srssi= -77.8 age= 2036ms
+id=  3 hop=  3 parent= 12 rssi= -83 srssi= -85.8 age= 1857ms
+id=  4 hop=  2 parent=  5 rssi= -87 srssi= -85.5 age= 9588ms
+id=  6 hop=  1 parent=  0 rssi= -77 srssi= -77.0 age= 1498ms
+id=  9 hop=  3 parent= 13 rssi= -84 srssi= -82.6 age= 1127ms
+id= 10 hop=  1 parent=  0 rssi= -78 srssi= -76.9 age= 3418ms
+id= 12 hop=  2 parent= 10 rssi= -83 srssi= -83.0 age= 7737ms
+id= 13 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age= 6767ms
+GENERATED,177466,7,12,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=180973 mode=DV ---
+no_rssi:0 generated:12 relay_queue_drops:0 data_relayed:2 tx_fail:0 data_originated:12 no_route_drops:0 adv_sent:35 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:25
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -79 srssi= -78.1 age= 1558ms
+id=  3 hop=  3 parent= 12 rssi= -83 srssi= -85.8 age= 6867ms
+id=  4 hop=  2 parent=  5 rssi= -87 srssi= -85.5 age=14598ms
+id=  6 hop=  1 parent=  0 rssi= -78 srssi= -77.3 age= 1348ms
+id=  9 hop=  3 parent= 13 rssi= -82 srssi= -82.4 age=  908ms
+id= 10 hop=  1 parent=  0 rssi= -80 srssi= -77.8 age= 2978ms
+id= 12 hop=  2 parent= 10 rssi= -83 srssi= -83.0 age=12747ms
+id= 13 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age=11777ms
+NEIGHBOR EXPIRED t=183373 id=4
+PARENT CHANGE t=184723 10 -> 6, hop 2 -> 2, srssi -77.3, reason: advert from 10
+NEIGHBOR EXPIRED t=185433 id=12
+PARENT CHANGE t=186226 6 -> 6, hop 2 -> 3, srssi -79.0, reason: advert from 6
+NEIGHBOR EXPIRED t=186453 id=13
+--- neighbors | me=7 parent=6 hop=3 ---
+id=  1 hop=  2 parent= 10 rssi= -75 srssi= -77.2 age= 1377ms
+id=  3 hop=  3 parent= 12 rssi= -83 srssi= -85.8 age=11867ms
+id=  6 hop=  2 parent=  5 rssi= -83 srssi= -79.0 age=  988ms
+id=  9 hop=  2 parent=  5 rssi= -86 srssi= -83.5 age=  877ms
+id= 10 hop=  2 parent=  6 rssi= -78 srssi= -77.9 age= 2498ms
+GENERATED,188181,7,13,3,71.39830 deg lon,51.09040 deg lat
+PARENT CHANGE t=190007 6 -> 10, hop 3 -> 2, srssi -76.4, reason: advert from 10
+NEIGHBOR EXPIRED t=190513 id=3
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -74 srssi= -76.2 age= 1168ms
+id=  6 hop=  2 parent=  5 rssi= -84 srssi= -80.5 age= 1028ms
+id=  9 hop=  2 parent=  5 rssi= -86 srssi= -83.5 age= 5957ms
+id= 10 hop=  1 parent=  0 rssi= -73 srssi= -76.4 age= 2287ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -75 srssi= -75.9 age= 1068ms
+id=  3 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age= 1018ms
+id=  6 hop=  2 parent=  5 rssi= -84 srssi= -80.5 age= 6048ms
+id=  9 hop=  2 parent=  5 rssi= -86 srssi= -83.5 age=10977ms
+id= 10 hop=  1 parent=  0 rssi= -74 srssi= -75.7 age= 2218ms
+id= 12 hop=  2 parent= 10 rssi= -85 srssi= -85.0 age= 1967ms
+GENERATED,198885,7,14,3,71.39830 deg lon,51.09040 deg lat
+NEIGHBOR EXPIRED t=202094 id=9
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -76.2 age=  787ms
+id=  3 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age=  868ms
+id=  6 hop=  2 parent= 10 rssi= -88 srssi= -82.8 age=  708ms
+id= 10 hop=  1 parent=  0 rssi= -75 srssi= -75.5 age= 1948ms
+id= 12 hop=  2 parent= 10 rssi= -80 srssi= -83.5 age= 1797ms
+id= 13 hop=  3 parent=  6 rssi= -84 srssi= -84.0 age=  306ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -72 srssi= -74.9 age=  317ms
+id=  3 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age= 5878ms
+id=  6 hop=  2 parent= 10 rssi= -85 srssi= -83.4 age=  488ms
+id=  8 hop=  2 parent= 10 rssi= -81 srssi= -81.0 age= 4327ms
+id= 10 hop=  1 parent=  0 rssi= -72 srssi= -74.4 age= 1888ms
+id= 12 hop=  2 parent= 10 rssi= -80 srssi= -83.5 age= 6807ms
+id= 13 hop=  3 parent=  6 rssi= -84 srssi= -84.0 age= 5316ms
+GENERATED,209401,7,15,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=211013 mode=DV ---
+no_rssi:0 generated:15 relay_queue_drops:0 data_relayed:2 tx_fail:0 data_originated:15 no_route_drops:0 adv_sent:40 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:30
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -75.6 age=  107ms
+id=  3 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age=10928ms
+id=  6 hop=  2 parent= 10 rssi= -79 srssi= -82.1 age=  127ms
+id=  8 hop=  2 parent= 10 rssi= -81 srssi= -81.0 age= 9377ms
+id= 10 hop=  1 parent=  0 rssi= -75 srssi= -74.6 age= 1768ms
+id= 12 hop=  2 parent= 10 rssi= -80 srssi= -83.5 age=11857ms
+id= 13 hop=  3 parent=  6 rssi= -84 srssi= -84.0 age=10366ms
+NEIGHBOR EXPIRED t=215943 id=12
+PARENT CHANGE t=216084 10 -> 1, hop 2 -> 3, srssi -75.6, reason: advert from 10
+NEIGHBOR EXPIRED t=217013 id=3
+--- neighbors | me=7 parent=1 hop=3 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -75.6 age= 5107ms
+id=  6 hop=  2 parent= 10 rssi= -79 srssi= -82.1 age= 5127ms
+id=  8 hop=  2 parent= 10 rssi= -79 srssi= -80.4 age= 3987ms
+id=  9 hop=  2 parent= 10 rssi= -87 srssi= -87.0 age= 4417ms
+id= 10 hop=255 parent=255 rssi= -76 srssi= -75.0 age= 1387ms
+id= 13 hop=  3 parent=  6 rssi= -84 srssi= -84.0 age=15366ms
+NEIGHBOR EXPIRED t=218103 id=13
+GENERATED,220326,7,16,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=1 hop=3 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -75.6 age=10117ms
+id=  6 hop=  2 parent= 10 rssi= -79 srssi= -82.1 age=10137ms
+id=  8 hop=  3 parent=  9 rssi= -83 srssi= -81.2 age= 3558ms
+id=  9 hop=  2 parent= 10 rssi= -87 srssi= -87.0 age= 9427ms
+id= 10 hop=  4 parent= 12 rssi= -76 srssi= -75.3 age=  967ms
+id= 12 hop=  3 parent=  1 rssi= -84 srssi= -84.0 age=  518ms
+id= 13 hop=  3 parent=  9 rssi= -84 srssi= -84.0 age= 4307ms
+--- neighbors | me=7 parent=1 hop=3 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -75.6 age=15167ms
+id=  6 hop=  2 parent= 10 rssi= -79 srssi= -82.1 age=15187ms
+id=  8 hop=  3 parent=  9 rssi= -82 srssi= -81.4 age= 3297ms
+id=  9 hop=  2 parent=  5 rssi= -84 srssi= -86.1 age= 3917ms
+id= 10 hop=  4 parent= 12 rssi= -75 srssi= -75.2 age=  978ms
+id= 12 hop=  3 parent=  1 rssi= -84 srssi= -84.0 age= 5568ms
+id= 13 hop=  3 parent=  9 rssi= -84 srssi= -84.0 age= 9357ms
+PARENT CHANGE t=227981 1 -> 9, hop 3 -> 3, srssi -86.1, reason: advert from 1
+NEIGHBOR EXPIRED t=228393 id=6
+GENERATED,231235,7,17,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=9 hop=3 ---
+id=  1 hop=  3 parent=  6 rssi= -76 srssi= -75.7 age= 4638ms
+id=  6 hop=  2 parent=  5 rssi= -82 srssi= -82.0 age= 4117ms
+id=  8 hop=  3 parent=  9 rssi= -82 srssi= -81.4 age= 8387ms
+id=  9 hop=  2 parent=  5 rssi= -84 srssi= -86.1 age= 9007ms
+id= 10 hop=  4 parent= 12 rssi= -75 srssi= -75.2 age= 6068ms
+id= 12 hop=  4 parent=  3 rssi= -82 srssi= -83.4 age=  327ms
+id= 13 hop=  3 parent=  9 rssi= -84 srssi= -84.0 age=14447ms
+NEIGHBOR EXPIRED t=233563 id=13
+--- neighbors | me=7 parent=9 hop=3 ---
+id=  1 hop=  3 parent=  6 rssi= -78 srssi= -76.4 age= 4308ms
+id=  3 hop=  4 parent=  7 rssi= -83 srssi= -83.0 age= 4037ms
+id=  6 hop=  2 parent=  5 rssi= -82 srssi= -82.0 age= 9167ms
+id=  8 hop=  3 parent=  9 rssi= -82 srssi= -81.4 age=13437ms
+id=  9 hop=  2 parent=  4 rssi= -85 srssi= -85.8 age= 3587ms
+id= 10 hop=  4 parent= 12 rssi= -75 srssi= -75.2 age=11118ms
+id= 12 hop=  4 parent= 10 rssi= -84 srssi= -83.6 age=  103ms
+NEIGHBOR EXPIRED t=239893 id=8
+--- STATS t=241013 mode=DV ---
+no_rssi:0 generated:17 relay_queue_drops:0 data_relayed:3 tx_fail:0 data_originated:17 no_route_drops:0 adv_sent:46 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:36
+NEIGHBOR EXPIRED t=241933 id=10
+GENERATED,241945,7,18,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=9 hop=3 ---
+id=  1 hop=  3 parent=  8 rssi= -81 srssi= -77.8 age= 4048ms
+id=  3 hop=  4 parent=  7 rssi= -83 srssi= -83.0 age= 9087ms
+id=  6 hop=  2 parent=  5 rssi= -82 srssi= -82.0 age=14217ms
+id=  9 hop=  2 parent=  4 rssi= -85 srssi= -85.8 age= 8637ms
+id= 10 hop=  2 parent=  4 rssi= -77 srssi= -77.0 age=  207ms
+id= 12 hop=  4 parent= 10 rssi= -84 srssi= -83.6 age= 5153ms
+NEIGHBOR EXPIRED t=243973 id=6
+--- neighbors | me=7 parent=9 hop=3 ---
+id=  1 hop=  3 parent=  8 rssi= -77 srssi= -77.5 age= 3687ms
+id=  3 hop=  4 parent=  7 rssi= -83 srssi= -83.0 age=14167ms
+id=  6 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 3378ms
+id=  8 hop=  2 parent=  4 rssi= -82 srssi= -82.0 age= 2628ms
+id=  9 hop=  2 parent=  4 rssi= -81 srssi= -84.3 age= 3458ms
+id= 10 hop=  2 parent=  4 rssi= -77 srssi= -77.0 age= 5287ms
+id= 12 hop=  4 parent= 10 rssi= -83 srssi= -83.4 age= 5046ms
+id= 13 hop=  3 parent=  8 rssi= -86 srssi= -86.0 age= 2878ms
+NEIGHBOR EXPIRED t=249153 id=3
+GENERATED,252663,7,19,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=9 hop=3 ---
+id=  1 hop=  3 parent= 10 rssi= -77 srssi= -77.4 age= 3477ms
+id=  6 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 8388ms
+id=  8 hop=  2 parent=  4 rssi= -82 srssi= -82.0 age= 7638ms
+id=  9 hop=  2 parent=  4 rssi= -81 srssi= -84.3 age= 8468ms
+id= 10 hop=  2 parent=  4 rssi= -77 srssi= -77.0 age=10297ms
+id= 12 hop=  4 parent= 10 rssi= -83 srssi= -83.4 age=10056ms
+id= 13 hop=  3 parent=  8 rssi= -82 srssi= -84.8 age= 2428ms
+--- neighbors | me=7 parent=9 hop=3 ---
+id=  1 hop=  3 parent= 10 rssi= -74 srssi= -76.4 age= 3217ms
+id=  3 hop=  3 parent=  6 rssi= -85 srssi= -85.0 age= 2938ms
+id=  6 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age=13398ms
+id=  8 hop=  2 parent=  4 rssi= -81 srssi= -81.7 age= 2268ms
+id=  9 hop=  2 parent=  4 rssi= -81 srssi= -84.3 age=13478ms
+id= 10 hop=  2 parent=  4 rssi= -75 srssi= -76.4 age= 4657ms
+id= 12 hop=  4 parent= 10 rssi= -83 srssi= -83.4 age=15066ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.6 age= 2007ms
+NEIGHBOR EXPIRED t=258564 id=12
+NEIGHBOR EXPIRED t=259573 id=6
+NEIGHBOR EXPIRED t=259573 id=9
+PARENT CHANGE t=259582 9 -> 8, hop 3 -> 3, srssi -81.7, reason: parent expired
+--- neighbors | me=7 parent=8 hop=3 ---
+id=  1 hop=  3 parent= 10 rssi= -75 srssi= -76.0 age= 2777ms
+id=  3 hop=  3 parent=  6 rssi= -85 srssi= -85.0 age= 7988ms
+id=  8 hop=  2 parent=  4 rssi= -76 srssi= -80.0 age= 2228ms
+id= 10 hop=  3 parent=  6 rssi= -74 srssi= -75.7 age= 4397ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.6 age= 7057ms
+GENERATED,263155,7,20,3,71.39830 deg lon,51.09040 deg lat
+PARENT CHANGE t=263869 8 -> 10, hop 3 -> 2, srssi -74.9, reason: advert from 10
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent= 10 rssi= -75 srssi= -75.7 age= 2698ms
+id=  3 hop=  3 parent=  6 rssi= -85 srssi= -85.0 age=13008ms
+id=  8 hop=  2 parent=  4 rssi= -76 srssi= -80.0 age= 7248ms
+id=  9 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age= 2287ms
+id= 10 hop=  1 parent=  0 rssi= -73 srssi= -74.9 age= 4018ms
+id= 12 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age= 3187ms
+id= 13 hop=  2 parent= 10 rssi= -78 srssi= -82.6 age= 1438ms
+NEIGHBOR EXPIRED t=270874 id=3
+--- STATS t=271083 mode=DV ---
+no_rssi:0 generated:20 relay_queue_drops:0 data_relayed:3 tx_fail:0 data_originated:20 no_route_drops:0 adv_sent:52 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:43
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent= 10 rssi= -75 srssi= -75.7 age= 7778ms
+id=  6 hop=  2 parent=  5 rssi= -84 srssi= -84.0 age= 2667ms
+id=  8 hop=  2 parent=  4 rssi= -76 srssi= -80.0 age=12328ms
+id=  9 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age= 7367ms
+id= 10 hop=  1 parent=  0 rssi= -76 srssi= -75.2 age= 3838ms
+id= 12 hop=  2 parent= 10 rssi= -81 srssi= -81.7 age= 3238ms
+id= 13 hop=  2 parent= 10 rssi= -82 srssi= -82.4 age= 1317ms
+GENERATED,273982,7,21,3,71.39830 deg lon,51.09040 deg lat
+NEIGHBOR EXPIRED t=276073 id=8
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -76.1 age= 2453ms
+id=  6 hop=  2 parent=  5 rssi= -85 srssi= -84.3 age= 1793ms
+id=  8 hop=  2 parent= 10 rssi= -80 srssi= -80.0 age= 1573ms
+id=  9 hop=  2 parent= 10 rssi= -82 srssi= -82.0 age=12412ms
+id= 10 hop=  1 parent=  0 rssi= -79 srssi= -76.3 age= 3852ms
+id= 12 hop=  2 parent= 10 rssi= -81 srssi= -81.7 age= 8283ms
+id= 13 hop=  2 parent= 10 rssi= -82 srssi= -82.4 age= 6362ms
+NEIGHBOR EXPIRED t=281203 id=9
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -77 srssi= -76.1 age= 7449ms
+id=  6 hop=  2 parent=  5 rssi= -83 srssi= -83.9 age= 1719ms
+id=  8 hop=  2 parent= 10 rssi= -81 srssi= -80.3 age= 1389ms
+id= 10 hop=  1 parent=  0 rssi= -79 srssi= -76.3 age= 8848ms
+id= 12 hop=  2 parent= 10 rssi= -81 srssi= -81.7 age=13279ms
+id= 13 hop=  2 parent= 10 rssi= -82 srssi= -82.4 age=11358ms
+GENERATED,284697,7,22,3,71.39830 deg lon,51.09040 deg lat
+PARENT CHANGE t=284927 10 -> 1, hop 2 -> 3, srssi -76.1, reason: advert from 10
+NEIGHBOR EXPIRED t=285333 id=12
+PARENT CHANGE t=286250 1 -> 8, hop 3 -> 3, srssi -80.3, reason: advert from 1
+NEIGHBOR EXPIRED t=287433 id=13
+--- neighbors | me=7 parent=8 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -78 srssi= -76.6 age= 1847ms
+id=  3 hop=  3 parent=  1 rssi= -84 srssi= -84.0 age= 1567ms
+id=  6 hop=  2 parent=  5 rssi= -83 srssi= -83.9 age= 6808ms
+id=  8 hop=  2 parent= 10 rssi= -81 srssi= -80.3 age= 6478ms
+id= 10 hop=  3 parent=  6 rssi= -78 srssi= -76.8 age= 3167ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age=  318ms
+--- neighbors | me=7 parent=8 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -78 srssi= -76.6 age= 6937ms
+id=  3 hop=  3 parent=  1 rssi= -84 srssi= -84.0 age= 6657ms
+id=  6 hop=  2 parent=  5 rssi= -83 srssi= -83.9 age=11898ms
+id=  8 hop=  2 parent= 10 rssi= -81 srssi= -80.3 age=11568ms
+id= 10 hop=  3 parent=  6 rssi= -78 srssi= -76.8 age= 8257ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 5408ms
+GENERATED,294918,7,23,3,71.39830 deg lon,51.09040 deg lat
+NEIGHBOR EXPIRED t=296733 id=6
+NEIGHBOR EXPIRED t=296733 id=8
+PARENT CHANGE t=296742 8 -> 13, hop 3 -> 3, srssi -84.0, reason: parent expired
+--- neighbors | me=7 parent=13 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -84 srssi= -78.9 age= 1708ms
+id=  3 hop=  3 parent=  1 rssi= -84 srssi= -84.0 age=11707ms
+id=  6 hop=  3 parent=  9 rssi= -81 srssi= -81.0 age=  628ms
+id=  9 hop=  2 parent=  4 rssi= -79 srssi= -79.0 age=  827ms
+id= 10 hop=  3 parent=  6 rssi= -74 srssi= -76.0 age= 2727ms
+id= 12 hop=  3 parent=  3 rssi= -81 srssi= -81.0 age= 2318ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age=10458ms
+--- STATS t=301163 mode=DV ---
+no_rssi:0 generated:23 relay_queue_drops:0 data_relayed:3 tx_fail:0 data_originated:23 no_route_drops:0 adv_sent:58 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:49
+NEIGHBOR EXPIRED t=301983 id=3
+NEIGHBOR EXPIRED t=303013 id=13
+PARENT CHANGE t=303026 13 -> 9, hop 3 -> 3, srssi -79.0, reason: parent expired
+--- neighbors | me=7 parent=9 hop=3 ---
+id=  1 hop=  3 parent=  3 rssi= -84 srssi= -78.9 age= 6728ms
+id=  3 hop=  4 parent= 10 rssi= -81 srssi= -81.0 age= 1147ms
+id=  6 hop=  3 parent=  9 rssi= -81 srssi= -81.0 age= 5648ms
+id=  9 hop=  2 parent=  4 rssi= -79 srssi= -79.0 age= 5847ms
+id= 10 hop=  3 parent= 13 rssi= -75 srssi= -75.7 age= 2408ms
+id= 12 hop=  3 parent=  3 rssi= -81 srssi= -81.0 age= 7338ms
+GENERATED,305332,7,24,3,71.39830 deg lon,51.09040 deg lat
+PARENT CHANGE t=305975 9 -> 10, hop 3 -> 2, srssi -76.1, reason: advert from 10
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent=  7 rssi= -82 srssi= -79.8 age= 1477ms
+id=  3 hop=  4 parent= 10 rssi= -81 srssi= -81.0 age= 6217ms
+id=  6 hop=  2 parent=  5 rssi= -82 srssi= -81.3 age=  108ms
+id=  9 hop=  2 parent=  4 rssi= -85 srssi= -80.8 age=  537ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -76.1 age= 2357ms
+id= 12 hop=  4 parent=  1 rssi= -81 srssi= -81.0 age= 1997ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent=  7 rssi= -81 srssi= -80.2 age= 1397ms
+id=  3 hop=  2 parent= 10 rssi= -85 srssi= -82.2 age=  917ms
+id=  6 hop=  2 parent=  5 rssi= -82 srssi= -81.3 age= 5178ms
+id=  9 hop=  2 parent=  4 rssi= -85 srssi= -80.8 age= 5607ms
+id= 10 hop=  1 parent=  0 rssi= -79 srssi= -77.0 age= 2228ms
+id= 12 hop=  4 parent=  1 rssi= -78 srssi= -80.1 age= 1618ms
+GENERATED,315942,7,25,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent=  7 rssi= -79 srssi= -79.8 age= 1388ms
+id=  3 hop=  2 parent= 10 rssi= -85 srssi= -82.2 age= 5997ms
+id=  6 hop=  2 parent=  5 rssi= -82 srssi= -81.3 age=10258ms
+id=  9 hop=  2 parent=  4 rssi= -85 srssi= -82.1 age=  408ms
+id= 10 hop=  1 parent=  0 rssi= -76 srssi= -76.7 age= 1938ms
+id= 12 hop=  3 parent=  7 rssi= -81 srssi= -80.4 age= 1648ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent=  7 rssi= -79 srssi= -79.8 age= 6458ms
+id=  3 hop=  2 parent= 10 rssi= -85 srssi= -82.2 age=11067ms
+id=  6 hop=  2 parent=  5 rssi= -82 srssi= -81.3 age=15328ms
+id=  9 hop=  2 parent=  4 rssi= -85 srssi= -82.1 age= 5478ms
+id= 10 hop=  1 parent=  0 rssi= -76 srssi= -76.7 age= 7008ms
+id= 12 hop=  3 parent=  7 rssi= -81 srssi= -80.4 age= 6718ms
+GENERATED,326155,7,26,3,71.39830 deg lon,51.09040 deg lat
+NEIGHBOR EXPIRED t=328043 id=3
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -82 srssi= -80.5 age=  918ms
+id=  6 hop=  2 parent=  5 rssi= -85 srssi= -82.4 age= 4742ms
+id=  9 hop=  2 parent=  4 rssi= -85 srssi= -82.1 age=10488ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -76.8 age= 1068ms
+id= 12 hop=  3 parent=  7 rssi= -84 srssi= -81.5 age= 1617ms
+--- STATS t=331213 mode=DV ---
+no_rssi:0 generated:26 relay_queue_drops:0 data_relayed:4 tx_fail:0 data_originated:26 no_route_drops:0 adv_sent:63 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:52
+NEIGHBOR EXPIRED t=333323 id=9
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -82 srssi= -80.5 age= 5998ms
+id=  6 hop=  2 parent=  5 rssi= -81 srssi= -82.0 age= 4807ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -76.8 age= 6148ms
+id= 12 hop=  3 parent=  7 rssi= -84 srssi= -81.5 age= 6697ms
+GENERATED,336382,7,27,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  3 parent=  3 rssi= -82 srssi= -80.9 age=  418ms
+id=  4 hop=  1 parent=  0 rssi= -87 srssi= -87.0 age= 2728ms
+id=  6 hop=  2 parent=  5 rssi= -81 srssi= -82.0 age= 9857ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -76.8 age=11198ms
+id= 12 hop=  3 parent=  7 rssi= -84 srssi= -81.5 age=11747ms
+NEIGHBOR EXPIRED t=342703 id=10
+NEIGHBOR EXPIRED t=342703 id=12
+PARENT CHANGE t=342705 10 -> 4, hop 2 -> 2, srssi -87.0, reason: parent expired
+--- neighbors | me=7 parent=4 hop=2 ---
+id=  1 hop=  3 parent=  3 rssi= -82 srssi= -80.9 age= 5478ms
+id=  3 hop=  3 parent= 12 rssi= -84 srssi= -84.0 age= 4897ms
+id=  4 hop=  1 parent=  0 rssi= -87 srssi= -87.0 age= 7788ms
+id=  6 hop=  2 parent= 10 rssi= -85 srssi= -82.9 age= 4118ms
+id= 12 hop=  3 parent=  7 rssi= -80 srssi= -80.0 age=  617ms
+GENERATED,347295,7,28,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=4 hop=2 ---
+id=  1 hop=  3 parent=  7 rssi= -79 srssi= -80.3 age=  207ms
+id=  3 hop=  3 parent= 12 rssi= -84 srssi= -84.0 age= 9897ms
+id=  4 hop=  1 parent=  0 rssi= -87 srssi= -87.0 age=12788ms
+id=  6 hop=  2 parent= 10 rssi= -85 srssi= -82.9 age= 9118ms
+id= 10 hop=  3 parent=  9 rssi= -73 srssi= -73.0 age= 4907ms
+id= 12 hop=  3 parent=  7 rssi= -80 srssi= -80.0 age= 5617ms
+NEIGHBOR EXPIRED t=350993 id=4
+PARENT CHANGE t=351003 4 -> 6, hop 2 -> 2, srssi -83.5, reason: parent expired
+--- neighbors | me=7 parent=6 hop=2 ---
+id=  1 hop=  3 parent=  7 rssi= -79 srssi= -80.3 age= 5267ms
+id=  3 hop=  3 parent= 12 rssi= -84 srssi= -84.0 age=14957ms
+id=  6 hop=  1 parent=  0 rssi= -85 srssi= -83.5 age= 3647ms
+id= 10 hop=  2 parent=  6 rssi= -74 srssi= -73.3 age= 4747ms
+id= 12 hop=  3 parent=  7 rssi= -80 srssi= -80.0 age=10677ms
+NEIGHBOR EXPIRED t=354094 id=3
+PARENT CHANGE t=355536 6 -> 6, hop 2 -> 3, srssi -83.1, reason: advert from 6
+NEIGHBOR EXPIRED t=358163 id=12
+GENERATED,358208,7,29,3,71.39830 deg lon,51.09040 deg lat
+--- neighbors | me=7 parent=6 hop=3 ---
+id=  1 hop=  3 parent=  7 rssi= -80 srssi= -80.2 age= 5037ms
+id=  3 hop=  3 parent=  7 rssi= -84 srssi= -84.0 age= 4168ms
+id=  6 hop=  2 parent=  4 rssi= -82 srssi= -83.1 age= 3338ms
+id=  9 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 3708ms
+id= 10 hop=  2 parent=  6 rssi= -75 srssi= -73.8 age= 4768ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 1127ms
+GENERATION STOPPED t=360611 (drain phase, still relaying)
+--- STATS t=361263 mode=DV ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:7 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:69 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:58
+--- neighbors | me=7 parent=6 hop=3 ---
+id=  1 hop=  3 parent=  7 rssi= -80 srssi= -80.2 age=10097ms
+id=  3 hop=  3 parent=  7 rssi= -84 srssi= -84.0 age= 9228ms
+id=  6 hop=  2 parent=  4 rssi= -82 srssi= -83.1 age= 8398ms
+id=  9 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 8768ms
+id= 10 hop=  2 parent=  6 rssi= -78 srssi= -75.1 age= 4617ms
+id= 12 hop=  2 parent=  6 rssi= -82 srssi= -82.0 age= 4657ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 1038ms
+--- neighbors | me=7 parent=6 hop=3 ---
+id=  1 hop=  3 parent= 12 rssi= -78 srssi= -79.6 age= 4603ms
+id=  3 hop=  3 parent=  7 rssi= -84 srssi= -84.0 age=14248ms
+id=  6 hop=  2 parent=  4 rssi= -81 srssi= -82.4 age= 2848ms
+id=  9 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age=13788ms
+id= 10 hop=  2 parent=  6 rssi= -78 srssi= -75.1 age= 9637ms
+id= 12 hop=  2 parent=  6 rssi= -84 srssi= -82.6 age= 4548ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 6058ms
+NEIGHBOR EXPIRED t=370573 id=9
+PARENT CHANGE t=371306 6 -> 12, hop 3 -> 3, srssi -82.6, reason: advert from 6
+--- neighbors | me=7 parent=12 hop=3 ---
+id=  1 hop=  3 parent= 12 rssi= -78 srssi= -79.1 age= 4437ms
+id=  3 hop=  3 parent= 10 rssi= -84 srssi= -84.0 age= 3878ms
+id=  6 hop=  3 parent=  4 rssi= -84 srssi= -82.9 age= 2737ms
+id= 10 hop=  3 parent=  6 rssi= -73 srssi= -74.4 age= 4517ms
+id= 12 hop=  2 parent=  6 rssi= -84 srssi= -82.6 age= 9638ms
+id= 13 hop=  3 parent=  9 rssi= -82 srssi= -83.4 age=  518ms
+PARENT CHANGE t=374767 12 -> 12, hop 3 -> 4, srssi -81.8, reason: advert from 12
+--- neighbors | me=7 parent=12 hop=4 ---
+id=  1 hop=  3 parent= 12 rssi= -78 srssi= -79.1 age= 9507ms
+id=  3 hop=  3 parent= 10 rssi= -84 srssi= -84.0 age= 8948ms
+id=  6 hop=  3 parent=  4 rssi= -81 srssi= -82.3 age= 2577ms
+id=  9 hop=  4 parent=  1 rssi= -83 srssi= -83.0 age= 3017ms
+id= 10 hop=  3 parent=  6 rssi= -76 srssi= -74.9 age= 4107ms
+id= 12 hop=  3 parent=  9 rssi= -80 srssi= -81.8 age= 4347ms
+id= 13 hop=  3 parent=  9 rssi= -82 srssi= -83.4 age= 5588ms
+--- neighbors | me=7 parent=12 hop=4 ---
+id=  1 hop=  3 parent=  6 rssi= -80 srssi= -79.4 age= 4007ms
+id=  3 hop=  3 parent= 10 rssi= -84 srssi= -84.0 age=13978ms
+id=  6 hop=  3 parent=  4 rssi= -81 srssi= -82.3 age= 7607ms
+id=  9 hop=  4 parent=  1 rssi= -83 srssi= -83.0 age= 8047ms
+id= 10 hop=  3 parent=  6 rssi= -77 srssi= -75.5 age= 3778ms
+id= 12 hop=  3 parent=  9 rssi= -80 srssi= -81.8 age= 9377ms
+id= 13 hop=  4 parent=  6 rssi= -85 srssi= -83.9 age=  108ms
+PARENT CHANGE t=385856 12 -> 10, hop 4 -> 2, srssi -76.0, reason: advert from 10
+NEIGHBOR EXPIRED t=386063 id=3
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  4 parent= 10 rssi= -78 srssi= -79.0 age= 3767ms
+id=  3 hop=  2 parent= 10 rssi= -77 srssi= -77.0 age= 3037ms
+id=  6 hop=  3 parent=  4 rssi= -81 srssi= -82.3 age=12687ms
+id=  9 hop=  4 parent=  1 rssi= -83 srssi= -83.0 age=13127ms
+id= 10 hop=  1 parent=  0 rssi= -77 srssi= -76.0 age= 3368ms
+id= 12 hop=  3 parent=  9 rssi= -80 srssi= -81.8 age=14457ms
+id= 13 hop=  4 parent=  6 rssi= -85 srssi= -83.9 age= 5188ms
+NEIGHBOR EXPIRED t=390143 id=12
+NEIGHBOR EXPIRED t=391153 id=9
+--- STATS t=391314 mode=DV ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:7 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:75 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:62
+NEIGHBOR EXPIRED t=392154 id=6
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  4 parent= 10 rssi= -78 srssi= -79.0 age= 8767ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -77.3 age= 2967ms
+id=  6 hop=  2 parent= 10 rssi= -79 srssi= -79.0 age= 2066ms
+id= 10 hop=  1 parent=  0 rssi= -79 srssi= -76.9 age= 2887ms
+id= 13 hop=  3 parent=  9 rssi= -84 srssi= -83.9 age= 4887ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -75 srssi= -77.8 age= 3137ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -77.3 age= 8007ms
+id=  6 hop=  2 parent= 10 rssi= -79 srssi= -79.0 age= 7106ms
+id= 10 hop=  1 parent=  0 rssi= -79 srssi= -76.9 age= 7927ms
+id= 13 hop=  3 parent=  9 rssi= -84 srssi= -83.9 age= 9927ms
+PARENT CHANGE t=401602 10 -> 3, hop 2 -> 3, srssi -77.3, reason: advert from 10
+PARENT CHANGE t=402535 3 -> 6, hop 3 -> 2, srssi -80.2, reason: advert from 6
+--- neighbors | me=7 parent=6 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -75 srssi= -77.8 age= 8197ms
+id=  3 hop=  2 parent= 10 rssi= -78 srssi= -77.3 age=13067ms
+id=  6 hop=  1 parent=  0 rssi= -83 srssi= -80.2 age= 1797ms
+id= 10 hop=  4 parent= 13 rssi= -74 srssi= -76.0 age= 2727ms
+id= 13 hop=  3 parent=  9 rssi= -84 srssi= -83.9 age=14987ms
+NEIGHBOR EXPIRED t=404553 id=13
+NEIGHBOR EXPIRED t=406573 id=3
+--- neighbors | me=7 parent=6 hop=2 ---
+id=  1 hop=  2 parent= 10 rssi= -75 srssi= -77.8 age=13217ms
+id=  6 hop=  1 parent=  0 rssi= -83 srssi= -80.2 age= 6817ms
+id= 10 hop=  2 parent=  6 rssi= -75 srssi= -75.7 age= 2327ms
+NEIGHBOR EXPIRED t=411743 id=1
+--- neighbors | me=7 parent=6 hop=2 ---
+id=  3 hop=  3 parent= 10 rssi= -82 srssi= -82.0 age= 2127ms
+id=  6 hop=  1 parent=  0 rssi= -83 srssi= -80.2 age=11847ms
+id= 10 hop=  2 parent=  6 rssi= -75 srssi= -75.7 age= 7357ms
+id= 13 hop=  2 parent=  6 rssi= -83 srssi= -83.0 age= 3757ms
+PARENT CHANGE t=417582 6 -> 10, hop 2 -> 3, srssi -76.1, reason: advert from 10
+NEIGHBOR EXPIRED t=417893 id=6
+--- neighbors | me=7 parent=10 hop=3 ---
+id=  3 hop=  3 parent= 10 rssi= -82 srssi= -82.0 age= 7167ms
+id= 10 hop=  2 parent=  6 rssi= -77 srssi= -76.1 age= 1837ms
+id= 13 hop=  2 parent=  6 rssi= -83 srssi= -83.0 age= 8797ms
+--- STATS t=420612 mode=DV ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:7 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:80 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:67
+RUN END t=420633
+--- STATS t=421363 mode=DV ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:7 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:80 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:67
+PARENT CHANGE t=422711 10 -> 13, hop 3 -> 3, srssi -83.0, reason: advert from 10
+--- neighbors | me=7 parent=13 hop=3 ---
+id=  1 hop=  3 parent=  6 rssi= -80 srssi= -80.0 age= 1897ms
+id=  3 hop=  3 parent= 10 rssi= -82 srssi= -82.0 age=12257ms
+id=  6 hop=  2 parent=  4 rssi= -81 srssi= -81.0 age= 1117ms
+id= 10 hop=  3 parent=  7 rssi= -80 srssi= -77.3 age= 1798ms
+id= 13 hop=  2 parent=  6 rssi= -83 srssi= -83.0 age=13887ms
+NEIGHBOR EXPIRED t=426153 id=13
+PARENT CHANGE t=426154 13 -> 6, hop 3 -> 3, srssi -81.0, reason: parent expired
+NEIGHBOR EXPIRED t=428263 id=3
+--- neighbors | me=7 parent=6 hop=3 ---
+id=  1 hop=  3 parent=  6 rssi= -78 srssi= -79.4 age= 1958ms
+id=  6 hop=  2 parent=  4 rssi= -81 srssi= -81.0 age= 6197ms
+id= 10 hop=  3 parent=  6 rssi= -78 srssi= -77.5 age= 1528ms
+id= 13 hop=  3 parent=  6 rssi= -83 srssi= -83.0 age= 2847ms
+--- neighbors | me=7 parent=6 hop=3 ---
+id=  1 hop=  2 parent=  4 rssi= -77 srssi= -78.7 age= 1627ms
+id=  6 hop=  2 parent=  4 rssi= -81 srssi= -81.0 age=11197ms
+id= 10 hop=  3 parent=  6 rssi= -78 srssi= -77.5 age= 6528ms
+id= 13 hop=  3 parent=  6 rssi= -83 srssi= -83.0 age= 7847ms
+NEIGHBOR EXPIRED t=438484 id=6
+PARENT CHANGE t=438485 6 -> 1, hop 3 -> 3, srssi -77.9, reason: parent expired
+--- neighbors | me=7 parent=1 hop=3 ---
+id=  1 hop=  2 parent=  4 rssi= -76 srssi= -77.9 age= 1487ms
+id=  9 hop=255 parent=255 rssi= -82 srssi= -82.0 age= 3787ms
+id= 10 hop=  3 parent=  6 rssi= -77 srssi= -77.3 age= 1114ms
+id= 13 hop=  4 parent=  7 rssi= -80 srssi= -82.1 age= 1747ms
+--- neighbors | me=7 parent=1 hop=3 ---
+id=  1 hop=  2 parent=  4 rssi= -76 srssi= -77.9 age= 6547ms
+id=  3 hop=  3 parent=  1 rssi= -82 srssi= -82.0 age=  618ms
+id=  9 hop=255 parent=255 rssi= -82 srssi= -82.0 age= 8847ms
+id= 10 hop=  3 parent=  6 rssi= -77 srssi= -77.3 age= 6174ms
+id= 13 hop=255 parent=255 rssi= -82 srssi= -82.1 age= 1457ms
+PARENT CHANGE t=448138 1 -> 10, hop 3 -> 4, srssi -77.3, reason: advert from 1
+--- neighbors | me=7 parent=10 hop=4 ---
+id=  1 hop=  5 parent= 13 rssi= -73 srssi= -76.4 age= 1527ms
+id=  3 hop=  4 parent=  7 rssi= -82 srssi= -82.0 age=  408ms
+id=  9 hop=255 parent=255 rssi= -82 srssi= -82.0 age=13847ms
+id= 10 hop=  3 parent=  1 rssi= -75 srssi= -76.6 age=  628ms
+id= 13 hop=255 parent=255 rssi= -82 srssi= -82.1 age= 6457ms
+--- STATS t=451413 mode=DV ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:7 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:86 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:70
+NEIGHBOR EXPIRED t=451843 id=9
+PARENT CHANGE t=454056 10 -> 10, hop 4 -> 6, srssi -75.2, reason: advert from 10
+--- neighbors | me=7 parent=10 hop=6 ---
+id=  1 hop=  5 parent=  7 rssi= -82 srssi= -78.1 age= 1047ms
+id=  3 hop=  4 parent=  7 rssi= -82 srssi= -82.0 age= 5408ms
+id= 10 hop=  5 parent=  3 rssi= -72 srssi= -75.2 age=  608ms
+id= 13 hop=255 parent=255 rssi= -82 srssi= -82.1 age=11457ms
+NEIGHBOR EXPIRED t=459033 id=13
+PARENT CHANGE t=459137 10 -> 10, hop 6 -> 2, srssi -74.6, reason: advert from 10
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  5 parent=  7 rssi= -82 srssi= -78.1 age= 6057ms
+id=  3 hop=  3 parent=  7 rssi= -83 srssi= -82.3 age=  107ms
+id= 10 hop=  1 parent=  0 rssi= -73 srssi= -74.6 age=  537ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  1 hop=  5 parent=  7 rssi= -82 srssi= -78.1 age=11127ms
+id=  3 hop=  3 parent=  7 rssi= -83 srssi= -82.3 age= 5177ms
+id= 10 hop=  1 parent=  0 rssi= -73 srssi= -74.6 age= 5607ms
+NEIGHBOR EXPIRED t=469213 id=1
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  3 hop=  3 parent=  7 rssi= -83 srssi= -82.3 age=10207ms
+id= 10 hop=  1 parent=  0 rssi= -74 srssi= -74.4 age=  117ms
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  3 hop=  3 parent=  7 rssi= -83 srssi= -82.3 age=15287ms
+id= 10 hop=  1 parent=  0 rssi= -74 srssi= -74.4 age= 5197ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 4747ms
+NEIGHBOR EXPIRED t=475273 id=3
+--- neighbors | me=7 parent=10 hop=2 ---
+id= 10 hop=  1 parent=  0 rssi= -74 srssi= -74.4 age=10257ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age= 9807ms
+--- STATS t=481483 mode=DV ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:7 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:92 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:74
+--- neighbors | me=7 parent=10 hop=2 ---
+id=  3 hop=  3 parent=  7 rssi= -83 srssi= -83.0 age= 4167ms
+id= 10 hop=  1 parent=  0 rssi= -74 srssi= -74.4 age=15277ms
+id= 13 hop=  2 parent=  4 rssi= -84 srssi= -84.0 age=14827ms
+PARENT CHANGE t=485112 10 -> 10, hop 2 -> 4, srssi -75.2, reason: advert from 10
+NEIGHBOR EXPIRED t=485423 id=13
+--- neighbors | me=7 parent=10 hop=4 ---
+id=  3 hop=  3 parent=  7 rssi= -83 srssi= -83.0 age= 9197ms
+id= 10 hop=  3 parent= 13 rssi= -77 srssi= -75.2 age= 4857ms
+PARENT CHANGE t=491429 10 -> 13, hop 4 -> 3, srssi -83.0, reason: advert from 13
+--- neighbors | me=7 parent=13 hop=3 ---
+id=  3 hop=  4 parent= 10 rssi= -84 srssi= -83.3 age= 3637ms
+id= 10 hop=  3 parent= 13 rssi= -78 srssi= -76.0 age= 4827ms
+id= 13 hop=  2 parent=  4 rssi= -83 srssi= -83.0 age= 3538ms
+--- neighbors | me=7 parent=13 hop=3 ---
+id=  3 hop=255 parent=255 rssi= -80 srssi= -82.3 age= 3557ms
+id= 10 hop=  3 parent= 13 rssi= -78 srssi= -76.0 age= 9887ms
+id= 13 hop=  2 parent=  4 rssi= -87 srssi= -84.2 age= 3332ms
+--- neighbors | me=7 parent=13 hop=3 ---
+id=  3 hop=255 parent=255 rssi= -80 srssi= -82.3 age= 8617ms
+id= 10 hop=  4 parent=  7 rssi= -78 srssi= -76.6 age= 4137ms
+id= 13 hop=  2 parent=  4 rssi= -87 srssi= -84.2 age= 8392ms
+--- neighbors | me=7 parent=13 hop=3 ---
+id=  3 hop=255 parent=255 rssi= -80 srssi= -82.3 age=13687ms
+id= 10 hop=  4 parent=  7 rssi= -76 srssi= -76.4 age= 3747ms
+id= 13 hop=  2 parent=  4 rssi= -87 srssi= -84.2 age=13462ms
+--- STATS t=511483 mode=DV ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:7 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:97 acq_fail:0 ttl_drop:0 duplicate:0 integrity_fail:0 bad_packet:6 sensor_queue_drops:0 neighbor_expired:75
+NEIGHBOR EXPIRED t=511903 id=13
+NEIGHBOR EXPIRED t=511903 id=3
+PARENT CHANGE t=511905 13 -> 255, hop 3 -> 255, srssi 0.0, reason: parent expired
+--- neighbors | me=7 parent=255 hop=255 ---
+id= 10 hop=  4 parent=  7 rssi= -76 srssi= -76.4 age= 8827ms
+PARENT CHANGE t=517513 255 -> 3, hop 255 -> 6, srssi -81.0, reason: advert from 3
+--- neighbors | me=7 parent=3 hop=6 ---
+id=  3 hop=  5 parent= 10 rssi= -81 srssi= -81.0 age= 2737ms
+id= 10 hop=  4 parent=  7 rssi= -76 srssi= -76.4 age=13837ms
+NEIGHBOR EXPIRED t=522073 id=10
+--- neighbors | me=7 parent=3 hop=6 ---
+id=  3 hop=  5 parent= 10 rssi= -83 srssi= -81.6 age= 2627ms
+--- neighbors | me=7 parent=3 hop=6 ---
+id=  3 hop=  5 parent= 10 rssi= -83 srssi= -81.6 age= 7687ms
+--- neighbors | me=7 parent=3 hop=6 ---
+id=  3 hop=  5 parent= 10 rssi= -83 srssi= -81.6 age=12737ms

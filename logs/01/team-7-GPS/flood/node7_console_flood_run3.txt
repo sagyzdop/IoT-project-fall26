@@ -1,0 +1,66 @@
+BOOTUP: Device 7, Mode=FLOODING, run_id=3, txpower=17.25
+--- STATS t=30663 mode=FLOODING ---
+no_rssi:0 generated:0 relay_queue_drops:0 data_relayed:1 tx_fail:0 data_originated:0 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:2 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+--- STATS t=60693 mode=FLOODING ---
+no_rssi:0 generated:0 relay_queue_drops:0 data_relayed:1 tx_fail:0 data_originated:0 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:2 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,60732,7,1,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,71223,7,2,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,81849,7,3,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=90713 mode=FLOODING ---
+no_rssi:0 generated:3 relay_queue_drops:0 data_relayed:20 tx_fail:0 data_originated:3 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:37 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,92545,7,4,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,103566,7,5,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,114581,7,6,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=120803 mode=FLOODING ---
+no_rssi:0 generated:6 relay_queue_drops:0 data_relayed:46 tx_fail:0 data_originated:6 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:123 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,125501,7,7,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,136216,7,8,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,146938,7,9,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=150833 mode=FLOODING ---
+no_rssi:0 generated:9 relay_queue_drops:0 data_relayed:69 tx_fail:0 data_originated:9 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:174 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,157555,7,10,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,168392,7,11,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,179088,7,12,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=180833 mode=FLOODING ---
+no_rssi:0 generated:12 relay_queue_drops:0 data_relayed:89 tx_fail:0 data_originated:12 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:205 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,189210,7,13,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,200210,7,14,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=210903 mode=FLOODING ---
+no_rssi:0 generated:14 relay_queue_drops:0 data_relayed:114 tx_fail:0 data_originated:14 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:250 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,211138,7,15,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,221440,7,16,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,231844,7,17,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=240913 mode=FLOODING ---
+no_rssi:0 generated:17 relay_queue_drops:0 data_relayed:134 tx_fail:0 data_originated:17 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:281 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,242766,7,18,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,253587,7,19,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,263710,7,20,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=271003 mode=FLOODING ---
+no_rssi:0 generated:20 relay_queue_drops:0 data_relayed:155 tx_fail:0 data_originated:20 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:316 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,274316,7,21,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,284819,7,22,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,295132,7,23,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=301053 mode=FLOODING ---
+no_rssi:0 generated:23 relay_queue_drops:0 data_relayed:169 tx_fail:0 data_originated:23 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:328 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,305563,7,24,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,316494,7,25,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,327181,7,26,3,71.39830 deg lon,51.09040 deg lat
+--- STATS t=331063 mode=FLOODING ---
+no_rssi:0 generated:26 relay_queue_drops:0 data_relayed:188 tx_fail:0 data_originated:26 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:353 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+GENERATED,338003,7,27,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,348300,7,28,3,71.39830 deg lon,51.09040 deg lat
+GENERATED,358317,7,29,3,71.39830 deg lon,51.09040 deg lat
+GENERATION STOPPED t=360713 (drain phase, still relaying)
+--- STATS t=361143 mode=FLOODING ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:212 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:415 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+--- STATS t=391183 mode=FLOODING ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:217 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:424 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+--- STATS t=420714 mode=FLOODING ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:220 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:433 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+RUN END t=420733
+--- STATS t=421203 mode=FLOODING ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:220 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:433 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+--- STATS t=451263 mode=FLOODING ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:223 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:433 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
+--- STATS t=481333 mode=FLOODING ---
+no_rssi:0 generated:29 relay_queue_drops:0 data_relayed:224 tx_fail:0 data_originated:29 no_route_drops:0 adv_sent:0 acq_fail:0 ttl_drop:0 duplicate:433 integrity_fail:0 bad_packet:0 sensor_queue_drops:0 neighbor_expired:0
