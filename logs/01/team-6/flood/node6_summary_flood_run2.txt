@@ -1,0 +1,19 @@
+# iot-log format 1
+format=1
+device=node
+device_id=6
+sensor=DHT11
+mode=flood
+run_id=2
+warmup_s=60
+run_s=300
+drain_s=60
+adv_interval_s=5
+data_interval_s=10
+tx_power_dbm=16.75
+adv_tx=0
+generated=28
+acq_fail=1
+drop_noroute=0
+data_tx_own=28
+data_tx_relay=249
