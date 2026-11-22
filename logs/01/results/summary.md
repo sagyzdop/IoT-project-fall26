@@ -2,6 +2,7 @@
 
 ## Warnings
 
+- team-1/flood/node1_summary_dv_run2.txt: second file for node 1 in dv run 2, ignored
 - team-5-CO/dv/node5_summary_dv_run1.txt: not a format-1 summary (needs format, mode, run_id, device, device_id), skipped
 - team-5-CO/dv/node5_summary_dv_run2.txt: not a format-1 summary (needs format, mode, run_id, device, device_id), skipped
 - team-5-CO/dv/node5_summary_dv_run3.txt: not a format-1 summary (needs format, mode, run_id, device, device_id), skipped
@@ -9,35 +10,34 @@
 - team-5-CO/flood/node5_summary_flood_run2.txt: not a format-1 summary (needs format, mode, run_id, device, device_id), skipped
 - team-5-CO/flood/node5_summary_flood_run3.txt: not a format-1 summary (needs format, mode, run_id, device, device_id), skipped
 - dv run 1: 7 root event(s) after the 420 s end of the run ignored (0 rx)
-- dv run 1: no summary for node(s) 5: generated ASSUMED equal to delivered (--assume-full), PDR 100% by assumption
-- dv run 1: no summary for node(s) 3, 4, 6, 7, 8, 9, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
-- dv run 1: no node summary for 3, 4, 5, 6, 7, 8, 9, 13: overhead is a lower bound
+- dv run 1: node 8: 9 delivered seq(s) >= generated=0 (reboot or wrong summary?), not counted
+- dv run 1: no summary for node(s) 3, 5, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
+- dv run 1: no node summary for 3, 5, 13: overhead is a lower bound
 - dv run 2: 4 root event(s) after the 420 s end of the run ignored (0 rx)
-- dv run 2: no summary for node(s) 5: generated ASSUMED equal to delivered (--assume-full), PDR 100% by assumption
-- dv run 2: no summary for node(s) 4, 6, 7, 10, 12: generated estimated as highest seq + 1 (PDR is an upper bound)
-- dv run 2: no node summary for 4, 5, 6, 7, 10, 12: overhead is a lower bound
+- dv run 2: no summary for node(s) 5, 12: generated estimated as highest seq + 1 (PDR is an upper bound)
+- dv run 2: no node summary for 5, 12: overhead is a lower bound
 - dv run 3: 7 root event(s) after the 420 s end of the run ignored (3 rx from node(s) 5)
-- dv run 3: no summary for node(s) 5: generated ASSUMED equal to delivered (--assume-full), PDR 100% by assumption
-- dv run 3: no summary for node(s) 3, 4, 6, 7, 8, 9, 10, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
-- dv run 3: no node summary for 3, 4, 5, 6, 7, 8, 9, 10, 13: overhead is a lower bound
-- flood run 2: no summary for node(s) 5: generated ASSUMED equal to delivered (--assume-full), PDR 100% by assumption
-- flood run 2: no summary for node(s) 1, 3, 4, 6, 7, 8, 9, 10, 12, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
-- flood run 2: no node summary for 1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13: overhead is a lower bound
+- dv run 3: no summary for node(s) 3, 5, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
+- dv run 3: no node summary for 3, 5, 13: overhead is a lower bound
+- flood run 2: node 7: 1 delivered seq(s) >= generated=29 (reboot or wrong summary?), not counted
+- flood run 2: node 12: 1 delivered seq(s) >= generated=29 (reboot or wrong summary?), not counted
+- flood run 2: no summary for node(s) 1, 3, 5, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
+- flood run 2: no node summary for 1, 3, 5, 13: overhead is a lower bound
 - flood run 3: 2 root event(s) after the 420 s end of the run ignored (2 rx from node(s) 9)
-- flood run 3: no summary for node(s) 5: generated ASSUMED equal to delivered (--assume-full), PDR 100% by assumption
-- flood run 3: no summary for node(s) 1, 3, 4, 6, 7, 8, 9, 10, 12, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
-- flood run 3: no node summary for 1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13: overhead is a lower bound
+- flood run 3: node 7: 1 delivered seq(s) >= generated=29 (reboot or wrong summary?), not counted
+- flood run 3: no summary for node(s) 3, 5, 12, 13: generated estimated as highest seq + 1 (PDR is an upper bound)
+- flood run 3: no node summary for 3, 5, 12, 13: overhead is a lower bound
 
 ## Runs (underlying results)
 
 | mode | run | sources | generated | delivered | PDR | data tx | adv tx | total tx | overhead | convergence (s) | complete |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| dv | 1 | 8 | 178 | 73 | 41.0% | 0 | 79 | 79 | 1.08 | 266 | NO |
-| dv | 2 | 6 | 116 | 51 | 44.0% | 0 | 80 | 80 | 1.57 | 403 | NO |
-| dv | 3 | 9 | 210 | 52 | 24.8% | 0 | 79 | 79 | 1.52 | 270 | NO |
-| flood | 1 | 0 | 0 | 0 | n/a | 0 | 0 | 0 | n/a | – | yes |
-| flood | 2 | 11 | 319 | 207 | 64.9% | 0 | 0 | 0 | 0.00 | – | NO |
-| flood | 3 | 11 | 297 | 158 | 53.2% | 0 | 0 | 0 | 0.00 | – | NO |
+| dv | 1 | 10 | 235 | 65 | 27.7% | 230 | 561 | 791 | 12.17 | 266 | NO |
+| dv | 2 | 9 | 243 | 51 | 21.0% | 284 | 615 | 899 | 17.63 | 403 | NO |
+| dv | 3 | 11 | 276 | 52 | 18.8% | 335 | 718 | 1053 | 20.25 | 270 | NO |
+| flood | 1 | 8 | 231 | 0 | 0.0% | 1800 | 0 | 1800 | n/a | – | yes |
+| flood | 2 | 11 | 317 | 205 | 64.7% | 1814 | 0 | 1814 | 8.85 | – | NO |
+| flood | 3 | 11 | 316 | 157 | 49.7% | 1667 | 0 | 1667 | 10.62 | – | NO |
 
 Overhead = (data + relayed + advertisement send attempts of all devices, root included) / unique packets delivered. PDR = unique (origin, seq) at the root / `generated` of each source. With `complete = NO` some node summaries are missing and the overhead is a lower bound.
 
@@ -45,8 +45,8 @@ Overhead = (data + relayed + advertisement send attempts of all devices, root in
 
 | mode | runs | PDR | overhead | data tx | adv tx | duplicates dropped at root |
 | --- | --- | --- | --- | --- | --- | --- |
-| dv | 3 | 36.6% ± 10.3% (n=3) | n/a | n/a | n/a | 0 ± 0 (n=3) |
-| flood | 3 | 59.0% ± 8.3% (n=2) | n/a | 0 ± – (n=1) | 0 ± – (n=1) | 215 ± 84 (n=3) |
+| dv | 3 | 22.5% ± 4.6% (n=3) | n/a | n/a | n/a | 0 ± 0 (n=3) |
+| flood | 3 | 38.1% ± 33.9% (n=3) | n/a | 1800 ± – (n=1) | 0 ± – (n=1) | 215 ± 84 (n=3) |
 
 ⚠ dv: overhead, data tx and adv tx use only the 0 of 3 runs with every node summary present (the others would undercount).
 ⚠ flood: overhead, data tx and adv tx use only the 1 of 3 runs with every node summary present (the others would undercount).
@@ -54,16 +54,16 @@ Overhead = (data + relayed + advertisement send attempts of all devices, root in
 
 | source | dv | flood |
 | --- | --- | --- |
-| node 1 | n/a | 50.6% ± 21.1% (n=2) |
+| node 1 | 0.0% ± 0.0% (n=3) | 33.3% ± 32.8% (n=3) |
 | node 3 | 58.3% ± 58.9% (n=2) | 36.9% ± 3.4% (n=2) |
-| node 4 | 48.3% ± 4.7% (n=3) | 75.9% ± 0.0% (n=2) |
-| node 5 | 98.8% ± 2.1% (n=3) | 100.0% ± 0.0% (n=2) |
-| node 6 | 22.6% ± 6.7% (n=3) | 49.9% ± 5.2% (n=2) |
-| node 7 | 12.4% ± 7.4% (n=3) | 63.3% ± 14.1% (n=2) |
-| node 8 | 18.5% ± 21.0% (n=2) | 56.9% ± 17.1% (n=2) |
-| node 9 | 19.1% ± 22.2% (n=2) | 62.5% ± 17.7% (n=2) |
-| node 10 | 8.6% ± 2.0% (n=2) | 56.9% ± 7.3% (n=2) |
-| node 12 | 5.3% ± – (n=1) | 51.3% ± 17.0% (n=2) |
+| node 4 | 47.1% ± 4.0% (n=3) | 50.6% ± 43.8% (n=3) |
+| node 5 | 98.9% ± 2.0% (n=3) | 100.0% ± 0.0% (n=2) |
+| node 6 | 16.0% ± 1.6% (n=3) | 32.7% ± 28.7% (n=3) |
+| node 7 | 8.0% ± 4.0% (n=3) | 41.4% ± 37.3% (n=3) |
+| node 8 | 1.7% ± 2.4% (n=2) | 37.9% ± 35.0% (n=3) |
+| node 9 | 10.0% ± 14.5% (n=3) | 26.7% ± 25.2% (n=3) |
+| node 10 | 5.2% ± 2.4% (n=2) | 37.9% ± 33.3% (n=3) |
+| node 12 | 1.8% ± 3.0% (n=3) | 33.8% ± 31.4% (n=3) |
 | node 13 | 16.1% ± 15.3% (n=2) | 50.0% ± 15.2% (n=2) |
 
 A source that is far below the others in every run is consistently disadvantaged.
@@ -95,7 +95,7 @@ Last route each node advertised to the root (hop / parent, DV) and mean RSSI at 
 
 ## Answers to Task.md section VIII
 
-- **PDR**: DV 36.6%, flooding 59.0%.
-- **Overhead** (send attempts per delivered packet): DV nan (data nan + adverts nan per run), flooding nan (data 0).
+- **PDR**: DV 22.5%, flooding 38.1%.
+- **Overhead** (send attempts per delivered packet): DV nan (data nan + adverts nan per run), flooding nan (data 1800).
 - **DV convergence**: 313 s mean over 3 of 3 runs.
 
